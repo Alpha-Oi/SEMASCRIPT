@@ -1,0 +1,891 @@
+{
+  "project_index_version": "SEMASCRIPT_PROJECT_INDEX_v0.1",
+  "project_name": "Sample Restored Project",
+  "active_session_id": "restore_feature",
+  "active_branch_name": "main",
+  "branches": {
+    "main": {
+      "branch_name": "main",
+      "root_session_id": "restore_base",
+      "head_session_id": "restore_feature",
+      "manual_head_session_id": "restore_feature",
+      "color_index": 0
+    }
+  },
+  "sessions": [
+    {
+      "session_id": "restore_base",
+      "session_name": "Restore Base",
+      "profile": "human",
+      "source_mode": "text",
+      "file_name": "sample_restore_base_session.json",
+      "tags": [
+        "restore"
+      ],
+      "entry_metadata": {
+        "branching": {
+          "branch_name": "main",
+          "parent_session_ids": [],
+          "lineage_kind": "root",
+          "branch_order": 0
+        }
+      },
+      "session": {
+        "session_version": "SEMASCRIPT_PROJECT_SESSION_v0.1",
+        "session_name": "Restore Base",
+        "project": {
+          "profile": "human",
+          "source_mode": "text",
+          "source_text": "gen(template -> instance)",
+          "normalized_text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]",
+          "slinear": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]",
+          "decomposed_slinear": "[REL:DEP <dst=[ENT:INSTANCE]; src=[ENT:TEMPLATE]>]",
+          "initial_state": {
+            "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+            "resources": {},
+            "states": {},
+            "dependencies": [],
+            "observations": [],
+            "actions": [],
+            "expansions": [],
+            "history": [],
+            "metadata": {
+              "applied_steps": 0,
+              "last_schedule": null
+            }
+          }
+        },
+        "documents": {
+          "ast_document": {
+            "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+            "source_profile": "normalized",
+            "source_text": "gen(template -> instance)",
+            "ast": {
+              "kind": "node",
+              "class_name": "PAT",
+              "root": "GEN",
+              "modifiers": [],
+              "roles": [
+                {
+                  "name": "code",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "TEMPLATE",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                },
+                {
+                  "name": "dst",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "INSTANCE",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                }
+              ],
+              "source_profile": "normalized"
+            },
+            "validation_annotations": [],
+            "metadata": {
+              "normalized_text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]"
+            }
+          },
+          "decomposed_ast_document": {
+            "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+            "source_profile": "normalized",
+            "source_text": "gen(template -> instance)",
+            "ast": {
+              "kind": "node",
+              "class_name": "REL",
+              "root": "DEP",
+              "modifiers": [],
+              "roles": [
+                {
+                  "name": "dst",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "INSTANCE",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                },
+                {
+                  "name": "src",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "TEMPLATE",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                }
+              ],
+              "notes": [
+                "decomposed_from:PAT:GEN"
+              ]
+            },
+            "validation_annotations": [],
+            "metadata": {
+              "normalized_text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]",
+              "pattern_decomposition_applied": true,
+              "pattern_decomposition_count": 1
+            }
+          },
+          "graph_document": {
+            "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+            "profile": "normalized",
+            "source_text": "gen(template -> instance)",
+            "root_entity_id": "e1",
+            "entities": [
+              {
+                "id": "e1",
+                "kind": "node",
+                "class_name": "PAT",
+                "root": "GEN",
+                "modifiers": [],
+                "x": 320,
+                "y": 80
+              },
+              {
+                "id": "e2",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "TEMPLATE",
+                "modifiers": [],
+                "x": 140,
+                "y": 200
+              },
+              {
+                "id": "e3",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "INSTANCE",
+                "modifiers": [],
+                "x": 320,
+                "y": 224
+              }
+            ],
+            "edges": [
+              {
+                "id": "edge_e1_e2_0",
+                "from_id": "e1",
+                "to_id": "e2",
+                "role": "code",
+                "order": 0
+              },
+              {
+                "id": "edge_e1_e3_1",
+                "from_id": "e1",
+                "to_id": "e3",
+                "role": "dst",
+                "order": 1
+              }
+            ],
+            "metadata": {
+              "generated_from_ast": true
+            }
+          },
+          "decomposed_graph_document": {
+            "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+            "profile": "normalized",
+            "source_text": "gen(template -> instance)",
+            "root_entity_id": "e1",
+            "entities": [
+              {
+                "id": "e1",
+                "kind": "node",
+                "class_name": "REL",
+                "root": "DEP",
+                "modifiers": [],
+                "x": 320,
+                "y": 80
+              },
+              {
+                "id": "e2",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "INSTANCE",
+                "modifiers": [],
+                "x": 140,
+                "y": 200
+              },
+              {
+                "id": "e3",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "TEMPLATE",
+                "modifiers": [],
+                "x": 320,
+                "y": 224
+              }
+            ],
+            "edges": [
+              {
+                "id": "edge_e1_e2_0",
+                "from_id": "e1",
+                "to_id": "e2",
+                "role": "dst",
+                "order": 0
+              },
+              {
+                "id": "edge_e1_e3_1",
+                "from_id": "e1",
+                "to_id": "e3",
+                "role": "src",
+                "order": 1
+              }
+            ],
+            "metadata": {
+              "generated_from_ast": true
+            }
+          }
+        },
+        "reports": {
+          "validation": {
+            "mode": "core",
+            "valid": true,
+            "errors": []
+          },
+          "runtime_report": {
+            "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+            "accepted": true,
+            "entry_kind": "core_runtime",
+            "context": {
+              "time_mode": null,
+              "invariant_law": null,
+              "schedule": null
+            },
+            "plan": [
+              {
+                "op_family": "CORE",
+                "op_name": "DEPENDENCY",
+                "roles": {
+                  "dst": "[ENT:INSTANCE]",
+                  "src": "[ENT:TEMPLATE]"
+                },
+                "constraints": {
+                  "time_mode": null,
+                  "invariant_law": null,
+                  "schedule": null
+                },
+                "reversible": false,
+                "effect_class": "dependency_relation"
+              }
+            ],
+            "errors": [],
+            "notes": [
+              "decomposed_pattern_runtime"
+            ],
+            "decomposition_count": 1
+          },
+          "state_report": {
+            "state_model_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+            "accepted": true,
+            "initial_state": {
+              "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+              "resources": {},
+              "states": {},
+              "dependencies": [],
+              "observations": [],
+              "actions": [],
+              "expansions": [],
+              "history": [],
+              "metadata": {
+                "applied_steps": 0,
+                "last_schedule": null
+              }
+            },
+            "final_state": {
+              "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+              "resources": {},
+              "states": {},
+              "dependencies": [
+                {
+                  "dst": "[ENT:INSTANCE]",
+                  "src": "[ENT:TEMPLATE]"
+                }
+              ],
+              "observations": [],
+              "actions": [],
+              "expansions": [],
+              "history": [
+                {
+                  "op_name": "DEPENDENCY",
+                  "op_family": "CORE",
+                  "roles": {
+                    "dst": "[ENT:INSTANCE]",
+                    "src": "[ENT:TEMPLATE]"
+                  },
+                  "constraints": {
+                    "time_mode": null,
+                    "invariant_law": null,
+                    "schedule": null
+                  }
+                }
+              ],
+              "metadata": {
+                "applied_steps": 1,
+                "last_schedule": null
+              }
+            },
+            "runtime_report": {
+              "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+              "accepted": true,
+              "entry_kind": "core_runtime",
+              "context": {
+                "time_mode": null,
+                "invariant_law": null,
+                "schedule": null
+              },
+              "plan": [
+                {
+                  "op_family": "CORE",
+                  "op_name": "DEPENDENCY",
+                  "roles": {
+                    "dst": "[ENT:INSTANCE]",
+                    "src": "[ENT:TEMPLATE]"
+                  },
+                  "constraints": {
+                    "time_mode": null,
+                    "invariant_law": null,
+                    "schedule": null
+                  },
+                  "reversible": false,
+                  "effect_class": "dependency_relation"
+                }
+              ],
+              "errors": [],
+              "notes": [
+                "decomposed_pattern_runtime"
+              ],
+              "decomposition_count": 1
+            },
+            "errors": []
+          }
+        },
+        "render": {
+          "svg_raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"462\" height=\"114\" viewBox=\"0 0 462 114\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">normalized</text>\n<polygon points=\"234.5,26.0 289.5,47.8 272.3,88.0 196.8,88.0 179.5,47.8\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"234.5\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">PAT:GEN</text>\n<ellipse cx=\"69.0\" cy=\"57.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:TEMPLATE</text>\n<line x1=\"234.5\" y1=\"57.0\" x2=\"69.0\" y2=\"57.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"151.8\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">code</text>\n<ellipse cx=\"393.7\" cy=\"57.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"393.7\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:INSTANCE</text>\n<line x1=\"234.5\" y1=\"57.0\" x2=\"393.7\" y2=\"57.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"314.1\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">dst</text>\n</svg>",
+          "svg_decomposed": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"446\" height=\"112\" viewBox=\"0 0 446 112\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">normalized</text>\n<polygon points=\"223.1,26.0 275.1,56.0 223.1,86.0 171.1,56.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"223.1\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">REL:DEP</text>\n<ellipse cx=\"69.0\" cy=\"56.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:TEMPLATE</text>\n<line x1=\"223.1\" y1=\"56.0\" x2=\"69.0\" y2=\"56.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"146.1\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">src</text>\n<ellipse cx=\"377.3\" cy=\"56.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"377.3\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:INSTANCE</text>\n<line x1=\"223.1\" y1=\"56.0\" x2=\"377.3\" y2=\"56.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"300.2\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">dst</text>\n</svg>"
+        },
+        "ui_state": {
+          "selected_entity_id": null,
+          "preview_mode": "raw",
+          "decompose": true,
+          "viewport": {
+            "scroll_x": 0,
+            "scroll_y": 0,
+            "zoom": 1.0
+          },
+          "panels": {
+            "svg": true,
+            "ast": true,
+            "runtime": true,
+            "state": true,
+            "graph_json": true
+          }
+        },
+        "metadata": {
+          "generated_from": "text_input"
+        }
+      }
+    },
+    {
+      "session_id": "restore_feature",
+      "session_name": "Restore Feature",
+      "profile": "human",
+      "source_mode": "text",
+      "file_name": "sample_restore_feature_session.json",
+      "tags": [
+        "restore"
+      ],
+      "entry_metadata": {
+        "branching": {
+          "branch_name": "main",
+          "parent_session_ids": [
+            "restore_base"
+          ],
+          "lineage_kind": "commit",
+          "branch_order": 0
+        }
+      },
+      "session": {
+        "session_version": "SEMASCRIPT_PROJECT_SESSION_v0.1",
+        "session_name": "Restore Feature",
+        "project": {
+          "profile": "human",
+          "source_mode": "text",
+          "source_text": "spr(seed -> restore_form)",
+          "normalized_text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:RESTORE_FORM]>]",
+          "slinear": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:RESTORE_FORM]>]",
+          "decomposed_slinear": "[PRC:EXP <src=[ENT:SEED]; res=[ENT:RESTORE_FORM]>]",
+          "initial_state": {
+            "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+            "resources": {},
+            "states": {},
+            "dependencies": [],
+            "observations": [],
+            "actions": [],
+            "expansions": [],
+            "history": [],
+            "metadata": {
+              "applied_steps": 0,
+              "last_schedule": null
+            }
+          }
+        },
+        "documents": {
+          "ast_document": {
+            "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+            "source_profile": "normalized",
+            "source_text": "spr(seed -> restore_form)",
+            "ast": {
+              "kind": "node",
+              "class_name": "PAT",
+              "root": "SPR",
+              "modifiers": [],
+              "roles": [
+                {
+                  "name": "core",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "SEED",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                },
+                {
+                  "name": "res",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "RESTORE_FORM",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                }
+              ],
+              "source_profile": "normalized"
+            },
+            "validation_annotations": [],
+            "metadata": {
+              "normalized_text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:RESTORE_FORM]>]"
+            }
+          },
+          "decomposed_ast_document": {
+            "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+            "source_profile": "normalized",
+            "source_text": "spr(seed -> restore_form)",
+            "ast": {
+              "kind": "node",
+              "class_name": "PRC",
+              "root": "EXP",
+              "modifiers": [],
+              "roles": [
+                {
+                  "name": "src",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "SEED",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                },
+                {
+                  "name": "res",
+                  "value": {
+                    "kind": "node",
+                    "class_name": "ENT",
+                    "root": "RESTORE_FORM",
+                    "modifiers": [],
+                    "roles": []
+                  }
+                }
+              ],
+              "notes": [
+                "decomposed_from:PAT:SPR"
+              ]
+            },
+            "validation_annotations": [],
+            "metadata": {
+              "normalized_text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:RESTORE_FORM]>]",
+              "pattern_decomposition_applied": true,
+              "pattern_decomposition_count": 1
+            }
+          },
+          "graph_document": {
+            "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+            "profile": "normalized",
+            "source_text": "spr(seed -> restore_form)",
+            "root_entity_id": "e1",
+            "entities": [
+              {
+                "id": "e1",
+                "kind": "node",
+                "class_name": "PAT",
+                "root": "SPR",
+                "modifiers": [],
+                "x": 320,
+                "y": 80
+              },
+              {
+                "id": "e2",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "SEED",
+                "modifiers": [],
+                "x": 140,
+                "y": 200
+              },
+              {
+                "id": "e3",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "RESTORE_FORM",
+                "modifiers": [],
+                "x": 320,
+                "y": 224
+              }
+            ],
+            "edges": [
+              {
+                "id": "edge_e1_e2_0",
+                "from_id": "e1",
+                "to_id": "e2",
+                "role": "core",
+                "order": 0
+              },
+              {
+                "id": "edge_e1_e3_1",
+                "from_id": "e1",
+                "to_id": "e3",
+                "role": "res",
+                "order": 1
+              }
+            ],
+            "metadata": {
+              "generated_from_ast": true
+            }
+          },
+          "decomposed_graph_document": {
+            "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+            "profile": "normalized",
+            "source_text": "spr(seed -> restore_form)",
+            "root_entity_id": "e1",
+            "entities": [
+              {
+                "id": "e1",
+                "kind": "node",
+                "class_name": "PRC",
+                "root": "EXP",
+                "modifiers": [],
+                "x": 320,
+                "y": 80
+              },
+              {
+                "id": "e2",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "SEED",
+                "modifiers": [],
+                "x": 140,
+                "y": 200
+              },
+              {
+                "id": "e3",
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "RESTORE_FORM",
+                "modifiers": [],
+                "x": 320,
+                "y": 224
+              }
+            ],
+            "edges": [
+              {
+                "id": "edge_e1_e2_0",
+                "from_id": "e1",
+                "to_id": "e2",
+                "role": "src",
+                "order": 0
+              },
+              {
+                "id": "edge_e1_e3_1",
+                "from_id": "e1",
+                "to_id": "e3",
+                "role": "res",
+                "order": 1
+              }
+            ],
+            "metadata": {
+              "generated_from_ast": true
+            }
+          }
+        },
+        "reports": {
+          "validation": {
+            "mode": "core",
+            "valid": true,
+            "errors": []
+          },
+          "runtime_report": {
+            "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+            "accepted": true,
+            "entry_kind": "core_runtime",
+            "context": {
+              "time_mode": null,
+              "invariant_law": null,
+              "schedule": null
+            },
+            "plan": [
+              {
+                "op_family": "CORE",
+                "op_name": "EXPAND",
+                "roles": {
+                  "src": "[ENT:SEED]",
+                  "res": "[ENT:RESTORE_FORM]"
+                },
+                "constraints": {
+                  "time_mode": null,
+                  "invariant_law": null,
+                  "schedule": null
+                },
+                "reversible": false,
+                "effect_class": "structural_growth"
+              }
+            ],
+            "errors": [],
+            "notes": [
+              "decomposed_pattern_runtime"
+            ],
+            "decomposition_count": 1
+          },
+          "state_report": {
+            "state_model_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+            "accepted": true,
+            "initial_state": {
+              "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+              "resources": {},
+              "states": {},
+              "dependencies": [],
+              "observations": [],
+              "actions": [],
+              "expansions": [],
+              "history": [],
+              "metadata": {
+                "applied_steps": 0,
+                "last_schedule": null
+              }
+            },
+            "final_state": {
+              "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+              "resources": {},
+              "states": {},
+              "dependencies": [],
+              "observations": [],
+              "actions": [],
+              "expansions": [
+                {
+                  "src": "[ENT:SEED]",
+                  "res": "[ENT:RESTORE_FORM]"
+                }
+              ],
+              "history": [
+                {
+                  "op_name": "EXPAND",
+                  "op_family": "CORE",
+                  "roles": {
+                    "src": "[ENT:SEED]",
+                    "res": "[ENT:RESTORE_FORM]"
+                  },
+                  "constraints": {
+                    "time_mode": null,
+                    "invariant_law": null,
+                    "schedule": null
+                  }
+                }
+              ],
+              "metadata": {
+                "applied_steps": 1,
+                "last_schedule": null
+              }
+            },
+            "runtime_report": {
+              "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+              "accepted": true,
+              "entry_kind": "core_runtime",
+              "context": {
+                "time_mode": null,
+                "invariant_law": null,
+                "schedule": null
+              },
+              "plan": [
+                {
+                  "op_family": "CORE",
+                  "op_name": "EXPAND",
+                  "roles": {
+                    "src": "[ENT:SEED]",
+                    "res": "[ENT:RESTORE_FORM]"
+                  },
+                  "constraints": {
+                    "time_mode": null,
+                    "invariant_law": null,
+                    "schedule": null
+                  },
+                  "reversible": false,
+                  "effect_class": "structural_growth"
+                }
+              ],
+              "errors": [],
+              "notes": [
+                "decomposed_pattern_runtime"
+              ],
+              "decomposition_count": 1
+            },
+            "errors": []
+          }
+        },
+        "render": {
+          "svg_raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"311\" height=\"188\" viewBox=\"0 0 311 188\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">normalized</text>\n<polygon points=\"83.0,26.0 138.0,47.8 120.8,88.0 45.2,88.0 28.0,47.8\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"83.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">PAT:SPR</text>\n<ellipse cx=\"242.1\" cy=\"57.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"242.1\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:RESTORE_FORM</text>\n<line x1=\"83.0\" y1=\"57.0\" x2=\"242.1\" y2=\"57.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"162.6\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">res</text>\n<ellipse cx=\"133.8\" cy=\"136.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"133.8\" y=\"132.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:SEED</text>\n<line x1=\"83.0\" y1=\"57.0\" x2=\"133.8\" y2=\"136.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"108.4\" y=\"92.5\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">core</text>\n</svg>",
+          "svg_decomposed": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"448\" height=\"112\" viewBox=\"0 0 448 112\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">normalized</text>\n<polygon points=\"224.1,26.0 277.1,86.0 171.1,86.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"224.1\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">PRC:EXP</text>\n<ellipse cx=\"69.0\" cy=\"56.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:SEED</text>\n<line x1=\"224.1\" y1=\"56.0\" x2=\"69.0\" y2=\"56.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"146.6\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">src</text>\n<ellipse cx=\"379.3\" cy=\"56.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"379.3\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:RESTORE_FORM</text>\n<line x1=\"224.1\" y1=\"56.0\" x2=\"379.3\" y2=\"56.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"301.7\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">res</text>\n</svg>"
+        },
+        "ui_state": {
+          "selected_entity_id": null,
+          "preview_mode": "raw",
+          "decompose": true,
+          "viewport": {
+            "scroll_x": 0,
+            "scroll_y": 0,
+            "zoom": 1.0
+          },
+          "panels": {
+            "svg": true,
+            "ast": true,
+            "runtime": true,
+            "state": true,
+            "graph_json": true
+          }
+        },
+        "metadata": {
+          "generated_from": "text_input"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "workspace_kind": "multi_session"
+  },
+  "history": {
+    "events": [
+      {
+        "seq": 1,
+        "event_type": "workspace_created",
+        "title": "Workspace created: Sample Snapshot Restore Source",
+        "session_id": null,
+        "session_name": null,
+        "payload": {
+          "project_name": "Sample Snapshot Restore Source"
+        }
+      },
+      {
+        "seq": 2,
+        "event_type": "active_session_set",
+        "title": "Active session set: Restore Base",
+        "session_id": "restore_base",
+        "session_name": "Restore Base",
+        "payload": {}
+      },
+      {
+        "seq": 3,
+        "event_type": "session_added",
+        "title": "Session added: Restore Base",
+        "session_id": "restore_base",
+        "session_name": "Restore Base",
+        "payload": {
+          "profile": "human",
+          "source_mode": "text",
+          "branch_name": "main"
+        }
+      },
+      {
+        "seq": 4,
+        "event_type": "session_added",
+        "title": "Session added: Restore Feature",
+        "session_id": "restore_feature",
+        "session_name": "Restore Feature",
+        "payload": {
+          "profile": "human",
+          "source_mode": "text",
+          "branch_name": "main"
+        }
+      },
+      {
+        "seq": 5,
+        "event_type": "tag_release_created",
+        "title": "Release point created: restore_release",
+        "session_id": "restore_feature",
+        "session_name": "Restore Feature",
+        "payload": {
+          "tag_name": "restore_release",
+          "point_kind": "release",
+          "branch_name": "main"
+        }
+      },
+      {
+        "seq": 6,
+        "event_type": "snapshot_restored",
+        "title": "Snapshot restored: snapshot_restore_v1",
+        "session_id": "restore_feature",
+        "session_name": "Restore Feature",
+        "payload": {
+          "restore_name": "restore_v1",
+          "snapshot_name": "snapshot_restore_v1",
+          "source_point_name": "restore_release",
+          "source_point_kind": "release",
+          "branch_name": "main"
+        }
+      }
+    ],
+    "next_seq": 7
+  },
+  "tag_points": {
+    "restore_release": {
+      "tag_name": "restore_release",
+      "point_kind": "release",
+      "target_session_id": "restore_feature",
+      "target_session_name": "Restore Feature",
+      "branch_name": "main",
+      "note": "restore anchor",
+      "lineage_state": {
+        "branch_name": "main",
+        "branch_head_session_id": "restore_feature",
+        "active_session_id": "restore_base",
+        "active_branch_name": "main",
+        "is_branch_head_target": true
+      }
+    }
+  },
+  "snapshot_restores": {
+    "restore_v1": {
+      "restore_name": "restore_v1",
+      "snapshot_name": "snapshot_restore_v1",
+      "source_point_name": "restore_release",
+      "source_point_kind": "release",
+      "target_session_id": "restore_feature",
+      "branch_name": "main",
+      "note": "frozen restore source",
+      "immutability": {
+        "frozen": true,
+        "mutable": false,
+        "source": "tag_release_point"
+      }
+    }
+  },
+  "snapshot_exports": {}
+}

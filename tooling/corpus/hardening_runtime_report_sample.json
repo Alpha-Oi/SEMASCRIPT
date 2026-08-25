@@ -1,0 +1,136 @@
+{
+  "schema_version": "SEMASCRIPT_BATCH_RUNTIME_CORPUS_REPORT_v0.1",
+  "entries": [
+    {
+      "id": "HC01",
+      "profile": "human",
+      "tags": [
+        "human-alias-transfer"
+      ],
+      "accepted": false,
+      "plan_length": 0,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [
+        {
+          "code": "R_NORMALIZE",
+          "message": "Unsupported Human shorthand: 'A gives B resource'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "HC02",
+      "profile": "human",
+      "tags": [
+        "state-wrapper"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "HC03",
+      "profile": "human",
+      "tags": [
+        "branch",
+        "human-alias"
+      ],
+      "accepted": false,
+      "plan_length": 0,
+      "schedule": "branch_set",
+      "invariant_law": null,
+      "errors": [
+        {
+          "code": "R_CORE_NODE",
+          "message": "Unsupported core runtime node: PRC:TRF"
+        },
+        {
+          "code": "R_CORE_NODE",
+          "message": "Unsupported core runtime node: PRC:TRF"
+        }
+      ],
+      "notes": [
+        "branch_set_deferred_selection"
+      ]
+    },
+    {
+      "id": "HC04",
+      "profile": "exec",
+      "tags": [
+        "qty"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "HC05",
+      "profile": "exec",
+      "tags": [
+        "observe"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "HC06",
+      "profile": "core",
+      "tags": [
+        "destroy",
+        "nzsum"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": "NZSUM",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "HC07",
+      "profile": "human",
+      "tags": [
+        "dependency"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": [
+        "decomposed_pattern_runtime"
+      ]
+    },
+    {
+      "id": "HC08",
+      "profile": "human",
+      "tags": [
+        "expansion"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": [
+        "decomposed_pattern_runtime"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "accepted": 6,
+    "rejected": 2
+  }
+}

@@ -1,0 +1,229 @@
+# SEMASCRIPT Project Status Pack v0.2
+
+## Current working baseline
+- Active extracted bundle: `SEMASCRIPT_current_bundle`
+- Source archive baseline: `SEMASCRIPT_All_In_One_v0_2_PORTABLE_LOCAL_OUTCOME_PACKAGE_THREE_WAY_CONFLICT_RESOLUTION_MANUAL_MERGE_DECISIONS.zip`
+- Bundle chain is cumulative: later archives add scope and entries rather than replacing the project model.
+
+## Verified state on 2026-05-02
+- `python tooling/run_environment_bootstrap_checks.py`
+  - passed `env_bootstrap_self_check: passed=7 warnings=0 failed=0`
+- `python tooling/run_v0_2_hardening_suite.py`
+  - passed integrated non-browser suite
+  - includes `editor_visual_inspector: passed=64 failed=0 total=64`
+  - final marker: `v0_2_hardening_suite: passed=1 failed=0 total=1`
+- `Set-Location .\tooling; python -c "import inspector_server; print('IMPORT_OK')"`
+  - inspector server imports cleanly
+- `python tooling/run_inspector_browser_ui_checks.py`
+  - not run in this checkpoint; browser UI verification remains opt-in
+  - runner was updated to assert the new package-guidance next-action cards
+  - runner was updated to assert the new portable merge workstation guidance in the package and snapshot-to-portable browser flows
+
+## Verified state on 2026-04-25
+- `python run_inspector_smoke_checks.py`
+  - passed `62/62`
+- `python run_inspector_http_smoke_checks.py`
+  - passed `15/15`
+- `python run_inspector_http_e2e_checks.py`
+  - passed `7/7`
+- `python run_inspector_http_project_ops_e2e_checks.py`
+  - passed `9/9`
+- `python run_inspector_http_lifecycle_import_e2e_checks.py`
+  - passed `7/7`
+- `python run_inspector_http_graph_session_e2e_checks.py`
+  - passed `7/7`
+- `python run_portable_local_outcome_package_merge_resolution_checks.py`
+  - passed `3/3`
+- `python run_portable_local_outcome_package_merge_commit_checks.py`
+  - passed `4/4`
+- `python run_v0_2_hardening_suite.py`
+  - passed end-to-end regression suite
+- `python -c "import inspector_server"`
+  - inspector server imports cleanly
+- `python run_inspector_browser_ui_checks.py`
+  - passed `8/8` browser UI scenarios
+  - page load + default `human` profile + live profile guidance
+  - human analyze + add current session to project
+  - branch + release point + snapshot export flow
+  - `core` profile mismatch preflight guidance without browser errors
+  - snapshot/package guidance + cross-panel package-type mismatch hints
+  - smart autofill for restore/import/reconcile names with manual override preserved
+  - local outcome package preview -> resolve -> commit/promote with committed outcome bridged into portable merge selectors
+  - standalone package import -> local outcome package export/import/commit -> portable merge compare/resolve/commit with downstream autofill checks
+  - snapshot reconcile -> promoted standalone package export -> target-project package import -> local outcome package -> portable merge with snapshot/package/merge autofill checks
+  - live standalone/local package summary cards after export, so package handoff no longer depends on reading raw JSON only
+
+## What was completed in this iteration
+- Refactored inspector from a single overloaded `app.js` into workflow modules:
+  - project workspace / lifecycle / operations
+  - graph session workspace
+  - snapshot reconcile
+  - reconcile commit package
+  - local outcome set package
+  - portable merge workstation
+  - bootstrap / core / panel / action layer
+- Added `Interactive Merge Workstation v2` for portable local outcome reconciliation.
+- Added inspector frontend smoke coverage for workflow wiring and module registration.
+- Fixed a live inspector server regression where modular frontend assets returned `404`.
+- Added runtime HTTP smoke coverage for inspector static asset serving, `/api/samples`, and key `POST` routes including portable merge compare / resolve / commit.
+- Closed inspector frontend/server API drift by wiring the missing lifecycle / reconcile-package / project-operations HTTP handlers in `inspector_server.py`.
+- Added static route-parity regression so frontend `postJson("/api/...")` references must match live server handlers.
+- Added localhost HTTP e2e scenario runner for:
+  - snapshot reconcile resolution + commit
+  - standalone outcome package preview / resolve / commit
+  - local outcome package export / import-resolution / commit
+  - portable local three-way merge compare / resolve / commit
+- Fixed branch-aware project export/merge contract drift:
+  - `export-project-index` now preserves `entry_metadata` and branch lineage hints from session entries
+  - `commit-project-merge-result` now honors explicit `branch_name` from inspector frontend
+- Added localhost HTTP project-operations e2e runner for:
+  - branch-aware project export
+  - create branch
+  - compare / merge / resolve / commit
+  - rebase / cherry-pick / squash / reset
+- Added localhost HTTP lifecycle/direct-import e2e runner for:
+  - switch active project session
+  - partial snapshot import
+  - direct snapshot reconcile apply
+  - compare promoted reconcile commits
+  - direct standalone package import
+  - direct local outcome package import
+  - compare committed portable local outcome packages
+- Added localhost HTTP graph/session editor e2e runner for:
+  - analyze text
+  - text to graph
+  - analyze graph
+  - export text session
+  - export graph session
+  - import session
+  - build project from exported sessions
+- Added route-coverage parity regression:
+  - every frontend `postJson("/api/...")` route must now appear in at least one inspector HTTP smoke/e2e check file
+- Restored missing inspector sidebar lifecycle/operations panels in `inspector/index.html`:
+  - branch creation + branch list
+  - tag/release point management
+  - snapshot export / restore / partial import / reconcile
+  - rebase / reset / cherry-pick / squash controls
+  - missing local outcome package preview action
+- Added DOM parity regression:
+  - every `document.getElementById("...")` referenced by `inspector/app.js` must now exist in `inspector/index.html`
+- Added opt-in browser UI scenario runner:
+  - `tooling/run_inspector_browser_ui_checks.py`
+  - self-hosted temporary inspector server
+  - Playwright-driven page load / analyze / project / branch / tag / snapshot verification
+  - Playwright-driven profile mismatch preflight verification
+  - screenshot artifacts under `tooling/browser_ui_artifacts/`
+- Hardened inspector onboarding UX:
+  - default profile switched to `human`
+  - live profile-specific input guidance rendered in the sidebar
+  - obvious `core`/`exec` vs human-shorthand mismatches are blocked client-side before hitting `400`
+  - status messaging now points users toward the right profile instead of looking like a broken backend
+- Hardened inspector package/import UX:
+  - snapshot restore textarea now renders live snapshot package summaries with available session ids / tag points / snapshot names
+  - partial import and snapshot reconcile now surface snapshot-scoped selection hints instead of raw empty CSV failure
+  - standalone/local package textareas now detect wrong SEMASCRIPT package types before import attempts
+  - restore/import/reconcile name fields now autofill from loaded snapshot/package metadata without overwriting manual edits
+  - browser verification now covers live package guidance, snapshot-vs-standalone mismatch rendering, and metadata-driven autofill
+- Closed a real inspector product gap in local outcome workflow:
+  - local outcome package resolution can now be committed/promoted directly from the live UI
+  - the committed portable-local outcome is rendered back into the inspector list and immediately becomes selectable in portable merge controls
+- Closed a real inspector bridge gap between standalone and local outcome flows:
+  - after `commit imported package resolution`, the local outcome export selector now falls back to `currentProject.snapshot_reconcile_commit_package_commits`
+  - this keeps the live UI usable even when a route returns project state with commit objects but without a separate summary projection
+  - browser verification now covers the full `standalone package -> local outcome package -> portable merge` click-path
+- Added a full cross-project browser pipeline starting at snapshot reconcile:
+  - source project import -> snapshot reconcile preview/apply/commit
+  - standalone package export from the committed reconcile outcome
+  - target project import -> standalone package preview/import/commit
+  - local outcome package export/import/commit
+  - portable local three-way merge compare/resolve/commit
+- Added smoke protection for that browser runner path:
+  - `run_inspector_smoke_checks.py` now statically asserts the new snapshot-to-portable browser scenario remains wired into the opt-in runner
+- Hardened downstream inspector naming UX:
+  - snapshot reconcile now autofills commit/promote names from the live reconcile result
+  - standalone outcome export now autofills package name from the selected promoted reconcile commit
+  - standalone package resolution now autofills commit/promote names before promote into local outcomes
+  - local outcome export now autofills package name from the selected local outcome commit
+  - portable merge resolution now autofills merge commit/promote names from the resolved merge result
+  - export-selector change bindings now update package-name autofill live when the chosen source commit changes
+- Browser verification now asserts this downstream autofill layer in the live UI:
+  - snapshot reconcile commit/promote autofill before custom override
+  - standalone package export-name autofill before custom override
+  - standalone package resolution commit/promote autofill before custom override
+  - local outcome export-name autofill before custom override
+  - portable merge commit/promote autofill on the final merge commit path
+- Reduced raw-JSON friction in package flows:
+  - standalone package export now renders a structured current-package summary card in the live UI
+  - local outcome package export now renders a structured current-package summary card in the live UI
+  - these cards expose package name, commit/source lineage and resolved-session summary before any `Use current ... package` handoff
+- Hardened `Interactive Merge Workstation v2` decision UX:
+  - workstation overview now exposes manual decision and skipped counts alongside conflict/ready/needs-input counts
+  - queue cards now mark ready / skipped / needs-input states directly
+  - Decision Studio now shows selected session, status, decision, preview source and next safe action before relying on raw JSON panes
+  - non-browser smoke guards the workstation guidance contract in the current `editor_visual_inspector: passed=64 failed=0 total=64` baseline
+  - opt-in browser runner now asserts the new portable merge guidance in both package-pipeline and snapshot-to-portable flows
+- Hardened package handoff guidance:
+  - snapshot, standalone outcome package and local outcome package guidance cards now include an explicit `Next action:` line
+  - valid package cards point users to preview/import/resolve/reconcile actions instead of forcing raw JSON interpretation
+  - mismatch/error/empty cards now explain the safe next action before an import attempt
+  - non-browser smoke now guards the package next-action contract as `editor_visual_inspector: passed=64 failed=0 total=64`
+  - opt-in browser runner now asserts package next-action guidance in the package-guidance scenario
+
+## Important findings from analysis
+- Root archive chronology is internally consistent and strongly suggests a single cumulative development line.
+- Several legacy documentation files inside the bundle still describe earlier project phases and lag behind the real codebase.
+- The inspector refactor had progressed faster than the HTTP shell: `index.html` referenced modular frontend bundles, while `inspector_server.py` still only served a tiny legacy subset of static files.
+- Browser-level verification is still desirable, but current regression coverage now protects the biggest non-browser failure modes: missing modular asset routes, missing inspector HTTP handlers, broken route/payload wiring on live localhost HTTP, and broken multi-step inspector outcome pipelines.
+- The HTTP regression layer now covers both major inspector surfaces:
+- The HTTP regression layer now covers four major inspector surfaces:
+  - graph/session editor flows
+  - lifecycle/direct-import flows
+  - outcome/package pipelines
+  - core branch/project operations
+- Static inspector smoke now also guards that frontend API surface is not just implemented on the server, but actually exercised by the HTTP regression layer.
+- A real product-level DOM drift was found and fixed: workflow controllers in `app.js` referenced more inspector controls than `index.html` actually rendered, so several lifecycle/snapshot flows were implemented but not reachable from the live UI.
+- Static inspector smoke now also guards this DOM contract so future refactors cannot silently hide working workflows behind missing markup.
+- Browser-level verification is no longer purely manual: there is now a repeatable UI runner for the core restored inspector flows, even though it stays outside the default hardening suite because it depends on live browser execution.
+- The first browser-led UX pitfall is now explicitly closed: the inspector no longer defaults users into a high-friction `core` parse failure for the common shorthand input path.
+- The next JSON-heavy UX pitfall is also materially reduced: snapshot/package textareas no longer behave like opaque raw blobs, and the live UI now helps distinguish snapshot vs standalone vs local outcome package payloads before a user fires the wrong operation.
+- Repeated metadata entry is also reduced: inspector now pulls reasonable restore/import/reconcile names from loaded snapshot/package JSON while still respecting manual overrides.
+
+## Current product/engineering state
+SEMASCRIPT now has:
+- multi-session project workspace with branches / tags / snapshots / lineage
+- snapshot restore / partial import / snapshot reconcile flows
+- standalone outcome package export / import / resolve / commit-promote
+- portable local outcome package export / import / compare / three-way merge / commit-promote
+- inspector `Interactive Merge Workstation v2`
+- modular inspector frontend with dedicated workflow controllers
+- inspector server/runtime checks for modular asset delivery
+- live HTTP e2e coverage for both outcome pipelines and core project operations
+- live HTTP e2e coverage for graph/session editor flows, lifecycle/import flows, outcome pipelines and core project operations
+
+## Recommended next milestone
+The next strong step is:
+- browser-level verification and UX hardening for inspector workstation flows
+
+This should focus on:
+- live click-path verification for reconcile/package/portable-merge flows beyond the current package-guidance scenarios
+- catching console/runtime UI issues that static smoke cannot see
+- UX polish around decision density, preview readability and action affordances
+- reducing the remaining raw-JSON burden with more guided import/preview affordances where possible
+- optional higher-level end-to-end inspector regression automation
+
+## Practical next entry points
+- Inspector HTTP shell:
+  - `tooling/inspector_server.py`
+  - `tooling/run_inspector_http_smoke_checks.py`
+- Unified regression entry:
+- `tooling/run_v0_2_hardening_suite.py`
+- Inspector UI shell:
+  - `inspector/index.html`
+  - `inspector/inspector-bootstrap-workflow.js`
+  - `inspector/inspector-action-workflow.js`
+- Inspector HTTP regression:
+  - `tooling/run_inspector_http_smoke_checks.py`
+  - `tooling/run_inspector_http_e2e_checks.py`
+  - `tooling/run_inspector_http_project_ops_e2e_checks.py`
+  - `tooling/run_inspector_http_lifecycle_import_e2e_checks.py`
+  - `tooling/run_inspector_http_graph_session_e2e_checks.py`

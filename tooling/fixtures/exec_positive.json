@@ -1,0 +1,50 @@
+[
+  {
+    "id": "X01",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=[LAW:ZSUM]>]"
+  },
+  {
+    "id": "X02",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]; time=[TIME:LIN]>]"
+  },
+  {
+    "id": "X03",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]; invariant=[LAW:NZSUM]>]"
+  },
+  {
+    "id": "X04",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:DESTROY <obj=[ENT:RES]; ctx=[ENT:SYS]>]"
+  },
+  {
+    "id": "X05",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:OBSERVE <agt=[ENT:HUM]; obj=[ENT:OBJ]>]"
+  },
+  {
+    "id": "X06",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:CHANGE <obj=[ENT:SYS]; res=[STA:DEC]>]"
+  },
+  {
+    "id": "X07",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:TRANSFER <src=[ENT:ACCOUNT_A]; dst=[ENT:ACCOUNT_B]; obj=[ENT:CREDIT]; qty=[VAL:10]; time=[TIME:LIN]; invariant=[LAW:ZSUM]>]"
+  },
+  {
+    "id": "X08",
+    "mode": "exec",
+    "expected_valid": true,
+    "text": "[EXEC:ACT <agt=[ENT:HUM]; ctx=[ENT:LAB]>]"
+  }
+]

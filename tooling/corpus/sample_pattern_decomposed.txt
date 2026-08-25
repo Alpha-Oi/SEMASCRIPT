@@ -1,0 +1,1 @@
+[PRC:EXP <src=[ENT:SEED]; res=[ENT:FORM]>]

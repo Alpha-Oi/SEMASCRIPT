@@ -1,0 +1,31 @@
+{
+  "cherry_pick_version": "SEMASCRIPT_CHERRY_PICK_REPLAY_v0.1",
+  "project_name": "Sample Cherry Pick Project",
+  "source_session_ids": [
+    "feature_1",
+    "feature_2"
+  ],
+  "target_branch_name": "main",
+  "target_head_before": "main_2",
+  "replayed_sessions": [
+    {
+      "source_session_id": "feature_1",
+      "replayed_session_id": "feature_1_cp",
+      "source_branch_name": "feature_cp",
+      "target_branch_name": "main",
+      "cherry_pick_index": 1
+    },
+    {
+      "source_session_id": "feature_2",
+      "replayed_session_id": "feature_2_cp",
+      "source_branch_name": "feature_cp",
+      "target_branch_name": "main",
+      "cherry_pick_index": 2
+    }
+  ],
+  "summary": {
+    "picked_count": 2,
+    "target_head_after": "feature_2_cp",
+    "active_session_id": "feature_2_cp"
+  }
+}

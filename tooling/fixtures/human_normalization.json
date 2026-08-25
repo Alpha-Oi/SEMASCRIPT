@@ -1,0 +1,42 @@
+[
+  {
+    "id": "H01",
+    "human": "spr(seed -> form)",
+    "expected_core": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]"
+  },
+  {
+    "id": "H02",
+    "human": "gen(template -> instance)",
+    "expected_core": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]"
+  },
+  {
+    "id": "H03",
+    "human": "state:bal(system)",
+    "expected_core": "[STA:BAL <ctx=[ENT:SYSTEM]>]"
+  },
+  {
+    "id": "H04",
+    "human": "inv:zsum(A -> B : resource)",
+    "expected_core": "[FRM:INV <law=ZSUM; scp=[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]>]"
+  },
+  {
+    "id": "H05",
+    "human": "inv:nzsum(system -> reserve : resource)",
+    "expected_core": "[FRM:INV <law=NZSUM; scp=[PRC:TRF <src=[ENT:SYSTEM]; dst=[ENT:RESERVE]; obj=[ENT:RESOURCE]>]>]"
+  },
+  {
+    "id": "H06",
+    "human": "time:cyc(system change)",
+    "expected_core": "[FRM:TIME <mode=CYC; scp=[PRC:CHG <obj=[ENT:SYSTEM]>]>]"
+  },
+  {
+    "id": "H07",
+    "human": "time:rev(A -> B : resource)",
+    "expected_core": "[FRM:TIME <mode=REV; scp=[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]>]"
+  },
+  {
+    "id": "H08",
+    "human": "time:lin(human observes object)",
+    "expected_core": "[FRM:TIME <mode=LIN; scp=[PRC:OBS <agt=[ENT:HUMAN]; obj=[ENT:OBJECT]>]>]"
+  }
+]

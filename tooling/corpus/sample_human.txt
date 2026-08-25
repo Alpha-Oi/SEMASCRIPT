@@ -1,0 +1,1 @@
+time:lin(resource declines => system becomes unstable)

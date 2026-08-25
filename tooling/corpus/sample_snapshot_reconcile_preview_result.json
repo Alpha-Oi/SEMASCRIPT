@@ -1,0 +1,36 @@
+{
+  "snapshot_reconcile_preview_version": "SEMASCRIPT_SNAPSHOT_CONFLICT_DETECTION_RECONCILE_PREVIEW_v0.1",
+  "reconcile_name": "reconcile_preview_v1",
+  "snapshot_name": "snapshot_reconcile_preview_v1",
+  "source_point_name": "reconcile_preview_release",
+  "source_point_kind": "release",
+  "target_branch_name": "main",
+  "current_head_session_id": "preview_recon_current",
+  "selected_session_ids": [
+    "preview_recon_feature"
+  ],
+  "preview_items": [
+    {
+      "preview_index": 1,
+      "original_session_id": "preview_recon_feature",
+      "session_name": "Preview Source Feature",
+      "source_branch_name": "main",
+      "target_branch_name": "main",
+      "current_head_session_id": "preview_recon_current",
+      "current_head_session_name": "Preview Current Head",
+      "source_profile": "human",
+      "current_head_profile": "human",
+      "same_source_as_head": false,
+      "same_profile_as_head": true,
+      "exact_match": false,
+      "conflict_like": true,
+      "status": "conflict_like"
+    }
+  ],
+  "summary": {
+    "selected_session_count": 1,
+    "conflict_like_count": 1,
+    "exact_match_count": 0,
+    "has_conflicts": true
+  }
+}

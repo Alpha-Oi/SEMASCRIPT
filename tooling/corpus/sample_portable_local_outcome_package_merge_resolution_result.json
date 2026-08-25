@@ -1,0 +1,36 @@
+{
+  "portable_local_outcome_package_three_way_merge_resolution_version": "SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_THREE_WAY_MERGE_RESOLUTION_v0.1",
+  "resolution_name": "portable_local_merge_resolution",
+  "base_commit_name": "base_commit",
+  "left_commit_name": "left_commit",
+  "right_commit_name": "right_commit",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "feature_s_reconcile_resolved_pkg_resolved_localpkg_merge_resolved"
+  ],
+  "skipped_session_ids": [],
+  "merge_pairs": [
+    {
+      "original_session_id": "feature_s_reconcile_resolved_pkg_resolved",
+      "resolved_session_id": "feature_s_reconcile_resolved_pkg_resolved_localpkg_merge_resolved",
+      "resolved_with_head_session_id": "feature_s_reconcile_resolved_pkg_resolved_localpkg_resolved_3",
+      "decision_choice": "use_left",
+      "merge_status": "conflict",
+      "conflict": true
+    }
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "skipped_session_count": 0,
+    "conflict_count": 1,
+    "conflict_resolved_count": 1,
+    "decision_counts": {
+      "use_auto": 0,
+      "use_base": 0,
+      "use_left": 1,
+      "use_right": 0,
+      "skip": 0,
+      "custom_text": 0
+    }
+  }
+}

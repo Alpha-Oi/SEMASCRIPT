@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ERN01",
+    "profile": "core",
+    "input": "[FRM:INV <law=ZSUM; scp=[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]>]>]",
+    "required_error": "R_INV_ZSUM"
+  },
+  {
+    "id": "ERN02",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=REV; scp=[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]>]>]",
+    "required_error": "R_TIME_REV"
+  },
+  {
+    "id": "ERN03",
+    "profile": "core",
+    "input": "[FRM:INV <law=BAL; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]",
+    "required_error": "R_INV_BAL"
+  },
+  {
+    "id": "ERN04",
+    "profile": "human",
+    "input": "mystic(seed -> form)",
+    "required_error": "R_NORMALIZE"
+  },
+  {
+    "id": "ERN05",
+    "profile": "exec",
+    "input": "[EXEC:FLOW <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]",
+    "required_error": "R_EXEC_OP"
+  }
+]

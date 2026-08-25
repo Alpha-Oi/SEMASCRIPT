@@ -1,0 +1,42 @@
+{
+  "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+  "source_profile": "normalized",
+  "source_text": "spr(seed -> form)",
+  "ast": {
+    "kind": "node",
+    "class_name": "PRC",
+    "root": "EXP",
+    "modifiers": [],
+    "roles": [
+      {
+        "name": "src",
+        "value": {
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "SEED",
+          "modifiers": [],
+          "roles": []
+        }
+      },
+      {
+        "name": "res",
+        "value": {
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "FORM",
+          "modifiers": [],
+          "roles": []
+        }
+      }
+    ],
+    "notes": [
+      "decomposed_from:PAT:SPR"
+    ]
+  },
+  "validation_annotations": [],
+  "metadata": {
+    "normalized_text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+    "pattern_decomposition_applied": true,
+    "pattern_decomposition_count": 1
+  }
+}

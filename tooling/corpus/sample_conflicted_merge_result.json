@@ -1,0 +1,60 @@
+{
+  "merge_version": "SEMASCRIPT_THREE_WAY_SESSION_MERGE_v0.1",
+  "project_name": "Sample Resolve Project",
+  "base_session_id": "resolve_base",
+  "left_session_id": "resolve_left",
+  "right_session_id": "resolve_right",
+  "base_session_name": "Resolve Base",
+  "left_session_name": "Resolve Left",
+  "right_session_name": "Resolve Right",
+  "conflicts": [
+    {
+      "path": "source_text",
+      "base": "gen(template -> instance)",
+      "left": "gen(template -> instance_a)",
+      "right": "gen(template -> instance_b)",
+      "reason": "concurrent_scalar_change"
+    }
+  ],
+  "summary": {
+    "conflict_count": 1,
+    "auto_merged": false
+  },
+  "merged_source": {
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "profile": "human",
+    "source_mode": "text",
+    "source_text": "gen(template -> instance_a)",
+    "ui_state": {
+      "selected_entity_id": null,
+      "preview_mode": "raw",
+      "decompose": true,
+      "viewport": {
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "zoom": 1.0
+      },
+      "panels": {
+        "svg": true,
+        "ast": true,
+        "runtime": true,
+        "state": true,
+        "graph_json": true
+      }
+    },
+    "session_name": "Merged: Resolve Left + Resolve Right"
+  }
+}

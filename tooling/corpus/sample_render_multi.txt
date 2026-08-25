@@ -1,0 +1,1 @@
+[FRM:TIME <mode=LIN; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:CHANGE <obj=[ENT:SYS]; res=[STA:DEC]>]]>]

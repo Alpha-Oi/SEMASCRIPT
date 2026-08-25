@@ -1,0 +1,52 @@
+[
+  {
+    "id": "HH01",
+    "input": "A gives B resource",
+    "expected_core": "[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]"
+  },
+  {
+    "id": "HH02",
+    "input": "A transfers resource to B",
+    "expected_core": "[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]"
+  },
+  {
+    "id": "HH03",
+    "input": "A returns resource to B",
+    "expected_core": "[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]"
+  },
+  {
+    "id": "HH04",
+    "input": "resource decreases",
+    "expected_core": "[STA:DEC <ctx=[ENT:RESOURCE]>]"
+  },
+  {
+    "id": "HH05",
+    "input": "system grows",
+    "expected_core": "[STA:INC <ctx=[ENT:SYSTEM]>]"
+  },
+  {
+    "id": "HH06",
+    "input": "system stabilizes",
+    "expected_core": "[STA:STB <ctx=[ENT:SYSTEM]>]"
+  },
+  {
+    "id": "HH07",
+    "input": "state:stable(system)",
+    "expected_core": "[STA:STB <ctx=[ENT:SYSTEM]>]"
+  },
+  {
+    "id": "HH08",
+    "input": "state:unstable(system)",
+    "expected_core": "[STA:STB {NEG} <ctx=[ENT:SYSTEM]>]"
+  },
+  {
+    "id": "HH09",
+    "input": "state:open(gate)",
+    "expected_core": "[STA:OPN <ctx=[ENT:GATE]>]"
+  },
+  {
+    "id": "HH10",
+    "input": "time:brn(A gives B resource; A transfers credit to C)",
+    "expected_core": "[FRM:TIME <mode=BRN; scp=[[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]; [PRC:TRF <src=[ENT:A]; dst=[ENT:C]; obj=[ENT:CREDIT]>]]>]"
+  }
+]

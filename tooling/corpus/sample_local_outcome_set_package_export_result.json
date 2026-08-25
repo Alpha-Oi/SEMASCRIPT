@@ -1,0 +1,10 @@
+{
+  "local_outcome_set_package_export_version": "SEMASCRIPT_LOCAL_PROMOTED_RESOLUTION_PACKAGE_v0.1",
+  "package_name": "lp_local_portable",
+  "commit_name": "lp_local_outcome",
+  "summary": {
+    "resolved_session_count": 1,
+    "has_promoted_point": true,
+    "portable": true
+  }
+}

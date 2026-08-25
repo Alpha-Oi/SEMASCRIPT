@@ -1,0 +1,13 @@
+{
+  "snapshot_export_version": "SEMASCRIPT_IMMUTABLE_WORKSPACE_SNAPSHOT_v0.1",
+  "project_name": "Sample Tag Release Project",
+  "snapshot_name": "snapshot_release_v1",
+  "source_point_name": "release_v1",
+  "source_point_kind": "release",
+  "target_session_id": "tag_feature",
+  "summary": {
+    "created": true,
+    "immutable": true,
+    "is_release_source": true
+  }
+}

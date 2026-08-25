@@ -1,0 +1,96 @@
+{
+  "state_model_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+  "accepted": true,
+  "initial_state": {
+    "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+    "resources": {
+      "A": {
+        "RES": 2
+      },
+      "B": {
+        "RES": 0
+      }
+    },
+    "states": {},
+    "dependencies": [],
+    "observations": [],
+    "actions": [],
+    "expansions": [],
+    "history": [],
+    "metadata": {
+      "applied_steps": 0,
+      "last_schedule": null
+    }
+  },
+  "final_state": {
+    "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+    "resources": {
+      "A": {
+        "RES": 1
+      },
+      "B": {
+        "RES": 1
+      }
+    },
+    "states": {
+      "A": [],
+      "B": []
+    },
+    "dependencies": [],
+    "observations": [],
+    "actions": [],
+    "expansions": [],
+    "history": [
+      {
+        "op_name": "TRANSFER",
+        "op_family": "EXEC",
+        "roles": {
+          "src": "[ENT:A]",
+          "dst": "[ENT:B]",
+          "obj": "[ENT:RES]"
+        },
+        "constraints": {
+          "time_mode": null,
+          "invariant_law": null,
+          "schedule": null
+        }
+      }
+    ],
+    "metadata": {
+      "applied_steps": 1,
+      "last_schedule": null
+    }
+  },
+  "runtime_report": {
+    "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+    "accepted": true,
+    "entry_kind": "exec",
+    "context": {
+      "time_mode": null,
+      "invariant_law": null,
+      "schedule": null
+    },
+    "plan": [
+      {
+        "op_family": "EXEC",
+        "op_name": "TRANSFER",
+        "roles": {
+          "src": "[ENT:A]",
+          "dst": "[ENT:B]",
+          "obj": "[ENT:RES]"
+        },
+        "constraints": {
+          "time_mode": null,
+          "invariant_law": null,
+          "schedule": null
+        },
+        "reversible": true,
+        "effect_class": "redistribution"
+      }
+    ],
+    "errors": [],
+    "notes": [],
+    "decomposition_count": 0
+  },
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "local_outcome_set_package_commit_version": "SEMASCRIPT_LOCAL_OUTCOME_SET_PACKAGE_COMMIT_v0.1",
+  "commit_name": "portable_local_pkg_commit_2",
+  "resolution_name": "portable_local_pkg_resolution",
+  "package_name": "local_outcome_portable_pkg",
+  "source_commit_name": "local_outcome_commit",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved"
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "promoted": true,
+    "promoted_point_name": "portable_local_pkg_release_2",
+    "promoted_point_kind": "release"
+  }
+}

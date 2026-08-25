@@ -1,0 +1,22 @@
+[
+  {
+    "id": "HN01",
+    "human": "mystic(seed -> form)"
+  },
+  {
+    "id": "HN02",
+    "human": "spr(seed form)"
+  },
+  {
+    "id": "HN03",
+    "human": "time:cyc()"
+  },
+  {
+    "id": "HN04",
+    "human": "system dreams future"
+  },
+  {
+    "id": "HN05",
+    "human": "inv:zsum(A donates B resource)"
+  }
+]

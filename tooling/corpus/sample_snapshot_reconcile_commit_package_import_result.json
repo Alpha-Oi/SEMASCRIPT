@@ -1,0 +1,12 @@
+{
+  "snapshot_reconcile_commit_package_import_version": "SEMASCRIPT_PROMOTED_RECONCILE_OUTCOME_PACKAGE_v0.1",
+  "import_name": "pkg_commit_v1_import",
+  "package_name": "pkg_commit_v1_package",
+  "imported_commit_name": "pkg_commit_v1_import",
+  "summary": {
+    "imported_session_count": 1,
+    "imported_point": true,
+    "active_session_id": "pkg_feature_reconcile_resolved_pkg",
+    "active_branch_name": "main"
+  }
+}

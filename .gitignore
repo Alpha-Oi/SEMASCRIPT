@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.log
+tooling/*.png
+tooling/browser_ui_artifacts/

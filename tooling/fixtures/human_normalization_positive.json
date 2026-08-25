@@ -1,0 +1,52 @@
+[
+  {
+    "id": "H01",
+    "human": "spr(seed -> form)",
+    "expected_core": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]"
+  },
+  {
+    "id": "H02",
+    "human": "gen(template -> instance)",
+    "expected_core": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]"
+  },
+  {
+    "id": "H03",
+    "human": "pal(A equals A)",
+    "expected_core": "[PAT:PAL <axis=[IDX:CENTER]; scope=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]"
+  },
+  {
+    "id": "H04",
+    "human": "state:bal(system)",
+    "expected_core": "[STA:BAL <ctx=[ENT:SYSTEM]>]"
+  },
+  {
+    "id": "H05",
+    "human": "inv:zsum(A -> B : resource; B -> C : credit)",
+    "expected_core": "[FRM:INV <law=ZSUM; scp=[[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]; [PRC:TRF <src=[ENT:B]; dst=[ENT:C]; obj=[ENT:CREDIT]>]]>]"
+  },
+  {
+    "id": "H06",
+    "human": "inv:nzsum(system creates resource)",
+    "expected_core": "[FRM:INV <law=NZSUM; scp=[PRC:CRT <dst=[ENT:SYSTEM]; obj=[ENT:RESOURCE]>]>]"
+  },
+  {
+    "id": "H07",
+    "human": "time:cyc(system change; reserve change)",
+    "expected_core": "[FRM:TIME <mode=CYC; scp=[[PRC:CHG <obj=[ENT:SYSTEM]>]; [PRC:CHG <obj=[ENT:RESERVE]>]]>]"
+  },
+  {
+    "id": "H08",
+    "human": "time:lin(human observes object; human acts on system)",
+    "expected_core": "[FRM:TIME <mode=LIN; scp=[[PRC:OBS <agt=[ENT:HUMAN]; obj=[ENT:OBJECT]>]; [PRC:ACT <agt=[ENT:HUMAN]; obj=[ENT:SYSTEM]>]]>]"
+  },
+  {
+    "id": "H09",
+    "human": "time:lin(resource declines => system becomes unstable)",
+    "expected_core": "[FRM:TIME <mode=LIN; scp=[REL:CAU <cau=[STA:DEC <ctx=[ENT:RESOURCE]>]; res=[STA:STB {NEG} <ctx=[ENT:SYSTEM]>]>]>]"
+  },
+  {
+    "id": "H10",
+    "human": "time:atm(form depends on code)",
+    "expected_core": "[FRM:TIME <mode=ATM; scp=[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]>]"
+  }
+]

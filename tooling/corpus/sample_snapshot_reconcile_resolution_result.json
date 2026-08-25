@@ -1,0 +1,35 @@
+{
+  "snapshot_reconcile_resolution_version": "SEMASCRIPT_SNAPSHOT_CONFLICT_RESOLUTION_v0.1",
+  "resolution_name": "resolution_v1",
+  "snapshot_name": "snapshot_resolution_v1",
+  "source_point_name": "resolve_release",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "resolve_feature_reconcile_resolved"
+  ],
+  "skipped_session_ids": [],
+  "resolution_pairs": [
+    {
+      "original_session_id": "resolve_feature",
+      "resolved_session_id": "resolve_feature_reconcile_resolved",
+      "resolved_with_head_session_id": "resolve_current",
+      "decision_choice": "custom_text",
+      "preview_status": "conflict_like",
+      "conflict_like": true
+    }
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "skipped_session_count": 0,
+    "conflict_like_count": 1,
+    "conflict_resolved_count": 1,
+    "decision_counts": {
+      "use_snapshot": 0,
+      "use_current": 0,
+      "skip": 0,
+      "custom_text": 1
+    },
+    "active_session_id": "resolve_feature_reconcile_resolved",
+    "active_branch_name": "main"
+  }
+}

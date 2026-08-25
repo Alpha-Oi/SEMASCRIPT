@@ -1,0 +1,10 @@
+{
+  "snapshot_reconcile_commit_package_export_version": "SEMASCRIPT_PROMOTED_RECONCILE_OUTCOME_PACKAGE_v0.1",
+  "package_name": "pkg_commit_v1_package",
+  "commit_name": "pkg_commit_v1",
+  "summary": {
+    "resolved_session_count": 1,
+    "has_promoted_point": true,
+    "portable": true
+  }
+}

@@ -1,0 +1,494 @@
+SEMASCRIPT_current_bundle/
+├── docs/
+│   ├── 00_PROJECT_IDENTITY.md
+│   ├── 01_ARCHITECTURE_MAP.md
+│   ├── 02_CURRENT_STATUS.md
+│   ├── 03_ROADMAP.md
+│   ├── 04_SCOPE_V0_1.md
+│   ├── README.md
+│   ├── SEMASCRIPT_0_SEMANTIC_BASELINE.md
+│   ├── SEMASCRIPT_AST_INTEGRATION_PACK_v0.1.md
+│   ├── SEMASCRIPT_BATCH_RUNTIME_STATE_CORPUS_v0.1.md
+│   ├── SEMASCRIPT_BRANCH_REBASE_REPLAY_TARGET_LINEAGE_v0.1.md
+│   ├── SEMASCRIPT_BRANCHING_NAMED_MERGE_LINEAGE_GRAPH_v0.1.md
+│   ├── SEMASCRIPT_CHERRY_PICK_SELECTIVE_SESSION_REPLAY_ACROSS_BRANCHES_v0.1.md
+│   ├── SEMASCRIPT_CORE_SPEC_v0.1.md
+│   ├── SEMASCRIPT_CORPUS_PIPELINE_v0.1.md
+│   ├── SEMASCRIPT_CROSS_SESSION_COMPARE_DIFF_MODE_v0.1.md
+│   ├── SEMASCRIPT_EDITABLE_VISUAL_GRAPH_MODE_v0.1.md
+│   ├── SEMASCRIPT_EDITOR_VISUAL_INSPECTOR_SPEC_v0.1.md
+│   ├── SEMASCRIPT_ENV_BOOTSTRAP_AND_VERIFICATION_v0.2.md
+│   ├── SEMASCRIPT_EXEC_PROFILE_v0.1.md
+│   ├── SEMASCRIPT_EXEC_RUNTIME_RULES_v0.1.md
+│   ├── SEMASCRIPT_GLYPH_ARCHITECTURE_v0.1.md
+│   ├── SEMASCRIPT_GRAMMAR_EXPANSION_v0.1.md
+│   ├── SEMASCRIPT_HARDENING_REGRESSION_SUITE_v0.2.md
+│   ├── SEMASCRIPT_HUMAN_NORMALIZER_MVP_v0.1.md
+│   ├── SEMASCRIPT_HUMAN_PROFILE_v0.1.md
+│   ├── SEMASCRIPT_IMPLEMENTATION_PLAN_v0.1.md
+│   ├── SEMASCRIPT_INTERACTIVE_CONFLICT_RESOLUTION_MANUAL_MERGE_DECISIONS_v0.1.md
+│   ├── SEMASCRIPT_LOCAL_OUTCOME_SET_DIFF_COMPARE_BETWEEN_IMPORTED_PROMOTED_RESOLUTIONS_v0.1.md
+│   ├── SEMASCRIPT_LOCAL_OUTCOME_SET_EXPORT_IMPORT_AS_PORTABLE_LOCAL_PROMOTED_RESOLUTION_PACKAGE_v0.1.md
+│   ├── SEMASCRIPT_MANIFEST_v0.1.md
+│   ├── SEMASCRIPT_MERGE_COMMIT_RESOLVED_SESSION_INSERTION_v0.1.md
+│   ├── SEMASCRIPT_MULTI_SESSION_PROJECT_WORKSPACE_v0.1.md
+│   ├── SEMASCRIPT_PARTIAL_SNAPSHOT_RESTORE_SELECTIVE_WORKSPACE_STATE_IMPORT_v0.1.md
+│   ├── SEMASCRIPT_PATTERN_DECOMPOSITION_SPEC_v0.1.md
+│   ├── SEMASCRIPT_PATTERN_TIME_INVARIANT_PACK_v0.1.md
+│   ├── SEMASCRIPT_PERSISTED_PROJECT_SESSION_FORMAT_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_COMMIT_PROMOTE_IMPORTED_RESOLUTION_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_CONFLICT_RESOLUTION_MANUAL_IMPORT_DECISIONS_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_DIFF_COMPARE_COMMITTED_IMPORTED_OUTCOMES_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_DIFF_COMPATIBILITY_CHECK_BEFORE_IMPORT_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_EXPORT_IMPORT_COMPARE_BASELINE_OR_THREE_WAY_MERGE_BETWEEN_COMMITTED_IMPORTED_OUTCOMES_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_THREE_WAY_CONFLICT_RESOLUTION_MANUAL_MERGE_DECISIONS_v0.1.md
+│   ├── SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_THREE_WAY_MERGE_COMMIT_PROMOTE_v0.1.md
+│   ├── SEMASCRIPT_PROFILE_MATRIX_v0.1.md
+│   ├── SEMASCRIPT_PROJECT_STATUS_PACK_v0.2.md
+│   ├── SEMASCRIPT_REFERENCE_CORPUS_STARTER_v0.1.md
+│   ├── SEMASCRIPT_RESET_RESTORE_BRANCH_HEAD_TO_HISTORICAL_SESSION_OR_LINEAGE_POINT_v0.1.md
+│   ├── SEMASCRIPT_RESOLUTION_SET_DIFF_COMPARE_BETWEEN_PROMOTED_RECONCILE_OUTCOMES_v0.1.md
+│   ├── SEMASCRIPT_RESOLUTION_SET_EXPORT_IMPORT_AS_STANDALONE_PROMOTED_OUTCOME_PACKAGE_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_CONFLICT_DETECTION_RECONCILE_PREVIEW_BEFORE_APPLY_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_CONFLICT_RESOLUTION_MANUAL_RECONCILE_DECISIONS_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_DIFF_RESTORE_PREVIEW_BEFORE_APPLY_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_IMMUTABLE_WORKSPACE_STATE_EXPORT_BY_TAG_OR_RELEASE_POINT_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_IMPORT_WORKSPACE_RESTORE_FROM_IMMUTABLE_EXPORT_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_MERGE_RECONCILE_IMPORTED_STATE_WITH_CURRENT_WORKSPACE_LINEAGE_v0.1.md
+│   ├── SEMASCRIPT_SNAPSHOT_RECONCILE_COMMIT_PROMOTE_RESOLUTION_SET_OR_RELEASE_LINEAGE_POINT_v0.1.md
+│   ├── SEMASCRIPT_SQUASH_FOLD_MULTIPLE_SESSIONS_INTO_ONE_LINEAGE_COMMIT_v0.1.md
+│   ├── SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_COMMIT_PROMOTE_IMPORTED_RESOLUTION_INTO_LOCAL_NAMED_OUTCOME_SET_OR_RELEASE_POINT_v0.1.md
+│   ├── SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_CONFLICT_RESOLUTION_MANUAL_IMPORT_DECISIONS_v0.1.md
+│   ├── SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_DIFF_COMPATIBILITY_CHECK_BEFORE_IMPORT_v0.1.md
+│   ├── SEMASCRIPT_STATE_MODEL_v0.1.md
+│   ├── SEMASCRIPT_SVG_RENDERER_SPEC_v0.1.md
+│   ├── SEMASCRIPT_TAG_RELEASE_POINTS_OVER_SESSIONS_AND_LINEAGE_STATES_v0.1.md
+│   ├── SEMASCRIPT_TESTPACK_v0.1.md
+│   ├── SEMASCRIPT_THREE_WAY_SESSION_MERGE_CONFLICT_DETECTION_v0.1.md
+│   ├── SEMASCRIPT_TOOLING_MVP_PLAN_v0.1.md
+│   ├── SEMASCRIPT_V0_2_HARDENING_SPEC.md
+│   ├── SEMASCRIPT_WORKSPACE_NAVIGATION_DEPENDENCY_MAP_v0.1.md
+│   └── SEMASCRIPT_WORKSPACE_TIMELINE_SESSION_HISTORY_v0.1.md
+├── inspector/
+│   ├── app.js
+│   ├── graph-session-workspace.js
+│   ├── index.html
+│   ├── inspector-action-workflow.js
+│   ├── inspector-bootstrap-workflow.js
+│   ├── inspector-core-workflow.js
+│   ├── inspector-package-guidance.js
+│   ├── inspector-panel-workflow.js
+│   ├── local-outcome-set-package-workflow.js
+│   ├── portable-merge-workstation.js
+│   ├── project-lifecycle-workflow.js
+│   ├── project-operations-workflow.js
+│   ├── project-workspace-workflow.js
+│   ├── reconcile-commit-package-workflow.js
+│   ├── snapshot-reconcile-workflow.js
+│   └── styles.css
+├── tooling/
+│   ├── corpus/
+│   │   ├── svg_samples/
+│   │   │   ├── batch_runtime_state/
+│   │   │   │   ├── BRC01.svg
+│   │   │   │   ├── BRC02.svg
+│   │   │   │   ├── BRC03.svg
+│   │   │   │   ├── BRC04.svg
+│   │   │   │   ├── BRC05.svg
+│   │   │   │   ├── BRC06.svg
+│   │   │   │   ├── BRC07.svg
+│   │   │   │   └── BRC08.svg
+│   │   │   ├── sample_core.svg
+│   │   │   ├── sample_human.svg
+│   │   │   ├── sample_human_decomposed.svg
+│   │   │   └── sample_multiscene.svg
+│   │   ├── corpus_manifest.json
+│   │   ├── corpus_normalized_sample.json
+│   │   ├── corpus_validation_report_sample.json
+│   │   ├── hardening_corpus_manifest_v0_2.json
+│   │   ├── hardening_runtime_report_sample.json
+│   │   ├── hardening_state_report_sample.json
+│   │   ├── inspector_graph_sample_analysis.json
+│   │   ├── inspector_sample_analysis.json
+│   │   ├── inspector_sample_input.txt
+│   │   ├── project_roundtrip_test.json
+│   │   ├── runtime_corpus_report_sample.json
+│   │   ├── runtime_state_corpus_manifest.json
+│   │   ├── sample_branch_base_session.json
+│   │   ├── sample_branch_feature_session.json
+│   │   ├── sample_branch_main_session.json
+│   │   ├── sample_branch_rebase_lineage_graph.json
+│   │   ├── sample_branch_rebase_result.json
+│   │   ├── sample_branch_rebased_project_index.json
+│   │   ├── sample_branch_reset_lineage_graph.json
+│   │   ├── sample_branch_reset_project_index.json
+│   │   ├── sample_branch_reset_result.json
+│   │   ├── sample_branching_project_index.json
+│   │   ├── sample_cherry_base_session.json
+│   │   ├── sample_cherry_feature1_session.json
+│   │   ├── sample_cherry_feature2_session.json
+│   │   ├── sample_cherry_main2_session.json
+│   │   ├── sample_cherry_pick_lineage_graph.json
+│   │   ├── sample_cherry_pick_result.json
+│   │   ├── sample_cherry_picked_project_index.json
+│   │   ├── sample_commit_base_session.json
+│   │   ├── sample_commit_current_head_session.json
+│   │   ├── sample_commit_left_session.json
+│   │   ├── sample_commit_right_session.json
+│   │   ├── sample_commit_source_base_session.json
+│   │   ├── sample_commit_source_feature_session.json
+│   │   ├── sample_compare_current_head_session.json
+│   │   ├── sample_compare_left_session.json
+│   │   ├── sample_compare_project_index.json
+│   │   ├── sample_compare_right_session.json
+│   │   ├── sample_compare_source_base_session.json
+│   │   ├── sample_compare_source_feature_session.json
+│   │   ├── sample_conflicted_merge_result.json
+│   │   ├── sample_cross_session_diff.json
+│   │   ├── sample_dependency_project_index.json
+│   │   ├── sample_graph_document.json
+│   │   ├── sample_graph_session.json
+│   │   ├── sample_human.ast.json
+│   │   ├── sample_human.report.json
+│   │   ├── sample_human.txt
+│   │   ├── sample_initial_state.json
+│   │   ├── sample_local_merge_current_head_session.json
+│   │   ├── sample_local_merge_source_base_session.json
+│   │   ├── sample_local_merge_source_feature_session.json
+│   │   ├── sample_local_outcome_set_package.json
+│   │   ├── sample_local_outcome_set_package_commit_compare_project_index.json
+│   │   ├── sample_local_outcome_set_package_commit_compare_result.json
+│   │   ├── sample_local_outcome_set_package_commit_package.json
+│   │   ├── sample_local_outcome_set_package_commit_project_index.json
+│   │   ├── sample_local_outcome_set_package_commit_result.json
+│   │   ├── sample_local_outcome_set_package_export_result.json
+│   │   ├── sample_local_outcome_set_package_import_result.json
+│   │   ├── sample_local_outcome_set_package_imported_project_index.json
+│   │   ├── sample_local_outcome_set_package_left_commit_result.json
+│   │   ├── sample_local_outcome_set_package_preview_package.json
+│   │   ├── sample_local_outcome_set_package_preview_project_index.json
+│   │   ├── sample_local_outcome_set_package_preview_result.json
+│   │   ├── sample_local_outcome_set_package_resolution_package.json
+│   │   ├── sample_local_outcome_set_package_resolution_project_index.json
+│   │   ├── sample_local_outcome_set_package_resolution_result.json
+│   │   ├── sample_local_outcome_set_package_right_commit_result.json
+│   │   ├── sample_local_package_commit_current_head_session.json
+│   │   ├── sample_local_package_commit_source_base_session.json
+│   │   ├── sample_local_package_commit_source_feature_session.json
+│   │   ├── sample_local_package_compare_current_head_session.json
+│   │   ├── sample_local_package_compare_source_base_session.json
+│   │   ├── sample_local_package_compare_source_feature_session.json
+│   │   ├── sample_local_package_current_head_session.json
+│   │   ├── sample_local_package_preview_current_head_session.json
+│   │   ├── sample_local_package_preview_source_base_session.json
+│   │   ├── sample_local_package_preview_source_feature_session.json
+│   │   ├── sample_local_package_resolution_current_head_session.json
+│   │   ├── sample_local_package_resolution_source_base_session.json
+│   │   ├── sample_local_package_resolution_source_feature_session.json
+│   │   ├── sample_local_package_source_base_session.json
+│   │   ├── sample_local_package_source_feature_session.json
+│   │   ├── sample_merge_base_session.json
+│   │   ├── sample_merge_commit_project_index.json
+│   │   ├── sample_merge_commit_result.json
+│   │   ├── sample_merge_left_session.json
+│   │   ├── sample_merge_right_session.json
+│   │   ├── sample_named_merge_lineage_graph.json
+│   │   ├── sample_navigation_consumer_session.json
+│   │   ├── sample_navigation_producer_session.json
+│   │   ├── sample_package_commit_current_head_session.json
+│   │   ├── sample_package_commit_source_base_session.json
+│   │   ├── sample_package_commit_source_feature_session.json
+│   │   ├── sample_package_current_head_session.json
+│   │   ├── sample_package_preview_current_head_session.json
+│   │   ├── sample_package_preview_source_base_session.json
+│   │   ├── sample_package_preview_source_feature_session.json
+│   │   ├── sample_package_resolution_current_head_session.json
+│   │   ├── sample_package_resolution_source_base_session.json
+│   │   ├── sample_package_resolution_source_feature_session.json
+│   │   ├── sample_package_source_base_session.json
+│   │   ├── sample_package_source_feature_session.json
+│   │   ├── sample_partial_base_session.json
+│   │   ├── sample_partial_current_session.json
+│   │   ├── sample_partial_feature_session.json
+│   │   ├── sample_partial_import_project_index.json
+│   │   ├── sample_partial_import_result.json
+│   │   ├── sample_partial_import_snapshot_package.json
+│   │   ├── sample_pattern.txt
+│   │   ├── sample_pattern_decomposed.ast.json
+│   │   ├── sample_pattern_decomposed.txt
+│   │   ├── sample_portable_local_outcome_package_base_commit_result.json
+│   │   ├── sample_portable_local_outcome_package_left_commit_result.json
+│   │   ├── sample_portable_local_outcome_package_merge_project_index.json
+│   │   ├── sample_portable_local_outcome_package_merge_resolution_merge_result.json
+│   │   ├── sample_portable_local_outcome_package_merge_resolution_project_index.json
+│   │   ├── sample_portable_local_outcome_package_merge_resolution_result.json
+│   │   ├── sample_portable_local_outcome_package_merge_result.json
+│   │   ├── sample_portable_local_outcome_package_right_commit_result.json
+│   │   ├── sample_preview_base_session.json
+│   │   ├── sample_preview_extra_session.json
+│   │   ├── sample_preview_feature_session.json
+│   │   ├── sample_project_index.json
+│   │   ├── sample_rebase_base_session.json
+│   │   ├── sample_rebase_feature1_session.json
+│   │   ├── sample_rebase_feature2_session.json
+│   │   ├── sample_rebase_main2_session.json
+│   │   ├── sample_reconcile_current_head_session.json
+│   │   ├── sample_reconcile_preview_current_head_session.json
+│   │   ├── sample_reconcile_preview_source_base_session.json
+│   │   ├── sample_reconcile_preview_source_feature_session.json
+│   │   ├── sample_reconcile_source_base_session.json
+│   │   ├── sample_reconcile_source_feature_session.json
+│   │   ├── sample_render_core.txt
+│   │   ├── sample_render_human.txt
+│   │   ├── sample_render_multi.txt
+│   │   ├── sample_reset_base_session.json
+│   │   ├── sample_reset_feature1_session.json
+│   │   ├── sample_reset_feature2_session.json
+│   │   ├── sample_resolution_current_head_session.json
+│   │   ├── sample_resolution_source_base_session.json
+│   │   ├── sample_resolution_source_feature_session.json
+│   │   ├── sample_resolve_base_session.json
+│   │   ├── sample_resolve_left_session.json
+│   │   ├── sample_resolve_right_session.json
+│   │   ├── sample_resolved_merge_result.json
+│   │   ├── sample_restore_base_session.json
+│   │   ├── sample_restore_feature_session.json
+│   │   ├── sample_runtime.txt
+│   │   ├── sample_runtime_report.json
+│   │   ├── sample_snapshot_export_package.json
+│   │   ├── sample_snapshot_export_result.json
+│   │   ├── sample_snapshot_reconcile_commit_compare_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_compare_result.json
+│   │   ├── sample_snapshot_reconcile_commit_left_result.json
+│   │   ├── sample_snapshot_reconcile_commit_local_outcome_compare_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_package.json
+│   │   ├── sample_snapshot_reconcile_commit_package_commit_package.json
+│   │   ├── sample_snapshot_reconcile_commit_package_commit_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_package_commit_result.json
+│   │   ├── sample_snapshot_reconcile_commit_package_export_result.json
+│   │   ├── sample_snapshot_reconcile_commit_package_import_result.json
+│   │   ├── sample_snapshot_reconcile_commit_package_imported_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_package_preview_package.json
+│   │   ├── sample_snapshot_reconcile_commit_package_preview_result.json
+│   │   ├── sample_snapshot_reconcile_commit_package_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_package_resolution_package.json
+│   │   ├── sample_snapshot_reconcile_commit_package_resolution_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_package_resolution_result.json
+│   │   ├── sample_snapshot_reconcile_commit_project_index.json
+│   │   ├── sample_snapshot_reconcile_commit_result.json
+│   │   ├── sample_snapshot_reconcile_commit_right_result.json
+│   │   ├── sample_snapshot_reconcile_package.json
+│   │   ├── sample_snapshot_reconcile_preview_package.json
+│   │   ├── sample_snapshot_reconcile_preview_result.json
+│   │   ├── sample_snapshot_reconcile_project_index.json
+│   │   ├── sample_snapshot_reconcile_resolution_package.json
+│   │   ├── sample_snapshot_reconcile_resolution_project_index.json
+│   │   ├── sample_snapshot_reconcile_resolution_result.json
+│   │   ├── sample_snapshot_reconcile_result.json
+│   │   ├── sample_snapshot_restore_package.json
+│   │   ├── sample_snapshot_restore_preview_package.json
+│   │   ├── sample_snapshot_restore_preview_result.json
+│   │   ├── sample_snapshot_restore_result.json
+│   │   ├── sample_snapshot_restored_project_index.json
+│   │   ├── sample_squash_base_session.json
+│   │   ├── sample_squash_feature1_session.json
+│   │   ├── sample_squash_feature2_session.json
+│   │   ├── sample_squash_lineage_graph.json
+│   │   ├── sample_squash_main2_session.json
+│   │   ├── sample_squash_result.json
+│   │   ├── sample_squashed_project_index.json
+│   │   ├── sample_state_input.txt
+│   │   ├── sample_state_report.json
+│   │   ├── sample_tag_base_session.json
+│   │   ├── sample_tag_feature_session.json
+│   │   ├── sample_tag_release_lineage_graph.json
+│   │   ├── sample_tag_release_project_index.json
+│   │   ├── sample_tag_release_result.json
+│   │   ├── sample_text_session.json
+│   │   ├── sample_three_way_merge_result.json
+│   │   ├── sample_timeline_project_index.json
+│   │   ├── sample_timeline_session_a.json
+│   │   ├── sample_timeline_session_b.json
+│   │   ├── session_roundtrip_test.json
+│   │   └── state_corpus_report_sample.json
+│   ├── fixtures/
+│   │   ├── core_negative.json
+│   │   ├── core_positive.json
+│   │   ├── exec_negative.json
+│   │   ├── exec_positive.json
+│   │   ├── exec_runtime_negative.json
+│   │   ├── exec_runtime_positive.json
+│   │   ├── hardening_human_negative.json
+│   │   ├── hardening_human_positive.json
+│   │   ├── hardening_runtime_negative.json
+│   │   ├── hardening_runtime_positive.json
+│   │   ├── hardening_state_negative.json
+│   │   ├── hardening_state_positive.json
+│   │   ├── human_normalization.json
+│   │   ├── human_normalization_negative.json
+│   │   ├── human_normalization_positive.json
+│   │   ├── pattern_decomposition_negative.json
+│   │   ├── pattern_decomposition_positive.json
+│   │   ├── state_model_negative.json
+│   │   ├── state_model_positive.json
+│   │   └── svg_renderer_cases.json
+│   ├── _generate_branch_rebase_project.py
+│   ├── _generate_branch_reset_project.py
+│   ├── _generate_branching_project.py
+│   ├── _generate_cherry_pick_project.py
+│   ├── _generate_compare_project.py
+│   ├── _generate_conflict_resolution_project.py
+│   ├── _generate_dependency_project.py
+│   ├── _generate_graph_sample.py
+│   ├── _generate_graph_session.py
+│   ├── _generate_inspector_sample.py
+│   ├── _generate_local_outcome_set_compare_project.py
+│   ├── _generate_local_outcome_set_package_commit_compare_project.py
+│   ├── _generate_local_outcome_set_package_commit_project.py
+│   ├── _generate_local_outcome_set_package_preview_project.py
+│   ├── _generate_local_outcome_set_package_project.py
+│   ├── _generate_local_outcome_set_package_resolution_project.py
+│   ├── _generate_merge_commit_project.py
+│   ├── _generate_merge_project.py
+│   ├── _generate_partial_snapshot_import_project.py
+│   ├── _generate_portable_local_outcome_package_merge_project.py
+│   ├── _generate_portable_local_outcome_package_merge_resolution_project.py
+│   ├── _generate_project_index.py
+│   ├── _generate_snapshot_project.py
+│   ├── _generate_snapshot_reconcile_commit_compare_project.py
+│   ├── _generate_snapshot_reconcile_commit_package_commit_project.py
+│   ├── _generate_snapshot_reconcile_commit_package_preview_project.py
+│   ├── _generate_snapshot_reconcile_commit_package_project.py
+│   ├── _generate_snapshot_reconcile_commit_package_resolution_project.py
+│   ├── _generate_snapshot_reconcile_commit_project.py
+│   ├── _generate_snapshot_reconcile_preview_project.py
+│   ├── _generate_snapshot_reconcile_project.py
+│   ├── _generate_snapshot_reconcile_resolution_project.py
+│   ├── _generate_snapshot_restore_preview_project.py
+│   ├── _generate_snapshot_restore_project.py
+│   ├── _generate_squash_project.py
+│   ├── _generate_tag_release_project.py
+│   ├── _generate_text_session.py
+│   ├── _generate_timeline_project.py
+│   ├── decompose_pattern.py
+│   ├── exec_runtime.py
+│   ├── execute_runtime.py
+│   ├── execute_with_state.py
+│   ├── FIXTURE_INDEX.md
+│   ├── graph_model.py
+│   ├── human_normalizer.py
+│   ├── inspector_browser_check.png
+│   ├── inspector_browser_check_branch_snapshot.png
+│   ├── inspector_browser_check_human.png
+│   ├── inspector_server.py
+│   ├── inspector_service.py
+│   ├── normalize_cli.py
+│   ├── normalize_corpus.py
+│   ├── parse_to_ast.py
+│   ├── pattern_decomposer.py
+│   ├── project_branching.py
+│   ├── project_cherrypick.py
+│   ├── project_local_outcome_set_package.py
+│   ├── project_local_outcome_set_package_commit.py
+│   ├── project_local_outcome_set_package_commit_compare.py
+│   ├── project_local_outcome_set_package_commit_merge.py
+│   ├── project_local_outcome_set_package_commit_merge_commit.py
+│   ├── project_local_outcome_set_package_commit_merge_resolution.py
+│   ├── project_local_outcome_set_package_preview.py
+│   ├── project_local_outcome_set_package_resolution.py
+│   ├── project_model.py
+│   ├── project_rebase.py
+│   ├── project_reset.py
+│   ├── project_snapshot.py
+│   ├── project_snapshot_diff.py
+│   ├── project_snapshot_partial_import.py
+│   ├── project_snapshot_reconcile.py
+│   ├── project_snapshot_reconcile_commit.py
+│   ├── project_snapshot_reconcile_commit_compare.py
+│   ├── project_snapshot_reconcile_commit_package.py
+│   ├── project_snapshot_reconcile_commit_package_commit.py
+│   ├── project_snapshot_reconcile_commit_package_commit_compare.py
+│   ├── project_snapshot_reconcile_commit_package_preview.py
+│   ├── project_snapshot_reconcile_commit_package_resolution.py
+│   ├── project_snapshot_reconcile_preview.py
+│   ├── project_snapshot_reconcile_resolution.py
+│   ├── project_snapshot_restore.py
+│   ├── project_squash.py
+│   ├── project_tags.py
+│   ├── README.md
+│   ├── render_corpus_svgs.py
+│   ├── render_to_svg.py
+│   ├── run_batch_runtime_state_corpus_checks.py
+│   ├── run_branch_rebase_checks.py
+│   ├── run_branch_reset_checks.py
+│   ├── run_branching_checks.py
+│   ├── run_cherry_pick_checks.py
+│   ├── run_conflict_resolution_checks.py
+│   ├── run_cross_session_compare_checks.py
+│   ├── run_environment_bootstrap_checks.py
+│   ├── run_exec_runtime_checks.py
+│   ├── run_fixture_validation.py
+│   ├── run_hardening_human_checks.py
+│   ├── run_hardening_runtime_checks.py
+│   ├── run_hardening_state_checks.py
+│   ├── run_human_normalization_checks.py
+│   ├── run_inspector_browser_ui_checks.py
+│   ├── run_inspector_http_e2e_checks.py
+│   ├── run_inspector_http_graph_session_e2e_checks.py
+│   ├── run_inspector_http_lifecycle_import_e2e_checks.py
+│   ├── run_inspector_http_project_ops_e2e_checks.py
+│   ├── run_inspector_http_smoke_checks.py
+│   ├── run_inspector_smoke_checks.py
+│   ├── run_local_outcome_set_compare_checks.py
+│   ├── run_local_outcome_set_package_checks.py
+│   ├── run_local_outcome_set_package_commit_checks.py
+│   ├── run_local_outcome_set_package_commit_compare_checks.py
+│   ├── run_local_outcome_set_package_preview_checks.py
+│   ├── run_local_outcome_set_package_resolution_checks.py
+│   ├── run_merge_commit_checks.py
+│   ├── run_partial_snapshot_import_checks.py
+│   ├── run_pattern_decomposition_checks.py
+│   ├── run_portable_local_outcome_package_merge_checks.py
+│   ├── run_portable_local_outcome_package_merge_commit_checks.py
+│   ├── run_portable_local_outcome_package_merge_resolution_checks.py
+│   ├── run_project_model_checks.py
+│   ├── run_runtime_corpus.py
+│   ├── run_session_merge_checks.py
+│   ├── run_session_model_checks.py
+│   ├── run_snapshot_export_checks.py
+│   ├── run_snapshot_reconcile_checks.py
+│   ├── run_snapshot_reconcile_commit_checks.py
+│   ├── run_snapshot_reconcile_commit_compare_checks.py
+│   ├── run_snapshot_reconcile_commit_package_checks.py
+│   ├── run_snapshot_reconcile_commit_package_commit_checks.py
+│   ├── run_snapshot_reconcile_commit_package_preview_checks.py
+│   ├── run_snapshot_reconcile_commit_package_resolution_checks.py
+│   ├── run_snapshot_reconcile_preview_checks.py
+│   ├── run_snapshot_reconcile_resolution_checks.py
+│   ├── run_snapshot_restore_checks.py
+│   ├── run_snapshot_restore_preview_checks.py
+│   ├── run_squash_checks.py
+│   ├── run_state_corpus.py
+│   ├── run_state_model_checks.py
+│   ├── run_svg_renderer_checks.py
+│   ├── run_tag_release_checks.py
+│   ├── run_v0_2_hardening_suite.py
+│   ├── run_workspace_navigation_checks.py
+│   ├── run_workspace_timeline_checks.py
+│   ├── semascript_ast.py
+│   ├── semascript_parser.py
+│   ├── semascript_validator.py
+│   ├── serialize_ast.py
+│   ├── session_conflict_resolution.py
+│   ├── session_diff.py
+│   ├── session_merge.py
+│   ├── session_model.py
+│   ├── state_model.py
+│   ├── svg_renderer.py
+│   ├── validate_ast.py
+│   ├── validate_cli.py
+│   ├── validate_corpus.py
+│   ├── workspace_navigation.py
+│   └── workspace_timeline.py
+├── AGENTS.md
+└── README.md

@@ -1,0 +1,219 @@
+{
+  "schema_version": "SEMASCRIPT_RUNTIME_STATE_CORPUS_MANIFEST_v0.1",
+  "entries": [
+    {
+      "id": "BRC01",
+      "profile": "exec",
+      "text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]",
+      "tags": [
+        "transfer",
+        "runtime",
+        "state"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "A": {
+            "RES": 5
+          },
+          "B": {
+            "RES": 1
+          }
+        },
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC02",
+      "profile": "core",
+      "text": "[FRM:INV <law=ZSUM; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]",
+      "tags": [
+        "zsum",
+        "transfer"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "A": {
+            "RES": 2
+          },
+          "B": {
+            "RES": 0
+          }
+        },
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC03",
+      "profile": "exec",
+      "text": "[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]; invariant=[LAW:NZSUM]>]",
+      "tags": [
+        "create",
+        "nzsum"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "SYS": {
+            "RES": 0
+          }
+        },
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC04",
+      "profile": "core",
+      "text": "[FRM:TIME <mode=CYC; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:CHANGE <obj=[ENT:SYS]; res=[STA:DEC]>]]>]",
+      "tags": [
+        "cyc",
+        "multiscene"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {},
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC05",
+      "profile": "human",
+      "text": "gen(template -> instance)",
+      "tags": [
+        "pattern",
+        "dependency"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {},
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC06",
+      "profile": "human",
+      "text": "spr(seed -> form)",
+      "tags": [
+        "pattern",
+        "expansion"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {},
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC07",
+      "profile": "core",
+      "text": "[FRM:INV <law=ZSUM; scp=[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]>]>]",
+      "tags": [
+        "negative",
+        "runtime-zsum"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "SYS": {
+            "RES": 0
+          }
+        },
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    {
+      "id": "BRC08",
+      "profile": "exec",
+      "text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]",
+      "tags": [
+        "negative",
+        "state-balance"
+      ],
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "A": {
+            "RES": 0
+          },
+          "B": {
+            "RES": 0
+          }
+        },
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    }
+  ]
+}

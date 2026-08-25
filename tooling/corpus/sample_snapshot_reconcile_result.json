@@ -1,0 +1,26 @@
+{
+  "snapshot_reconcile_version": "SEMASCRIPT_SNAPSHOT_MERGE_RECONCILE_v0.1",
+  "reconcile_name": "reconcile_v1",
+  "snapshot_name": "snapshot_reconcile_v1",
+  "source_point_name": "reconcile_release",
+  "target_branch_name": "main",
+  "reconciled_session_ids": [
+    "recon_feature_reconcile"
+  ],
+  "reconcile_pairs": [
+    {
+      "original_session_id": "recon_feature",
+      "reconciled_session_id": "recon_feature_reconcile",
+      "reconciled_with_head_session_id": "recon_current",
+      "same_source_as_head": false,
+      "same_profile_as_head": true,
+      "conflict_like": true
+    }
+  ],
+  "summary": {
+    "reconciled_session_count": 1,
+    "conflict_like_count": 1,
+    "active_session_id": "recon_feature_reconcile",
+    "active_branch_name": "main"
+  }
+}

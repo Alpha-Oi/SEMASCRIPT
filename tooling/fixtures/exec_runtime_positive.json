@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ER01",
+    "profile": "exec",
+    "input": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=[LAW:ZSUM]>]",
+    "required_ops": [
+      "TRANSFER"
+    ]
+  },
+  {
+    "id": "ER02",
+    "profile": "core",
+    "input": "[FRM:INV <law=ZSUM; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]",
+    "required_ops": [
+      "TRANSFER"
+    ],
+    "required_invariant": "ZSUM"
+  },
+  {
+    "id": "ER03",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=LIN; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:CHANGE <obj=[ENT:SYS]; res=[STA:DEC]>]]>]",
+    "required_ops": [
+      "ACT",
+      "CHANGE"
+    ],
+    "required_schedule": "sequential"
+  },
+  {
+    "id": "ER04",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=CYC; scp=[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]>]",
+    "required_ops": [
+      "EXPAND"
+    ]
+  },
+  {
+    "id": "ER05",
+    "profile": "human",
+    "input": "gen(template -> instance)",
+    "required_ops": [
+      "DEPENDENCY"
+    ]
+  },
+  {
+    "id": "ER06",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=ATM; scp=[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]>]",
+    "required_ops": [
+      "DEPENDENCY"
+    ],
+    "required_schedule": null
+  }
+]

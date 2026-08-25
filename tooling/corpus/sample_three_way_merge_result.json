@@ -1,0 +1,212 @@
+{
+  "merge_version": "SEMASCRIPT_THREE_WAY_SESSION_MERGE_v0.1",
+  "project_name": "Sample Merge Project",
+  "base_session_id": "merge_base",
+  "left_session_id": "merge_left",
+  "right_session_id": "merge_right",
+  "base_session_name": "Merge Base",
+  "left_session_name": "Merge Left",
+  "right_session_name": "Merge Right",
+  "conflicts": [
+    {
+      "path": "graph_document.entities",
+      "base": [
+        {
+          "id": "e1",
+          "kind": "node",
+          "class_name": "PAT",
+          "root": "GEN",
+          "modifiers": [],
+          "x": 320,
+          "y": 80
+        },
+        {
+          "id": "e2",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "TEMPLATE",
+          "modifiers": [],
+          "x": 140,
+          "y": 200
+        },
+        {
+          "id": "e3",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "INSTANCE",
+          "modifiers": [],
+          "x": 320,
+          "y": 224
+        }
+      ],
+      "left": [
+        {
+          "id": "e1",
+          "kind": "node",
+          "class_name": "PAT",
+          "root": "GEN",
+          "modifiers": [],
+          "x": 320,
+          "y": 80
+        },
+        {
+          "id": "e2",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "TEMPLATE",
+          "modifiers": [],
+          "x": 140,
+          "y": 200
+        },
+        {
+          "id": "e3",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "INSTANCE_A",
+          "modifiers": [],
+          "x": 320,
+          "y": 224
+        }
+      ],
+      "right": [
+        {
+          "id": "e1",
+          "kind": "node",
+          "class_name": "PAT",
+          "root": "GEN",
+          "modifiers": [],
+          "x": 320,
+          "y": 80
+        },
+        {
+          "id": "e2",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "TEMPLATE",
+          "modifiers": [],
+          "x": 140,
+          "y": 200
+        },
+        {
+          "id": "e3",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "INSTANCE_B",
+          "modifiers": [],
+          "x": 320,
+          "y": 224
+        }
+      ],
+      "reason": "concurrent_list_change"
+    },
+    {
+      "path": "graph_document.source_text",
+      "base": "gen(template -> instance)",
+      "left": "gen(template -> instance_a)",
+      "right": "gen(template -> instance_b)",
+      "reason": "concurrent_scalar_change"
+    },
+    {
+      "path": "source_text",
+      "base": "gen(template -> instance)",
+      "left": "gen(template -> instance_a)",
+      "right": "gen(template -> instance_b)",
+      "reason": "concurrent_scalar_change"
+    }
+  ],
+  "summary": {
+    "conflict_count": 3,
+    "auto_merged": false
+  },
+  "merged_source": {
+    "graph_document": {
+      "edges": [
+        {
+          "id": "edge_e1_e2_0",
+          "from_id": "e1",
+          "to_id": "e2",
+          "role": "code",
+          "order": 0
+        },
+        {
+          "id": "edge_e1_e3_1",
+          "from_id": "e1",
+          "to_id": "e3",
+          "role": "dst",
+          "order": 1
+        }
+      ],
+      "entities": [
+        {
+          "id": "e1",
+          "kind": "node",
+          "class_name": "PAT",
+          "root": "GEN",
+          "modifiers": [],
+          "x": 320,
+          "y": 80
+        },
+        {
+          "id": "e2",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "TEMPLATE",
+          "modifiers": [],
+          "x": 140,
+          "y": 200
+        },
+        {
+          "id": "e3",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "INSTANCE_A",
+          "modifiers": [],
+          "x": 320,
+          "y": 224
+        }
+      ],
+      "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+      "metadata": {
+        "generated_from_ast": true
+      },
+      "profile": "normalized",
+      "root_entity_id": "e1",
+      "source_text": "gen(template -> instance_a)"
+    },
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "profile": "human",
+    "source_mode": "text",
+    "source_text": "gen(template -> instance_a)",
+    "ui_state": {
+      "selected_entity_id": null,
+      "preview_mode": "raw",
+      "decompose": true,
+      "viewport": {
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "zoom": 1.0
+      },
+      "panels": {
+        "svg": true,
+        "ast": true,
+        "runtime": true,
+        "state": true,
+        "graph_json": true
+      }
+    },
+    "session_name": "Merged: Merge Left + Merge Right"
+  }
+}

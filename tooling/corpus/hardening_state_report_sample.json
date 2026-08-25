@@ -1,0 +1,138 @@
+{
+  "schema_version": "SEMASCRIPT_BATCH_STATE_CORPUS_REPORT_v0.1",
+  "entries": [
+    {
+      "id": "HC01",
+      "profile": "human",
+      "tags": [
+        "human-alias-transfer"
+      ],
+      "accepted": false,
+      "history_len": 0,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": [
+        {
+          "code": "R_NORMALIZE",
+          "message": "Unsupported Human shorthand: 'A gives B resource'"
+        }
+      ]
+    },
+    {
+      "id": "HC02",
+      "profile": "human",
+      "tags": [
+        "state-wrapper"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "HC03",
+      "profile": "human",
+      "tags": [
+        "branch",
+        "human-alias"
+      ],
+      "accepted": false,
+      "history_len": 0,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": [
+        {
+          "code": "R_CORE_NODE",
+          "message": "Unsupported core runtime node: PRC:TRF"
+        },
+        {
+          "code": "R_CORE_NODE",
+          "message": "Unsupported core runtime node: PRC:TRF"
+        }
+      ]
+    },
+    {
+      "id": "HC04",
+      "profile": "exec",
+      "tags": [
+        "qty"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "HC05",
+      "profile": "exec",
+      "tags": [
+        "observe"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 1,
+      "errors": []
+    },
+    {
+      "id": "HC06",
+      "profile": "core",
+      "tags": [
+        "destroy",
+        "nzsum"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "HC07",
+      "profile": "human",
+      "tags": [
+        "dependency"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 1,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "HC08",
+      "profile": "human",
+      "tags": [
+        "expansion"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 1,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "accepted": 6,
+    "rejected": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "snapshot_reconcile_commit_package_commit_version": "SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_COMMIT_PROMOTE_v0.1",
+  "commit_name": "left_local_outcome",
+  "resolution_name": "left_resolution",
+  "package_name": "compare_package_v1",
+  "source_commit_name": "source_commit",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "compare_feature_reconcile_resolved_pkg_resolved"
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "promoted": true,
+    "promoted_point_name": "left_local_release",
+    "promoted_point_kind": "release",
+    "active_session_id": "compare_feature_reconcile_resolved_pkg_resolved",
+    "active_branch_name": "main"
+  }
+}

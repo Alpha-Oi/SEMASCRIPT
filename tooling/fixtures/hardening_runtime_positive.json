@@ -1,0 +1,25 @@
+[
+  {
+    "id": "HR01",
+    "profile": "exec",
+    "input": "[EXEC:OBSERVE <agt=[ENT:HUM]; obj=[ENT:OBJ]>]",
+    "required_ops": [
+      "OBSERVE"
+    ]
+  },
+  {
+    "id": "HR02",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=BRN; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:OBSERVE <agt=[ENT:HUM]; obj=[ENT:SYS]>]]>]",
+    "required_schedule": "branch_set",
+    "required_note": "branch_set_deferred_selection"
+  },
+  {
+    "id": "HR03",
+    "profile": "core",
+    "input": "[FRM:INV <law=NZSUM; scp=[EXEC:DESTROY <obj=[ENT:RES]; ctx=[ENT:SYS]>]>]",
+    "required_ops": [
+      "DESTROY"
+    ]
+  }
+]

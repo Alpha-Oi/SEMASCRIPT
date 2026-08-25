@@ -1,0 +1,26 @@
+{
+  "rebase_version": "SEMASCRIPT_BRANCH_REBASE_REPLAY_v0.1",
+  "project_name": "Sample Branch Rebase Project",
+  "source_branch_name": "feature_rebase",
+  "target_branch_name": "main",
+  "source_root_session_id": "base_s",
+  "source_head_before": "feature_2",
+  "target_head_before": "main_2",
+  "replayed_sessions": [
+    {
+      "original_session_id": "feature_1",
+      "replayed_session_id": "feature_1_replay",
+      "replay_index": 1
+    },
+    {
+      "original_session_id": "feature_2",
+      "replayed_session_id": "feature_2_replay",
+      "replay_index": 2
+    }
+  ],
+  "summary": {
+    "replayed_count": 2,
+    "source_head_after": "feature_2_replay",
+    "active_session_id": "feature_2_replay"
+  }
+}

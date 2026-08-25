@@ -1,0 +1,101 @@
+{
+  "portable_local_outcome_package_commit_compare_version": "SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_COMMIT_COMPARE_v0.1",
+  "left_commit_name": "portable_local_pkg_commit",
+  "right_commit_name": "portable_local_pkg_commit_2",
+  "identity": {
+    "same_commit_name": false,
+    "same_resolution_name": true,
+    "same_package_name": true,
+    "same_source_commit_name": true
+  },
+  "metadata": {
+    "resolution_name": {
+      "left": "portable_local_pkg_resolution",
+      "right": "portable_local_pkg_resolution",
+      "same": true
+    },
+    "package_name": {
+      "left": "local_outcome_portable_pkg",
+      "right": "local_outcome_portable_pkg",
+      "same": true
+    },
+    "source_commit_name": {
+      "left": "local_outcome_commit",
+      "right": "local_outcome_commit",
+      "same": true
+    },
+    "target_branch_name": {
+      "left": "main",
+      "right": "main",
+      "same": true
+    },
+    "promoted_point_name": {
+      "left": "portable_local_pkg_release",
+      "right": "portable_local_pkg_release_2",
+      "same": false
+    },
+    "promoted_point_kind": {
+      "left": "release",
+      "right": "release",
+      "same": true
+    },
+    "note": {
+      "left": "portable local package commit",
+      "right": "portable local package commit 2",
+      "same": false
+    }
+  },
+  "resolved_sessions": {
+    "left": [
+      "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved"
+    ],
+    "right": [
+      "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved"
+    ],
+    "shared": [
+      "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved"
+    ],
+    "left_only": [],
+    "right_only": []
+  },
+  "resolution_pairs": {
+    "left_count": 1,
+    "right_count": 1,
+    "same_count": true,
+    "left": [
+      {
+        "original_session_id": "compare_feature_reconcile_resolved_pkg_resolved",
+        "resolved_session_id": "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved",
+        "resolved_with_head_session_id": "compare_feature_reconcile_resolved_pkg_resolved",
+        "decision_choice": "use_package",
+        "preview_status": "exact_match",
+        "conflict_like": false
+      }
+    ],
+    "right": [
+      {
+        "original_session_id": "compare_feature_reconcile_resolved_pkg_resolved",
+        "resolved_session_id": "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved",
+        "resolved_with_head_session_id": "compare_feature_reconcile_resolved_pkg_resolved",
+        "decision_choice": "use_package",
+        "preview_status": "exact_match",
+        "conflict_like": false
+      }
+    ]
+  },
+  "resolved_session_texts": {
+    "left": {
+      "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved": "spr(seed -> source_form)"
+    },
+    "right": {
+      "compare_feature_reconcile_resolved_pkg_resolved_localpkg_resolved": "spr(seed -> source_form)"
+    },
+    "shared_equal_count": 1
+  },
+  "summary": {
+    "resolved_session_count_differs": false,
+    "promoted_point_differs": true,
+    "text_differs": false,
+    "has_any_diff": true
+  }
+}

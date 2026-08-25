@@ -1,0 +1,22 @@
+{
+  "snapshot_partial_import_version": "SEMASCRIPT_PARTIAL_SNAPSHOT_RESTORE_v0.1",
+  "import_name": "partial_import_v1",
+  "snapshot_name": "partial_snapshot_v1",
+  "source_point_name": "partial_release",
+  "target_branch_name": "main",
+  "imported_session_ids": [
+    "partial_feature_import"
+  ],
+  "imported_tag_point_names": [
+    "partial_release_import"
+  ],
+  "imported_snapshot_export_names": [],
+  "skipped_tag_point_names": [],
+  "summary": {
+    "imported_session_count": 1,
+    "imported_tag_point_count": 1,
+    "imported_snapshot_export_count": 0,
+    "active_session_id": "partial_feature_import",
+    "active_branch_name": "main"
+  }
+}

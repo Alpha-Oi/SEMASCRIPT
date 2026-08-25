@@ -1,0 +1,80 @@
+{
+  "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+  "source_profile": "normalized",
+  "source_text": "time:lin(resource declines => system becomes unstable)",
+  "ast": {
+    "kind": "node",
+    "class_name": "FRM",
+    "root": "TIME",
+    "modifiers": [],
+    "roles": [
+      {
+        "name": "mode",
+        "value": {
+          "kind": "raw_token",
+          "value": "LIN"
+        }
+      },
+      {
+        "name": "scp",
+        "value": {
+          "kind": "node",
+          "class_name": "REL",
+          "root": "CAU",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "cau",
+              "value": {
+                "kind": "node",
+                "class_name": "STA",
+                "root": "DEC",
+                "modifiers": [],
+                "roles": [
+                  {
+                    "name": "ctx",
+                    "value": {
+                      "kind": "node",
+                      "class_name": "ENT",
+                      "root": "RESOURCE",
+                      "modifiers": [],
+                      "roles": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "res",
+              "value": {
+                "kind": "node",
+                "class_name": "STA",
+                "root": "STB",
+                "modifiers": [
+                  "NEG"
+                ],
+                "roles": [
+                  {
+                    "name": "ctx",
+                    "value": {
+                      "kind": "node",
+                      "class_name": "ENT",
+                      "root": "SYSTEM",
+                      "modifiers": [],
+                      "roles": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "source_profile": "normalized"
+  },
+  "validation_annotations": [],
+  "metadata": {
+    "normalized_text": "[FRM:TIME <mode=LIN; scp=[REL:CAU <cau=[STA:DEC <ctx=[ENT:RESOURCE]>]; res=[STA:STB {NEG} <ctx=[ENT:SYSTEM]>]>]>]"
+  }
+}

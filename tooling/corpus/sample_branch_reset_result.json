@@ -1,0 +1,12 @@
+{
+  "branch_reset_version": "SEMASCRIPT_BRANCH_RESET_RESTORE_v0.1",
+  "project_name": "Sample Branch Reset Project",
+  "branch_name": "feature_reset",
+  "previous_head_session_id": "feature_2",
+  "target_session_id": "feature_1",
+  "summary": {
+    "head_changed": true,
+    "active_session_id": "feature_1",
+    "active_branch_name": "feature_reset"
+  }
+}

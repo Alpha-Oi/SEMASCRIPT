@@ -1,0 +1,130 @@
+{
+  "lineage_graph_version": "SEMASCRIPT_NAMED_MERGE_LINEAGE_GRAPH_v0.1",
+  "project_name": "Sample Squash Project",
+  "active_session_id": "squash_s",
+  "active_branch_name": "main",
+  "branches": [
+    {
+      "branch_name": "main",
+      "root_session_id": "base_s",
+      "head_session_id": "squash_s",
+      "is_active_branch": true,
+      "session_count": 3,
+      "color_index": 0
+    },
+    {
+      "branch_name": "feature_squash",
+      "root_session_id": "base_s",
+      "head_session_id": "feature_2",
+      "is_active_branch": false,
+      "session_count": 2,
+      "color_index": 1
+    }
+  ],
+  "nodes": [
+    {
+      "session_id": "base_s",
+      "session_name": "Base",
+      "branch_name": "main",
+      "lineage_kind": "root",
+      "tags": [
+        "squash"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 70
+    },
+    {
+      "session_id": "feature_1",
+      "session_name": "Feature 1",
+      "branch_name": "feature_squash",
+      "lineage_kind": "commit",
+      "tags": [
+        "squash"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 70
+    },
+    {
+      "session_id": "feature_2",
+      "session_name": "Feature 2",
+      "branch_name": "feature_squash",
+      "lineage_kind": "commit",
+      "tags": [
+        "squash"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 185
+    },
+    {
+      "session_id": "main_2",
+      "session_name": "Main 2",
+      "branch_name": "main",
+      "lineage_kind": "commit",
+      "tags": [
+        "squash"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 185
+    },
+    {
+      "session_id": "squash_s",
+      "session_name": "Squashed Feature Session",
+      "branch_name": "main",
+      "lineage_kind": "squash_commit",
+      "tags": [
+        "squash",
+        "squash-fold"
+      ],
+      "is_active": true,
+      "x": 120,
+      "y": 300
+    }
+  ],
+  "edges": [
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "feature_1",
+      "relation": "parent",
+      "branch_name": "feature_squash"
+    },
+    {
+      "from_session_id": "feature_1",
+      "to_session_id": "feature_2",
+      "relation": "parent",
+      "branch_name": "feature_squash"
+    },
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "main_2",
+      "relation": "parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "main_2",
+      "to_session_id": "squash_s",
+      "relation": "parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "feature_1",
+      "to_session_id": "squash_s",
+      "relation": "squash_origin",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "feature_2",
+      "to_session_id": "squash_s",
+      "relation": "squash_origin",
+      "branch_name": "main"
+    }
+  ],
+  "summary": {
+    "branch_count": 2,
+    "session_count": 5,
+    "edge_count": 6
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "SEMASCRIPT_BATCH_RUNTIME_CORPUS_REPORT_v0.1",
+  "entries": [
+    {
+      "id": "BRC01",
+      "profile": "exec",
+      "tags": [
+        "transfer",
+        "runtime",
+        "state"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "BRC02",
+      "profile": "core",
+      "tags": [
+        "zsum",
+        "transfer"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": "ZSUM",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "BRC03",
+      "profile": "exec",
+      "tags": [
+        "create",
+        "nzsum"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "BRC04",
+      "profile": "core",
+      "tags": [
+        "cyc",
+        "multiscene"
+      ],
+      "accepted": true,
+      "plan_length": 2,
+      "schedule": "cyclical",
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    },
+    {
+      "id": "BRC05",
+      "profile": "human",
+      "tags": [
+        "pattern",
+        "dependency"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": [
+        "decomposed_pattern_runtime"
+      ]
+    },
+    {
+      "id": "BRC06",
+      "profile": "human",
+      "tags": [
+        "pattern",
+        "expansion"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": [
+        "decomposed_pattern_runtime"
+      ]
+    },
+    {
+      "id": "BRC07",
+      "profile": "core",
+      "tags": [
+        "negative",
+        "runtime-zsum"
+      ],
+      "accepted": false,
+      "plan_length": 0,
+      "schedule": null,
+      "invariant_law": "ZSUM",
+      "errors": [
+        {
+          "code": "R_INV_ZSUM",
+          "message": "CREATE violates ZSUM invariant"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "BRC08",
+      "profile": "exec",
+      "tags": [
+        "negative",
+        "state-balance"
+      ],
+      "accepted": true,
+      "plan_length": 1,
+      "schedule": null,
+      "invariant_law": null,
+      "errors": [],
+      "notes": []
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "accepted": 7,
+    "rejected": 1
+  }
+}

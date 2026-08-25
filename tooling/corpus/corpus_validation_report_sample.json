@@ -1,0 +1,95 @@
+{
+  "schema_version": "SEMASCRIPT_CORPUS_REPORT_v0.1",
+  "entries": [
+    {
+      "id": "C001",
+      "profile": "human",
+      "mode": "core",
+      "normalized_text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C002",
+      "profile": "human",
+      "mode": "core",
+      "normalized_text": "[FRM:INV <law=ZSUM; scp=[[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]; [PRC:TRF <src=[ENT:B]; dst=[ENT:C]; obj=[ENT:CREDIT]>]]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C003",
+      "profile": "human",
+      "mode": "core",
+      "normalized_text": "[FRM:TIME <mode=LIN; scp=[REL:CAU <cau=[STA:DEC <ctx=[ENT:RESOURCE]>]; res=[STA:STB {NEG} <ctx=[ENT:SYSTEM]>]>]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C004",
+      "profile": "human",
+      "mode": "core",
+      "normalized_text": "[FRM:TIME <mode=CYC; scp=[[PRC:CHG <obj=[ENT:SYSTEM]>]; [PRC:CHG <obj=[ENT:RESERVE]>]]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C005",
+      "profile": "core",
+      "mode": "core",
+      "normalized_text": "[STA:BAL <ctx=[ENT:SYS]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C006",
+      "profile": "core",
+      "mode": "core",
+      "normalized_text": "[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C007",
+      "profile": "exec",
+      "mode": "exec",
+      "normalized_text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=[LAW:ZSUM]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C008",
+      "profile": "exec",
+      "mode": "exec",
+      "normalized_text": "[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]; time=[TIME:LIN]>]",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "id": "C009",
+      "profile": "human",
+      "mode": "unknown",
+      "normalized_text": null,
+      "valid": false,
+      "errors": [
+        {
+          "code": "PIPELINE",
+          "message": "Unsupported Human shorthand: 'mystic(seed -> form)'"
+        }
+      ]
+    },
+    {
+      "id": "C010",
+      "profile": "exec",
+      "mode": "exec",
+      "normalized_text": "[EXEC:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+      "valid": false,
+      "errors": [
+        {
+          "code": "X001",
+          "message": "Unsupported EXEC operation: SPR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "portable_local_outcome_package_baseline_three_way_merge_version": "SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_BASELINE_THREE_WAY_MERGE_v0.1",
+  "base_commit_name": "base_commit",
+  "left_commit_name": "left_commit",
+  "right_commit_name": "right_commit",
+  "identity": {
+    "same_package_triplet": true,
+    "same_source_commit_triplet": true
+  },
+  "metadata": {
+    "base": {
+      "resolution_name": "base_resolution",
+      "package_name": "portable_local_pkg",
+      "source_commit_name": "local_outcome_commit",
+      "target_branch_name": "main",
+      "promoted_point_name": "base_release",
+      "promoted_point_kind": "release"
+    },
+    "left": {
+      "resolution_name": "left_resolution",
+      "package_name": "portable_local_pkg",
+      "source_commit_name": "local_outcome_commit",
+      "target_branch_name": "main",
+      "promoted_point_name": "left_release",
+      "promoted_point_kind": "release"
+    },
+    "right": {
+      "resolution_name": "right_resolution",
+      "package_name": "portable_local_pkg",
+      "source_commit_name": "local_outcome_commit",
+      "target_branch_name": "main",
+      "promoted_point_name": "right_release",
+      "promoted_point_kind": "release"
+    }
+  },
+  "merge_items": [
+    {
+      "original_session_id": "merge_feature_reconcile_resolved_pkg_resolved",
+      "base": {
+        "original_session_id": "merge_feature_reconcile_resolved_pkg_resolved",
+        "resolved_session_id": "merge_feature_reconcile_resolved_pkg_resolved_localpkg_resolved",
+        "decision_choice": "use_package",
+        "conflict_like": false,
+        "source_text": "spr(seed -> source_form)",
+        "session_name": "Local Merge Source Feature",
+        "profile": "human",
+        "source_mode": "text"
+      },
+      "left": {
+        "original_session_id": "merge_feature_reconcile_resolved_pkg_resolved",
+        "resolved_session_id": "merge_feature_reconcile_resolved_pkg_resolved_localpkg_resolved_2",
+        "decision_choice": "custom_text",
+        "conflict_like": false,
+        "source_text": "spr(seed -> left_form)",
+        "session_name": "Local Merge Source Feature",
+        "profile": "human",
+        "source_mode": "text"
+      },
+      "right": {
+        "original_session_id": "merge_feature_reconcile_resolved_pkg_resolved",
+        "resolved_session_id": "merge_feature_reconcile_resolved_pkg_resolved_localpkg_resolved_3",
+        "decision_choice": "custom_text",
+        "conflict_like": true,
+        "source_text": "spr(seed -> right_form)",
+        "session_name": "Local Merge Source Feature",
+        "profile": "human",
+        "source_mode": "text"
+      },
+      "status": "conflict",
+      "conflict": true,
+      "merged_source_text": null
+    }
+  ],
+  "auto_merged_items": [],
+  "summary": {
+    "original_session_count": 1,
+    "auto_merged_count": 0,
+    "conflict_count": 1,
+    "has_conflicts": true
+  }
+}

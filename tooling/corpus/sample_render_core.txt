@@ -1,0 +1,1 @@
+[FRM:INV <law=ZSUM; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]

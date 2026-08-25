@@ -1,0 +1,111 @@
+{
+  "lineage_graph_version": "SEMASCRIPT_NAMED_MERGE_LINEAGE_GRAPH_v0.1",
+  "project_name": "Sample Branch Lineage Project",
+  "active_session_id": "merge_s",
+  "active_branch_name": "main",
+  "branches": [
+    {
+      "branch_name": "main",
+      "root_session_id": "base_s",
+      "head_session_id": "merge_s",
+      "is_active_branch": true,
+      "session_count": 3,
+      "color_index": 0
+    },
+    {
+      "branch_name": "feature_a",
+      "root_session_id": "base_s",
+      "head_session_id": "feature_s",
+      "is_active_branch": false,
+      "session_count": 1,
+      "color_index": 1
+    }
+  ],
+  "nodes": [
+    {
+      "session_id": "base_s",
+      "session_name": "Branch Base",
+      "branch_name": "main",
+      "lineage_kind": "root",
+      "tags": [
+        "branching"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 70
+    },
+    {
+      "session_id": "feature_s",
+      "session_name": "Feature A",
+      "branch_name": "feature_a",
+      "lineage_kind": "commit",
+      "tags": [
+        "branching"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 70
+    },
+    {
+      "session_id": "main_s",
+      "session_name": "Main B",
+      "branch_name": "main",
+      "lineage_kind": "commit",
+      "tags": [
+        "branching"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 185
+    },
+    {
+      "session_id": "merge_s",
+      "session_name": "Merged Branch Session",
+      "branch_name": "main",
+      "lineage_kind": "merge_commit",
+      "tags": [
+        "merge-commit"
+      ],
+      "is_active": true,
+      "x": 120,
+      "y": 300
+    }
+  ],
+  "edges": [
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "feature_s",
+      "relation": "parent",
+      "branch_name": "feature_a"
+    },
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "main_s",
+      "relation": "parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "merge_s",
+      "relation": "merge_parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "feature_s",
+      "to_session_id": "merge_s",
+      "relation": "merge_parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "main_s",
+      "to_session_id": "merge_s",
+      "relation": "merge_parent",
+      "branch_name": "main"
+    }
+  ],
+  "summary": {
+    "branch_count": 2,
+    "session_count": 4,
+    "edge_count": 5
+  }
+}

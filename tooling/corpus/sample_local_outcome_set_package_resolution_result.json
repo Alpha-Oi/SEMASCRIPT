@@ -1,0 +1,35 @@
+{
+  "local_outcome_set_package_resolution_version": "SEMASCRIPT_LOCAL_PROMOTED_RESOLUTION_PACKAGE_IMPORT_RESOLUTION_v0.1",
+  "resolution_name": "local_pkg_resolution_v1",
+  "package_name": "local_outcome_pkg_v1",
+  "source_commit_name": "local_outcome_commit",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "resolve_feature_reconcile_resolved_pkg_resolved_localpkg_resolved"
+  ],
+  "skipped_session_ids": [],
+  "resolution_pairs": [
+    {
+      "original_session_id": "resolve_feature_reconcile_resolved_pkg_resolved",
+      "resolved_session_id": "resolve_feature_reconcile_resolved_pkg_resolved_localpkg_resolved",
+      "resolved_with_head_session_id": "target_current",
+      "decision_choice": "custom_text",
+      "preview_status": "conflict_like",
+      "conflict_like": true
+    }
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "skipped_session_count": 0,
+    "conflict_like_count": 1,
+    "conflict_resolved_count": 1,
+    "decision_counts": {
+      "use_package": 0,
+      "use_current": 0,
+      "skip": 0,
+      "custom_text": 1
+    },
+    "active_session_id": "resolve_feature_reconcile_resolved_pkg_resolved_localpkg_resolved",
+    "active_branch_name": "main"
+  }
+}

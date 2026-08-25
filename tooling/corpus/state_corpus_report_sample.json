@@ -1,0 +1,141 @@
+{
+  "schema_version": "SEMASCRIPT_BATCH_STATE_CORPUS_REPORT_v0.1",
+  "entries": [
+    {
+      "id": "BRC01",
+      "profile": "exec",
+      "tags": [
+        "transfer",
+        "runtime",
+        "state"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "BRC02",
+      "profile": "core",
+      "tags": [
+        "zsum",
+        "transfer"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "BRC03",
+      "profile": "exec",
+      "tags": [
+        "create",
+        "nzsum"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "BRC04",
+      "profile": "core",
+      "tags": [
+        "cyc",
+        "multiscene"
+      ],
+      "accepted": true,
+      "history_len": 2,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 1,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "BRC05",
+      "profile": "human",
+      "tags": [
+        "pattern",
+        "dependency"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 1,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "BRC06",
+      "profile": "human",
+      "tags": [
+        "pattern",
+        "expansion"
+      ],
+      "accepted": true,
+      "history_len": 1,
+      "dependency_count": 0,
+      "expansion_count": 1,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": []
+    },
+    {
+      "id": "BRC07",
+      "profile": "core",
+      "tags": [
+        "negative",
+        "runtime-zsum"
+      ],
+      "accepted": false,
+      "history_len": 0,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": [
+        {
+          "code": "R_INV_ZSUM",
+          "message": "CREATE violates ZSUM invariant"
+        }
+      ]
+    },
+    {
+      "id": "BRC08",
+      "profile": "exec",
+      "tags": [
+        "negative",
+        "state-balance"
+      ],
+      "accepted": false,
+      "history_len": 0,
+      "dependency_count": 0,
+      "expansion_count": 0,
+      "action_count": 0,
+      "observation_count": 0,
+      "errors": [
+        {
+          "code": "S_BALANCE",
+          "message": "Insufficient balance for A:RES"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "accepted": 6,
+    "rejected": 2
+  }
+}

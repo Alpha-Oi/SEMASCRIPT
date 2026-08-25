@@ -1,0 +1,22 @@
+[
+  {
+    "id": "HSN01",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=BRN; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:OBSERVE <agt=[ENT:HUM]; obj=[ENT:SYS]>]]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "required_error": "S_BRANCH_DEFERRED"
+  }
+]

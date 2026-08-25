@@ -1,0 +1,45 @@
+{
+  "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+  "accepted": true,
+  "entry_kind": "list_scope",
+  "context": {
+    "time_mode": "LIN",
+    "invariant_law": null,
+    "schedule": "sequential"
+  },
+  "plan": [
+    {
+      "op_family": "EXEC",
+      "op_name": "ACT",
+      "roles": {
+        "agt": "[ENT:HUM]",
+        "obj": "[ENT:SYS]"
+      },
+      "constraints": {
+        "time_mode": "LIN",
+        "invariant_law": null,
+        "schedule": "sequential"
+      },
+      "reversible": true,
+      "effect_class": "action"
+    },
+    {
+      "op_family": "EXEC",
+      "op_name": "CHANGE",
+      "roles": {
+        "obj": "[ENT:SYS]",
+        "res": "[STA:DEC]"
+      },
+      "constraints": {
+        "time_mode": "LIN",
+        "invariant_law": null,
+        "schedule": "sequential"
+      },
+      "reversible": true,
+      "effect_class": "state_transition"
+    }
+  ],
+  "errors": [],
+  "notes": [],
+  "decomposition_count": 0
+}

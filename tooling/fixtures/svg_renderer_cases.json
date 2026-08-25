@@ -1,0 +1,40 @@
+[
+  {
+    "id": "SVG01",
+    "profile": "core",
+    "input": "[FRM:INV <law=ZSUM; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]",
+    "must_contain": [
+      "FRM:INV",
+      "EXEC:TRANSFER",
+      "law=ZSUM"
+    ]
+  },
+  {
+    "id": "SVG02",
+    "profile": "human",
+    "input": "gen(template -> instance)",
+    "must_contain": [
+      "PAT:GEN"
+    ]
+  },
+  {
+    "id": "SVG03",
+    "profile": "human",
+    "input": "gen(template -> instance)",
+    "decompose": true,
+    "must_contain": [
+      "REL:DEP"
+    ]
+  },
+  {
+    "id": "SVG04",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=LIN; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:CHANGE <obj=[ENT:SYS]; res=[STA:DEC]>]]>]",
+    "must_contain": [
+      "FRM:TIME",
+      "list-scope",
+      "EXEC:ACT",
+      "EXEC:CHANGE"
+    ]
+  }
+]

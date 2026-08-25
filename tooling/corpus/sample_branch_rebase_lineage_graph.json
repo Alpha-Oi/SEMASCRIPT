@@ -1,0 +1,137 @@
+{
+  "lineage_graph_version": "SEMASCRIPT_NAMED_MERGE_LINEAGE_GRAPH_v0.1",
+  "project_name": "Sample Branch Rebase Project",
+  "active_session_id": "feature_2_replay",
+  "active_branch_name": "feature_rebase",
+  "branches": [
+    {
+      "branch_name": "main",
+      "root_session_id": "base_s",
+      "head_session_id": "main_2",
+      "is_active_branch": false,
+      "session_count": 2,
+      "color_index": 0
+    },
+    {
+      "branch_name": "feature_rebase",
+      "root_session_id": "base_s",
+      "head_session_id": "feature_2_replay",
+      "is_active_branch": true,
+      "session_count": 4,
+      "color_index": 1
+    }
+  ],
+  "nodes": [
+    {
+      "session_id": "base_s",
+      "session_name": "Base",
+      "branch_name": "main",
+      "lineage_kind": "root",
+      "tags": [
+        "rebase"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 70
+    },
+    {
+      "session_id": "feature_1",
+      "session_name": "Feature 1",
+      "branch_name": "feature_rebase",
+      "lineage_kind": "commit",
+      "tags": [
+        "rebase"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 70
+    },
+    {
+      "session_id": "feature_2",
+      "session_name": "Feature 2",
+      "branch_name": "feature_rebase",
+      "lineage_kind": "commit",
+      "tags": [
+        "rebase"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 185
+    },
+    {
+      "session_id": "main_2",
+      "session_name": "Main 2",
+      "branch_name": "main",
+      "lineage_kind": "commit",
+      "tags": [
+        "rebase"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 185
+    },
+    {
+      "session_id": "feature_1_replay",
+      "session_name": "Feature 1",
+      "branch_name": "feature_rebase",
+      "lineage_kind": "rebase_replay",
+      "tags": [
+        "rebase",
+        "rebase-replay"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 300
+    },
+    {
+      "session_id": "feature_2_replay",
+      "session_name": "Feature 2",
+      "branch_name": "feature_rebase",
+      "lineage_kind": "rebase_replay",
+      "tags": [
+        "rebase",
+        "rebase-replay"
+      ],
+      "is_active": true,
+      "x": 360,
+      "y": 415
+    }
+  ],
+  "edges": [
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "feature_1",
+      "relation": "parent",
+      "branch_name": "feature_rebase"
+    },
+    {
+      "from_session_id": "feature_1",
+      "to_session_id": "feature_2",
+      "relation": "parent",
+      "branch_name": "feature_rebase"
+    },
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "main_2",
+      "relation": "parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "main_2",
+      "to_session_id": "feature_1_replay",
+      "relation": "parent",
+      "branch_name": "feature_rebase"
+    },
+    {
+      "from_session_id": "feature_1_replay",
+      "to_session_id": "feature_2_replay",
+      "relation": "parent",
+      "branch_name": "feature_rebase"
+    }
+  ],
+  "summary": {
+    "branch_count": 2,
+    "session_count": 6,
+    "edge_count": 5
+  }
+}

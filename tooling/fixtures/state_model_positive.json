@@ -1,0 +1,161 @@
+[
+  {
+    "id": "SM01",
+    "profile": "exec",
+    "input": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "A": {
+          "RES": 5
+        },
+        "B": {
+          "RES": 1
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "expect_resources": {
+      "A": {
+        "RES": 4
+      },
+      "B": {
+        "RES": 2
+      }
+    },
+    "expect_history_len": 1
+  },
+  {
+    "id": "SM02",
+    "profile": "core",
+    "input": "[FRM:INV <law=ZSUM; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "A": {
+          "RES": 3
+        },
+        "B": {
+          "RES": 2
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "expect_resources": {
+      "A": {
+        "RES": 2
+      },
+      "B": {
+        "RES": 3
+      }
+    },
+    "expect_history_len": 1
+  },
+  {
+    "id": "SM03",
+    "profile": "exec",
+    "input": "[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]; invariant=[LAW:NZSUM]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "SYS": {
+          "RES": 0
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "expect_resources": {
+      "SYS": {
+        "RES": 1
+      }
+    },
+    "expect_history_len": 1
+  },
+  {
+    "id": "SM04",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=LIN; scp=[[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]; [EXEC:CHANGE <obj=[ENT:SYS]; res=[STA:DEC]>]]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "expect_history_len": 2
+  },
+  {
+    "id": "SM05",
+    "profile": "human",
+    "input": "gen(template -> instance)",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "expect_dependency_count": 1
+  },
+  {
+    "id": "SM06",
+    "profile": "human",
+    "input": "spr(seed -> form)",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "expect_expansion_count": 1
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "snapshot_reconcile_commit_package_preview_version": "SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_DIFF_COMPATIBILITY_v0.1",
+  "package_name": "pkg_outcome",
+  "commit_name": "pkg_commit",
+  "import_target": {
+    "import_name": "pkg_import_preview",
+    "target_branch_name": "main",
+    "activate_last_imported": true,
+    "would_import_commit_name": "pkg_commit_import",
+    "current_head_session_id": "pkg_current"
+  },
+  "metadata": {
+    "exported_from_project_name": "Resolve Current",
+    "snapshot_name": "pkg_snapshot",
+    "resolution_name": "pkg_resolution",
+    "promoted_point_name": "pkg_promoted",
+    "promoted_point_kind": "release",
+    "note": "portable"
+  },
+  "collections": {
+    "sessions": {
+      "shared": [],
+      "current_only": [
+        "pkg_current"
+      ],
+      "package_only": [
+        "pkg_feature_reconcile_resolved"
+      ]
+    },
+    "branches": {
+      "shared": [
+        "main"
+      ],
+      "current_only": [],
+      "package_only": []
+    },
+    "tag_points": {
+      "shared": [],
+      "current_only": [],
+      "package_only": [
+        "pkg_promoted"
+      ]
+    }
+  },
+  "compatibility": {
+    "version_supported": true,
+    "import_name_available": true,
+    "target_branch_exists": true,
+    "would_create_target_branch": false,
+    "promoted_point_name_collision": false,
+    "portable": true,
+    "standalone": true
+  },
+  "preview_items": [
+    {
+      "original_session_id": "pkg_feature_reconcile_resolved",
+      "session_name": "Package Source Feature",
+      "package_index": 1,
+      "target_branch_name": "main",
+      "compare_session_id": "pkg_current",
+      "same_profile_as_compare": true,
+      "same_source_mode_as_compare": true,
+      "same_source_text_as_compare": false,
+      "exact_match": false,
+      "conflict_like": true,
+      "status": "conflict_like"
+    }
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "exact_match_count": 0,
+    "conflict_like_count": 1,
+    "source_mode_mismatch_count": 0,
+    "profile_mismatch_count": 0,
+    "compatible_for_import": true
+  }
+}

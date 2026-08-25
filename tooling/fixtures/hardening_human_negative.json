@@ -1,0 +1,14 @@
+[
+  {
+    "id": "HHN01",
+    "input": "A donates B resource"
+  },
+  {
+    "id": "HHN02",
+    "input": "state:glowing(system)"
+  },
+  {
+    "id": "HHN03",
+    "input": "resource fluctuates"
+  }
+]

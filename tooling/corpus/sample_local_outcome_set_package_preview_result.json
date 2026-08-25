@@ -1,0 +1,56 @@
+{
+  "portable_local_outcome_package_preview_version": "SEMASCRIPT_LOCAL_OUTCOME_SET_PORTABLE_PACKAGE_PREVIEW_v0.1",
+  "package_name": "preview_local_outcome_pkg",
+  "import_target": {
+    "import_name": "preview_local_outcome_import",
+    "target_branch_name": "main",
+    "target_branch_exists": true,
+    "would_create_branch": false
+  },
+  "metadata": {
+    "source_commit_name": "preview_local_outcome_commit",
+    "resolution_name": "preview_pkg_resolution",
+    "promoted_point_name": null,
+    "promoted_point_kind": "release",
+    "has_promoted_point": false
+  },
+  "collections": {
+    "resolved_sessions": {
+      "package_count": 1,
+      "current_conflicting_ids": [
+        "preview_feature_reconcile_resolved_pkg_resolved"
+      ]
+    },
+    "local_outcome_commits": {
+      "existing_count": 1
+    },
+    "local_package_imports": {
+      "existing_count": 0,
+      "import_name_conflict": false
+    }
+  },
+  "compatibility": {
+    "version_ok": true,
+    "import_name_available": true,
+    "promoted_point_name_conflict": false,
+    "resolved_sessions_have_content": true
+  },
+  "preview_items": [
+    {
+      "original_session_id": "preview_feature_reconcile_resolved_pkg_resolved",
+      "current_head_session_id": "preview_feature_reconcile_resolved_pkg_resolved",
+      "same_profile_as_compare": true,
+      "same_source_mode_as_compare": true,
+      "same_source_text_as_compare": true,
+      "exact_match": true,
+      "conflict_like": false,
+      "status": "exact_match"
+    }
+  ],
+  "summary": {
+    "selected_session_count": 1,
+    "compatible_count": 1,
+    "conflict_like_count": 0,
+    "has_conflicts": false
+  }
+}

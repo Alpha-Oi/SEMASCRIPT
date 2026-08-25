@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>SEMASCRIPT Inspector — Interactive Merge Workstation v2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>SEMASCRIPT Inspector</h1>
+        <p>Interactive Merge Workstation v2 for portable local outcome reconciliation</p>
+      </div>
+
+      <div class="panel">
+        <label for="profile">Profile</label>
+        <select id="profile">
+          <option value="human" selected>human</option>
+          <option value="core">core</option>
+          <option value="exec">exec</option>
+        </select>
+        <p id="profileHint" class="field-hint">
+          Human-friendly shorthand and aliases. Example: <code>gen(template -&gt; instance)</code>
+        </p>
+
+        <label class="checkbox">
+          <input type="checkbox" id="decompose" checked />
+          <span>Decompose patterns</span>
+        </label>
+
+        <label for="sessionName">Session name</label>
+        <input id="sessionName" type="text" placeholder="Untitled SEMASCRIPT Session" />
+        <label for="projectName">Project name</label>
+        <input id="projectName" type="text" placeholder="Untitled SEMASCRIPT Project" />
+        <label for="inputText">Input</label>
+        <textarea id="inputText" spellcheck="false" placeholder="gen(template -&gt; instance)"></textarea>
+        <label for="initialState">Initial state (JSON, optional)</label>
+        <textarea id="initialState" class="small" spellcheck="false"></textarea>
+
+        <div class="actions triple">
+          <button id="analyzeBtn">Analyze text</button>
+          <button id="importGraphBtn">Text → graph</button>
+          <button id="clearBtn" class="secondary">Clear</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head">
+          <h2>Samples</h2>
+          <button id="reloadSamples" class="secondary">Reload</button>
+        </div>
+        <div id="samplesList" class="samples-list"></div>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Session actions</h2></div>
+        <div class="actions triple">
+          <button id="exportTextSessionBtn">Export text session</button>
+          <button id="exportGraphSessionBtn">Export graph session</button>
+          <button id="downloadSessionBtn" class="secondary">Download</button>
+        </div>
+        <label for="sessionJson">Session JSON</label>
+        <textarea id="sessionJson" class="small" spellcheck="false"></textarea>
+        <button id="importSessionBtn">Import session</button>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Project workspace</h2></div>
+        <div class="actions triple">
+          <button id="addCurrentToProjectBtn">Add current session</button>
+          <button id="exportProjectBtn">Export project</button>
+          <button id="downloadProjectBtn" class="secondary">Download</button>
+        </div>
+        <label for="projectJson">Project index JSON</label>
+        <textarea id="projectJson" class="small" spellcheck="false"></textarea>
+        <div class="actions triple">
+          <button id="importProjectBtn">Import project</button>
+          <button id="reloadProjectBtn" class="secondary">Refresh list</button>
+          <button id="clearProjectBtn" class="secondary">Clear project</button>
+        </div>
+        <div id="projectSessionsList" class="samples-list"></div>
+        <div class="samples-head">
+          <h2>Dependency map</h2>
+        </div>
+        <div id="projectDependencyMap" class="project-map"></div>
+        <div class="samples-head">
+          <h2>Workspace timeline</h2>
+        </div>
+        <div id="projectTimeline" class="project-timeline"></div>
+        <div class="samples-head">
+          <h2>Named merge lineage graph</h2>
+        </div>
+        <div id="projectLineageGraph" class="project-map"></div>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Branch / release points</h2></div>
+        <label for="newBranchName">New branch name</label>
+        <input id="newBranchName" type="text" placeholder="feature_branch_v1" />
+        <button id="createBranchBtn">Create branch from active session</button>
+        <div id="branchList" class="samples-list"></div>
+
+        <div class="samples-head">
+          <h2>Tag / release points</h2>
+        </div>
+        <label for="tagPointName">Point name</label>
+        <input id="tagPointName" type="text" placeholder="release_v1" />
+        <label for="tagPointKind">Point kind</label>
+        <select id="tagPointKind">
+          <option value="tag" selected>tag</option>
+          <option value="release">release</option>
+        </select>
+        <label for="tagTargetSession">Target session</label>
+        <select id="tagTargetSession"></select>
+        <label for="tagPointNote">Point note</label>
+        <input id="tagPointNote" type="text" placeholder="mark project milestone" />
+        <button id="createTagPointBtn">Create tag / release point</button>
+        <div id="tagPointList" class="samples-list"></div>
+        <pre id="tagPointResultText" class="codeblock compact"></pre>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Snapshot workflows</h2></div>
+        <label for="snapshotSourcePoint">Snapshot source point</label>
+        <select id="snapshotSourcePoint"></select>
+        <label for="snapshotName">Snapshot name</label>
+        <input id="snapshotName" type="text" placeholder="snapshot_v1" />
+        <label for="snapshotNote">Snapshot note</label>
+        <input id="snapshotNote" type="text" placeholder="portable project snapshot" />
+        <div class="actions triple">
+          <button id="createSnapshotBtn">Create snapshot export</button>
+          <button id="downloadSnapshotBtn" class="secondary">Download current snapshot</button>
+          <button id="refreshSnapshotSelectorsBtn" class="secondary">Refresh snapshot selectors</button>
+        </div>
+        <div id="snapshotList" class="samples-list"></div>
+        <pre id="snapshotResultText" class="codeblock compact"></pre>
+
+        <div class="samples-head">
+          <h2>Snapshot restore / partial import</h2>
+        </div>
+        <label for="snapshotRestoreJson">Snapshot package JSON</label>
+        <textarea id="snapshotRestoreJson" class="small" spellcheck="false" placeholder="Paste snapshot export package JSON here"></textarea>
+        <div id="snapshotPackageHint" class="package-guidance"></div>
+        <label for="restoredProjectName">Restored project name</label>
+        <input id="restoredProjectName" type="text" placeholder="restored_project_v1" />
+        <label for="snapshotRestoreName">Restore name</label>
+        <input id="snapshotRestoreName" type="text" placeholder="snapshot_restore_v1" />
+        <label class="checkbox">
+          <input type="checkbox" id="activateRestoredAnchor" checked />
+          <span>Activate restored anchor</span>
+        </label>
+        <div class="actions triple">
+          <button id="loadCurrentSnapshotForRestoreBtn">Use current snapshot</button>
+          <button id="previewSnapshotRestoreBtn" class="secondary">Preview restore</button>
+          <button id="restoreFromSnapshotBtn">Restore from snapshot</button>
+        </div>
+        <div class="actions triple">
+          <button id="clearSnapshotRestoreBtn" class="secondary">Clear restore input</button>
+        </div>
+        <pre id="snapshotRestorePreviewText" class="codeblock compact"></pre>
+        <pre id="snapshotRestoreResultText" class="codeblock compact"></pre>
+
+        <label for="partialImportSessionIds">Partial import session ids (CSV)</label>
+        <input id="partialImportSessionIds" type="text" placeholder="session_a, session_b" />
+        <label for="partialImportTagNames">Partial import tag names (CSV)</label>
+        <input id="partialImportTagNames" type="text" placeholder="release_v1, tag_v2" />
+        <label for="partialImportSnapshotNames">Partial import snapshot names (CSV)</label>
+        <input id="partialImportSnapshotNames" type="text" placeholder="snapshot_v1" />
+        <div id="partialImportSelectionHint" class="field-hint"></div>
+        <label for="partialImportTargetBranch">Partial import target branch</label>
+        <select id="partialImportTargetBranch"></select>
+        <label for="partialImportName">Partial import name</label>
+        <input id="partialImportName" type="text" placeholder="partial_import_v1" />
+        <label class="checkbox">
+          <input type="checkbox" id="activatePartialImportHead" checked />
+          <span>Activate last imported head</span>
+        </label>
+        <div class="actions triple">
+          <button id="useCurrentSnapshotForPartialBtn">Use current snapshot</button>
+          <button id="partialImportFromSnapshotBtn">Apply partial import</button>
+          <button id="clearPartialImportBtn" class="secondary">Clear partial import</button>
+        </div>
+        <pre id="partialImportResultText" class="codeblock compact"></pre>
+
+        <div class="samples-head">
+          <h2>Snapshot reconcile</h2>
+        </div>
+        <label for="snapshotReconcileSessionIds">Reconcile session ids (CSV)</label>
+        <input id="snapshotReconcileSessionIds" type="text" placeholder="session_a, session_b" />
+        <div id="snapshotReconcileSessionHint" class="field-hint"></div>
+        <label for="snapshotReconcileTargetBranch">Reconcile target branch</label>
+        <select id="snapshotReconcileTargetBranch"></select>
+        <label for="snapshotReconcileName">Reconcile name</label>
+        <input id="snapshotReconcileName" type="text" placeholder="snapshot_reconcile_v1" />
+        <label class="checkbox">
+          <input type="checkbox" id="activateSnapshotReconcileHead" checked />
+          <span>Activate reconciled head</span>
+        </label>
+        <div class="actions triple">
+          <button id="useCurrentSnapshotForReconcileBtn">Use current snapshot</button>
+          <button id="previewSnapshotReconcileBtn" class="secondary">Preview reconcile</button>
+          <button id="reconcileSnapshotBtn">Reconcile snapshot</button>
+        </div>
+        <div class="actions triple">
+          <button id="clearSnapshotReconcileBtn" class="secondary">Clear reconcile input</button>
+        </div>
+        <div id="snapshotReconcileList" class="samples-list"></div>
+        <pre id="snapshotReconcilePreviewText" class="codeblock compact"></pre>
+        <div id="snapshotReconcileDecisionList" class="conflict-list"></div>
+        <div class="actions triple">
+          <button id="useSnapshotForAllReconcileBtn">Use snapshot for all</button>
+          <button id="useCurrentForAllConflictsBtn">Use current for conflicts</button>
+          <button id="applySnapshotReconcileDecisionsBtn" class="secondary">Apply decisions</button>
+        </div>
+        <pre id="snapshotReconcileResultText" class="codeblock compact"></pre>
+
+        <label for="snapshotReconcileCommitName">Reconcile commit name</label>
+        <input id="snapshotReconcileCommitName" type="text" placeholder="snapshot_reconcile_commit_v1" />
+        <label for="snapshotReconcilePromotePointName">Promote point name</label>
+        <input id="snapshotReconcilePromotePointName" type="text" placeholder="snapshot_reconcile_release_v1" />
+        <label for="snapshotReconcilePromotePointKind">Promote point kind</label>
+        <select id="snapshotReconcilePromotePointKind">
+          <option value="release" selected>release</option>
+          <option value="tag">tag</option>
+        </select>
+        <label for="snapshotReconcileCommitNote">Commit note</label>
+        <input id="snapshotReconcileCommitNote" type="text" placeholder="commit reconciled snapshot outcome" />
+        <button id="commitSnapshotReconcileBtn">Commit reconciled snapshot outcome</button>
+        <div id="snapshotReconcileCommitList" class="samples-list"></div>
+        <pre id="snapshotReconcileCommitResultText" class="codeblock compact"></pre>
+
+        <div class="samples-head">
+          <h2>Reconciled outcome compare</h2>
+        </div>
+        <label for="compareReconcileCommitLeft">Left reconcile commit</label>
+        <select id="compareReconcileCommitLeft"></select>
+        <label for="compareReconcileCommitRight">Right reconcile commit</label>
+        <select id="compareReconcileCommitRight"></select>
+        <button id="compareReconcileCommitsBtn">Compare reconciled outcomes</button>
+        <pre id="compareReconcileCommitResultText" class="codeblock compact"></pre>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Project operations / packages</h2></div>
+
+<div class="samples-head">
+  <h2>Cross-session compare</h2>
+</div>
+<label for="compareLeftSession">Left session</label>
+<select id="compareLeftSession"></select>
+<label for="compareRightSession">Right session</label>
+<select id="compareRightSession"></select>
+<button id="compareSessionsBtn">Compare sessions</button>
+<pre id="compareResultText" class="codeblock compact"></pre>
+
+<div class="samples-head">
+  <h2>Three-way merge / conflicts</h2>
+</div>
+<label for="mergeBaseSession">Base session</label>
+<select id="mergeBaseSession"></select>
+<label for="mergeLeftSession">Left session</label>
+<select id="mergeLeftSession"></select>
+<label for="mergeRightSession">Right session</label>
+<select id="mergeRightSession"></select>
+<button id="mergeSessionsBtn">Run three-way merge</button>
+<pre id="mergeResultText" class="codeblock compact"></pre>
+
+<div class="samples-head">
+  <h2>Interactive conflict resolution</h2>
+</div>
+<div id="mergeConflictList" class="conflict-list"></div>
+<div class="actions triple">
+  <button id="useLeftForAllConflictsBtn">Use left for all</button>
+  <button id="useRightForAllConflictsBtn">Use right for all</button>
+  <button id="applyMergeDecisionsBtn" class="secondary">Apply decisions</button>
+</div>
+<pre id="resolvedMergeText" class="codeblock compact"></pre>
+
+<div class="samples-head">
+  <h2>Merge commit</h2>
+</div>
+<label for="mergeCommitSessionId">Commit session id</label>
+<input id="mergeCommitSessionId" type="text" placeholder="merge_commit_session" />
+<label for="mergeCommitSessionName">Commit session name</label>
+<input id="mergeCommitSessionName" type="text" placeholder="Merged Session Commit" />
+<label for="mergeCommitBranchName">Target branch</label>
+<input id="mergeCommitBranchName" type="text" placeholder="main" />
+<label class="checkbox">
+  <input type="checkbox" id="activateCommittedSession" checked />
+  <span>Activate committed session</span>
+</label>
+<button id="commitMergedSessionBtn">Commit merged session to workspace</button>
+<pre id="mergeCommitResultText" class="codeblock compact"></pre>
+
+<div class="samples-head">
+  <h2>Branch operations</h2>
+</div>
+<label for="rebaseSourceBranch">Rebase source branch</label>
+<select id="rebaseSourceBranch"></select>
+<label for="rebaseTargetBranch">Rebase target branch</label>
+<select id="rebaseTargetBranch"></select>
+<label class="checkbox">
+  <input type="checkbox" id="activateRebasedHead" checked />
+  <span>Activate rebased head</span>
+</label>
+<button id="rebaseBranchBtn">Rebase branch onto target</button>
+<pre id="rebaseResultText" class="codeblock compact"></pre>
+
+<label for="resetBranchName">Reset branch</label>
+<select id="resetBranchName"></select>
+<label for="resetTargetSession">Reset target session</label>
+<select id="resetTargetSession"></select>
+<label class="checkbox">
+  <input type="checkbox" id="activateResetHead" checked />
+  <span>Activate reset head</span>
+</label>
+<button id="resetBranchHeadBtn">Reset branch head</button>
+<pre id="branchResetResultText" class="codeblock compact"></pre>
+
+<label for="cherryPickSessionIds">Cherry-pick session ids (CSV)</label>
+<input id="cherryPickSessionIds" type="text" placeholder="session_a, session_b" />
+<label for="cherryPickTargetBranch">Cherry-pick target branch</label>
+<select id="cherryPickTargetBranch"></select>
+<label class="checkbox">
+  <input type="checkbox" id="activateCherryPickedHead" checked />
+  <span>Activate cherry-picked head</span>
+</label>
+<button id="cherryPickSessionsBtn">Cherry-pick sessions</button>
+<pre id="cherryPickResultText" class="codeblock compact"></pre>
+
+<label for="squashSessionIds">Squash session ids (CSV)</label>
+<input id="squashSessionIds" type="text" placeholder="session_a, session_b" />
+<label for="squashTargetBranch">Squash target branch</label>
+<select id="squashTargetBranch"></select>
+<label for="squashSessionId">Squash commit session id</label>
+<input id="squashSessionId" type="text" placeholder="squash_commit_v1" />
+<label for="squashSessionName">Squash commit session name</label>
+<input id="squashSessionName" type="text" placeholder="Squashed Session Commit" />
+<label class="checkbox">
+  <input type="checkbox" id="activateSquashedHead" checked />
+  <span>Activate squashed head</span>
+</label>
+<button id="squashSessionsBtn">Squash sessions into commit</button>
+<pre id="squashResultText" class="codeblock compact"></pre>
+
+
+
+<div class="samples-head">
+  <h2>Standalone outcome package diff / compatibility</h2>
+</div>
+<label for="exportReconcileCommitName">Promoted outcome commit</label>
+<select id="exportReconcileCommitName"></select>
+<label for="exportReconcileCommitPackageName">Package name</label>
+<input id="exportReconcileCommitPackageName" type="text" placeholder="outcome_package_v1" />
+<button id="exportReconcileCommitPackageBtn">Export standalone package</button>
+<div id="reconcileCommitPackageCurrentSummary" class="package-guidance"></div>
+
+<label for="importReconcileCommitPackageJson">Standalone package JSON</label>
+<textarea id="importReconcileCommitPackageJson" class="small" spellcheck="false" placeholder="Paste standalone promoted outcome package JSON here"></textarea>
+<div id="reconcileCommitPackageHint" class="package-guidance"></div>
+<label for="importReconcileCommitPackageName">Import name</label>
+<input id="importReconcileCommitPackageName" type="text" placeholder="outcome_import_v1" />
+<label for="importReconcileCommitTargetBranch">Target branch</label>
+<select id="importReconcileCommitTargetBranch"></select>
+<label class="checkbox">
+  <input type="checkbox" id="activateImportedReconcileCommit" checked />
+  <span>Activate imported head</span>
+</label>
+<div class="actions triple">
+  <button id="useCurrentReconcileCommitPackageBtn">Use current exported package</button>
+  <button id="previewReconcileCommitPackageBtn" class="secondary">Preview package compatibility</button>
+  <button id="importReconcileCommitPackageBtn">Import standalone package</button>
+</div>
+<div class="actions triple">
+  <button id="clearReconcileCommitPackageBtn" class="secondary">Clear package input</button>
+</div>
+<div id="reconcileCommitPackageList" class="samples-list"></div>
+<pre id="reconcileCommitPackagePreviewText" class="codeblock compact"></pre>
+
+<div class="samples-head">
+  <h2>Standalone outcome package conflict resolution / manual import decisions</h2>
+</div>
+<div id="reconcileCommitPackageDecisionList" class="conflict-list"></div>
+<div class="actions triple">
+  <button id="usePackageForAllImportBtn">Use package for all</button>
+  <button id="useCurrentForImportConflictsBtn">Use current for conflicts</button>
+  <button id="applyReconcileCommitPackageDecisionsBtn" class="secondary">Apply import decisions</button>
+</div>
+
+<pre id="reconcileCommitPackageResultText" class="codeblock compact"></pre>
+
+<div class="samples-head">
+  <h2>Standalone outcome package commit / promote imported resolution</h2>
+</div>
+<label for="reconcileCommitPackageCommitName">Commit / local outcome set name</label>
+<input id="reconcileCommitPackageCommitName" type="text" placeholder="local_outcome_set_v1" />
+<label for="reconcileCommitPackagePromotePointName">Promote point name</label>
+<input id="reconcileCommitPackagePromotePointName" type="text" placeholder="local_release_v1" />
+<label for="reconcileCommitPackagePromotePointKind">Promote point kind</label>
+<select id="reconcileCommitPackagePromotePointKind">
+  <option value="release" selected>release</option>
+  <option value="tag">tag</option>
+</select>
+<label for="reconcileCommitPackageCommitNote">Commit note</label>
+<input id="reconcileCommitPackageCommitNote" type="text" placeholder="promote imported outcome" />
+<button id="commitReconcileCommitPackageBtn">Commit / promote imported resolution</button>
+
+
+<div class="samples-head">
+  <h2>Local outcome set export / import as portable package</h2>
+</div>
+<label for="exportLocalOutcomeSetCommit">Local outcome set</label>
+<select id="exportLocalOutcomeSetCommit"></select>
+<label for="localOutcomeSetPackageName">Package name</label>
+<input id="localOutcomeSetPackageName" type="text" placeholder="local_outcome_pkg_v1" />
+<label for="localOutcomeSetPackageNote">Package note</label>
+<input id="localOutcomeSetPackageNote" type="text" placeholder="portable local outcome package" />
+<button id="exportLocalOutcomeSetPackageBtn">Export local outcome package</button>
+<div id="localOutcomeSetPackageCurrentSummary" class="package-guidance"></div>
+
+<label for="importLocalOutcomeSetPackageJson">Local outcome package JSON</label>
+<textarea id="importLocalOutcomeSetPackageJson" class="small" spellcheck="false" placeholder="Paste portable local outcome package JSON here"></textarea>
+<div id="localOutcomeSetPackageHint" class="package-guidance"></div>
+<label for="importLocalOutcomeSetPackageNameInput">Import name</label>
+<input id="importLocalOutcomeSetPackageNameInput" type="text" placeholder="local_outcome_pkg_import_v1" />
+<label for="importLocalOutcomeSetTargetBranch">Target branch</label>
+<select id="importLocalOutcomeSetTargetBranch"></select>
+<label class="checkbox">
+  <input type="checkbox" id="activateImportedLocalOutcomeSet" checked />
+  <span>Activate last imported session</span>
+</label>
+<div class="actions triple">
+  <button id="useCurrentLocalOutcomeSetPackageBtn">Use current local package</button>
+  <button id="previewLocalOutcomeSetPackageBtn" class="secondary">Preview local package import</button>
+  <button id="importLocalOutcomeSetPackageBtn">Import local outcome package</button>
+</div>
+<div class="actions triple">
+  <button id="clearLocalOutcomeSetPackageBtn" class="secondary">Clear local package</button>
+</div>
+<div id="localOutcomeSetPackageList" class="samples-list"></div>
+<pre id="localOutcomeSetPackagePreviewResultText" class="codeblock compact"></pre>
+<div id="localOutcomeSetPackageDecisionList" class="conflict-list"></div>
+  <div class="actions triple">
+    <button id="usePackageForAllLocalOutcomeBtn">Use package for all</button>
+    <button id="useCurrentForAllLocalOutcomeConflictsBtn">Use current for conflicts</button>
+    <button id="applyLocalOutcomePackageDecisionsBtn" class="secondary">Apply import decisions</button>
+  </div>
+<pre id="localOutcomeSetPackageResultText" class="codeblock compact"></pre>
+
+  <label for="localOutcomeSetPackageCommitName">Commit name</label>
+  <input id="localOutcomeSetPackageCommitName" type="text" placeholder="local_outcome_portable_commit_v1" />
+  <label for="localOutcomeSetPackagePromotePointName">Promote point name</label>
+  <input id="localOutcomeSetPackagePromotePointName" type="text" placeholder="local_outcome_portable_release_v1" />
+  <label for="localOutcomeSetPackagePromotePointKind">Promote point kind</label>
+  <select id="localOutcomeSetPackagePromotePointKind">
+    <option value="release" selected>release</option>
+    <option value="tag">tag</option>
+  </select>
+  <label for="localOutcomeSetPackageCommitNote">Commit note</label>
+  <input id="localOutcomeSetPackageCommitNote" type="text" placeholder="promote resolved portable local outcome package" />
+  <button id="commitLocalOutcomeSetPackageBtn">Commit / promote local outcome resolution</button>
+
+  <div class="samples-head">
+    <h2>Portable local outcome package baseline / three-way merge</h2>
+  </div>
+<label for="basePortableLocalOutcomeCommit">Base committed portable local outcome</label>
+<select id="basePortableLocalOutcomeCommit"></select>
+<label for="leftPortableLocalOutcomeCommit">Left committed portable local outcome</label>
+<select id="leftPortableLocalOutcomeCommit"></select>
+<label for="rightPortableLocalOutcomeCommit">Right committed portable local outcome</label>
+<select id="rightPortableLocalOutcomeCommit"></select>
+<button id="compareThreeWayPortableLocalOutcomeBtn">Compare baseline / three-way merge</button>
+<pre id="portableLocalOutcomeThreeWayMergeResultText" class="codeblock compact"></pre>
+
+
+<div class="samples-head">
+  <h2>Portable local outcome package three-way conflict resolution</h2>
+</div>
+<label for="portableLocalOutcomeMergeResolutionName">Merge resolution name</label>
+<input id="portableLocalOutcomeMergeResolutionName" type="text" placeholder="portable_local_merge_resolution_v1" />
+<label for="portableLocalOutcomeMergeTargetBranch">Target branch</label>
+<select id="portableLocalOutcomeMergeTargetBranch"></select>
+<div id="portableLocalOutcomeMergeDecisionList" class="conflict-list"></div>
+<div class="actions triple">
+  <button id="useLeftForAllPortableLocalMergeBtn">Use left for all</button>
+  <button id="useRightForAllPortableLocalMergeConflictsBtn">Use right for conflicts</button>
+  <button id="applyPortableLocalOutcomeMergeDecisionsBtn" class="secondary">Apply merge decisions</button>
+</div>
+<pre id="portableLocalOutcomeMergeResolutionResultText" class="codeblock compact"></pre>
+<label for="portableLocalOutcomeMergeCommitName">Merge commit name</label>
+<input id="portableLocalOutcomeMergeCommitName" type="text" placeholder="portable_local_merge_commit_v1" />
+<label for="portableLocalOutcomeMergePromotePointName">Promote point name</label>
+<input id="portableLocalOutcomeMergePromotePointName" type="text" placeholder="portable_local_merge_release_v1" />
+<label for="portableLocalOutcomeMergePromotePointKind">Promote point kind</label>
+<select id="portableLocalOutcomeMergePromotePointKind">
+  <option value="release" selected>release</option>
+  <option value="tag">tag</option>
+</select>
+<label for="portableLocalOutcomeMergeCommitNote">Commit note</label>
+<input id="portableLocalOutcomeMergeCommitNote" type="text" placeholder="promote resolved portable local merge" />
+<button id="commitPortableLocalOutcomeMergeBtn">Commit / promote resolved merge</button>
+<pre id="portableLocalOutcomeMergeCommitResultText" class="codeblock compact"></pre>
+
+
+
+
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Graph actions</h2></div>
+        <label for="newEntityKind">Add entity</label>
+        <div class="inline-row">
+          <select id="newEntityKind">
+            <option value="node">node</option>
+            <option value="list">list</option>
+            <option value="raw_token">raw_token</option>
+            <option value="typed_literal">typed_literal</option>
+          </select>
+          <button id="addEntityBtn">Add</button>
+        </div>
+
+        <div class="inline-row">
+          <button id="setRootBtn">Set selected as root</button>
+          <button id="deleteEntityBtn" class="secondary">Delete selected</button>
+        </div>
+
+        <label for="edgeRoleInput">Create edge from selected</label>
+        <input id="edgeRoleInput" type="text" placeholder="role name" />
+        <label for="edgeTargetSelect">Target entity</label>
+        <select id="edgeTargetSelect"></select>
+        <button id="addEdgeBtn">Add edge</button>
+      </div>
+
+      <div class="panel">
+        <div class="samples-head"><h2>Selected entity</h2></div>
+        <label>ID</label>
+        <input id="entityId" type="text" readonly />
+        <label>Kind</label>
+        <select id="entityKind">
+          <option value="node">node</option>
+          <option value="list">list</option>
+          <option value="raw_token">raw_token</option>
+          <option value="typed_literal">typed_literal</option>
+        </select>
+        <label>Class</label>
+        <input id="entityClass" type="text" />
+        <label>Root</label>
+        <input id="entityRoot" type="text" />
+        <label>Value</label>
+        <input id="entityValue" type="text" />
+        <label>Modifiers (space separated)</label>
+        <input id="entityModifiers" type="text" />
+        <button id="saveEntityBtn">Save entity</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="statusbar"><span id="statusText">Ready</span></div>
+      <div class="grid">
+        <section class="card wide merge-workstation-card">
+          <div class="card-header merge-workstation-header">
+            <div>
+              <div class="eyebrow">Portable Local Outcome Package</div>
+              <h2>Interactive Merge Workstation v2</h2>
+            </div>
+            <div id="portableMergeOverview" class="merge-overview"></div>
+          </div>
+          <div class="merge-workstation-shell">
+            <section class="merge-lane">
+              <div class="merge-lane-head">
+                <h3>Merge Queue</h3>
+                <span id="portableMergeFocusMeta" class="merge-lane-meta"></span>
+              </div>
+              <div id="portableMergeSessionList" class="merge-session-list"></div>
+            </section>
+
+            <section class="merge-lane merge-lane-detail">
+              <div class="merge-lane-head">
+                <h3>Decision Studio</h3>
+                <span id="portableMergeDecisionMeta" class="merge-lane-meta"></span>
+              </div>
+              <div id="portableMergeDetail" class="merge-detail-empty">
+                Run a portable local three-way merge to open the workstation.
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="card wide">
+          <div class="card-header">
+            <h2>Visual graph workspace</h2>
+            <div class="toggle-group"><button id="analyzeGraphBtn" class="tab-btn active">Analyze graph</button></div>
+          </div>
+          <div class="graph-toolbar"><span id="graphMeta"></span></div>
+          <div id="graphWorkspace" class="graph-workspace">
+            <svg id="graphEdges" class="graph-edges"></svg>
+            <div id="graphNodes" class="graph-nodes"></div>
+          </div>
+        </section>
+
+        <section class="card"><div class="card-header"><h2>Normalized / S-Linear</h2></div><pre id="normalizedText" class="codeblock"></pre></section>
+        <section class="card"><div class="card-header"><h2>Validation</h2></div><pre id="validationText" class="codeblock"></pre></section>
+        <section class="card"><div class="card-header"><h2>AST</h2></div><pre id="astText" class="codeblock"></pre></section>
+        <section class="card"><div class="card-header"><h2>Graph JSON</h2></div><pre id="graphJsonText" class="codeblock"></pre></section>
+        <section class="card"><div class="card-header"><h2>Runtime</h2></div><pre id="runtimeText" class="codeblock"></pre></section>
+        <section class="card"><div class="card-header"><h2>State</h2></div><pre id="stateText" class="codeblock"></pre></section>
+
+        <section class="card wide">
+          <div class="card-header">
+            <h2>SVG Preview</h2>
+            <div class="toggle-group">
+              <button class="tab-btn active svg-tab" data-preview="raw">raw</button>
+              <button class="tab-btn svg-tab" data-preview="decomposed">decomposed</button>
+            </div>
+          </div>
+          <div id="svgPanel" class="svg-panel"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/inspector-package-guidance.js"></script>
+  <script src="/snapshot-reconcile-workflow.js"></script>
+  <script src="/reconcile-commit-package-workflow.js"></script>
+  <script src="/local-outcome-set-package-workflow.js"></script>
+<script src="/project-workspace-workflow.js"></script>
+<script src="/project-lifecycle-workflow.js"></script>
+<script src="/project-operations-workflow.js"></script>
+<script src="/graph-session-workspace.js"></script>
+<script src="/inspector-core-workflow.js"></script>
+<script src="/inspector-panel-workflow.js"></script>
+<script src="/inspector-action-workflow.js"></script>
+<script src="/inspector-bootstrap-workflow.js"></script>
+<script src="/portable-merge-workstation.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

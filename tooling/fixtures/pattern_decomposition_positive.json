@@ -1,0 +1,50 @@
+[
+  {
+    "id": "PD01",
+    "profile": "core",
+    "input": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+    "expected_slinear": "[PRC:EXP <src=[ENT:SEED]; res=[ENT:FORM]>]"
+  },
+  {
+    "id": "PD02",
+    "profile": "core",
+    "input": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]",
+    "expected_slinear": "[REL:DEP <dst=[ENT:INSTANCE]; src=[ENT:TEMPLATE]>]"
+  },
+  {
+    "id": "PD03",
+    "profile": "core",
+    "input": "[PAT:PAL <axis=[IDX:CENTER]; scope=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]",
+    "expected_slinear": "[FRM:SCN <axis=[IDX:CENTER]; scp=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]"
+  },
+  {
+    "id": "PD04",
+    "profile": "human",
+    "input": "spr(seed -> form)",
+    "expected_slinear": "[PRC:EXP <src=[ENT:SEED]; res=[ENT:FORM]>]"
+  },
+  {
+    "id": "PD05",
+    "profile": "human",
+    "input": "gen(template -> instance)",
+    "expected_slinear": "[REL:DEP <dst=[ENT:INSTANCE]; src=[ENT:TEMPLATE]>]"
+  },
+  {
+    "id": "PD06",
+    "profile": "human",
+    "input": "pal(A equals A)",
+    "expected_slinear": "[FRM:SCN <axis=[IDX:CENTER]; scp=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]"
+  },
+  {
+    "id": "PD07",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=CYC; scp=[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]>]",
+    "expected_slinear": "[FRM:TIME <mode=CYC; scp=[PRC:EXP <src=[ENT:SEED]; res=[ENT:FORM]>]>]"
+  },
+  {
+    "id": "PD08",
+    "profile": "core",
+    "input": "[FRM:INV <law=ZSUM; scp=[[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]; [PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]]>]",
+    "expected_slinear": "[FRM:INV <law=ZSUM; scp=[[PRC:EXP <src=[ENT:SEED]; res=[ENT:FORM]>]; [REL:DEP <dst=[ENT:INSTANCE]; src=[ENT:TEMPLATE]>]]>]"
+  }
+]

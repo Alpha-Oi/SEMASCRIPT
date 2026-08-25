@@ -1,0 +1,56 @@
+[
+  {
+    "id": "X09",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:TRANSFER <dst=[ENT:B]; obj=[ENT:RES]>]"
+  },
+  {
+    "id": "X10",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]"
+  },
+  {
+    "id": "X11",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:TRANSFER <src=A; dst=[ENT:B]; obj=[ENT:RES]>]"
+  },
+  {
+    "id": "X12",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:ACT <agt=[ENT:HUM]; time=LIN>]"
+  },
+  {
+    "id": "X13",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=ZSUM>]"
+  },
+  {
+    "id": "X14",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[PRC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]>]"
+  },
+  {
+    "id": "X15",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]>]"
+  },
+  {
+    "id": "X16",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:FLOW <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]"
+  },
+  {
+    "id": "X17",
+    "mode": "exec",
+    "expected_valid": false,
+    "text": "[EXEC:CHANGE <obj=[[ENT:A]; [ENT:B]]>]"
+  }
+]

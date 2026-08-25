@@ -1,0 +1,574 @@
+{
+  "schema_version": "SEMASCRIPT_CORPUS_NORMALIZED_v0.1",
+  "entries": [
+    {
+      "id": "C001",
+      "profile": "human",
+      "source_text": "spr(seed -> form)",
+      "normalized_text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "normalized",
+        "source_text": "spr(seed -> form)",
+        "ast": {
+          "kind": "node",
+          "class_name": "PAT",
+          "root": "SPR",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "core",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "SEED",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "res",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "FORM",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "normalized"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C002",
+      "profile": "human",
+      "source_text": "inv:zsum(A -> B : resource; B -> C : credit)",
+      "normalized_text": "[FRM:INV <law=ZSUM; scp=[[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RESOURCE]>]; [PRC:TRF <src=[ENT:B]; dst=[ENT:C]; obj=[ENT:CREDIT]>]]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "normalized",
+        "source_text": "inv:zsum(A -> B : resource; B -> C : credit)",
+        "ast": {
+          "kind": "node",
+          "class_name": "FRM",
+          "root": "INV",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "law",
+              "value": {
+                "kind": "raw_token",
+                "value": "ZSUM"
+              }
+            },
+            {
+              "name": "scp",
+              "value": {
+                "kind": "list",
+                "items": [
+                  {
+                    "kind": "node",
+                    "class_name": "PRC",
+                    "root": "TRF",
+                    "modifiers": [],
+                    "roles": [
+                      {
+                        "name": "src",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "A",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      },
+                      {
+                        "name": "dst",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "B",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      },
+                      {
+                        "name": "obj",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "RESOURCE",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "node",
+                    "class_name": "PRC",
+                    "root": "TRF",
+                    "modifiers": [],
+                    "roles": [
+                      {
+                        "name": "src",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "B",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      },
+                      {
+                        "name": "dst",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "C",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      },
+                      {
+                        "name": "obj",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "CREDIT",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "source_profile": "normalized"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C003",
+      "profile": "human",
+      "source_text": "time:lin(resource declines => system becomes unstable)",
+      "normalized_text": "[FRM:TIME <mode=LIN; scp=[REL:CAU <cau=[STA:DEC <ctx=[ENT:RESOURCE]>]; res=[STA:STB {NEG} <ctx=[ENT:SYSTEM]>]>]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "normalized",
+        "source_text": "time:lin(resource declines => system becomes unstable)",
+        "ast": {
+          "kind": "node",
+          "class_name": "FRM",
+          "root": "TIME",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "mode",
+              "value": {
+                "kind": "raw_token",
+                "value": "LIN"
+              }
+            },
+            {
+              "name": "scp",
+              "value": {
+                "kind": "node",
+                "class_name": "REL",
+                "root": "CAU",
+                "modifiers": [],
+                "roles": [
+                  {
+                    "name": "cau",
+                    "value": {
+                      "kind": "node",
+                      "class_name": "STA",
+                      "root": "DEC",
+                      "modifiers": [],
+                      "roles": [
+                        {
+                          "name": "ctx",
+                          "value": {
+                            "kind": "node",
+                            "class_name": "ENT",
+                            "root": "RESOURCE",
+                            "modifiers": [],
+                            "roles": []
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "res",
+                    "value": {
+                      "kind": "node",
+                      "class_name": "STA",
+                      "root": "STB",
+                      "modifiers": [
+                        "NEG"
+                      ],
+                      "roles": [
+                        {
+                          "name": "ctx",
+                          "value": {
+                            "kind": "node",
+                            "class_name": "ENT",
+                            "root": "SYSTEM",
+                            "modifiers": [],
+                            "roles": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "source_profile": "normalized"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C004",
+      "profile": "human",
+      "source_text": "time:cyc(system change; reserve change)",
+      "normalized_text": "[FRM:TIME <mode=CYC; scp=[[PRC:CHG <obj=[ENT:SYSTEM]>]; [PRC:CHG <obj=[ENT:RESERVE]>]]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "normalized",
+        "source_text": "time:cyc(system change; reserve change)",
+        "ast": {
+          "kind": "node",
+          "class_name": "FRM",
+          "root": "TIME",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "mode",
+              "value": {
+                "kind": "raw_token",
+                "value": "CYC"
+              }
+            },
+            {
+              "name": "scp",
+              "value": {
+                "kind": "list",
+                "items": [
+                  {
+                    "kind": "node",
+                    "class_name": "PRC",
+                    "root": "CHG",
+                    "modifiers": [],
+                    "roles": [
+                      {
+                        "name": "obj",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "SYSTEM",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "node",
+                    "class_name": "PRC",
+                    "root": "CHG",
+                    "modifiers": [],
+                    "roles": [
+                      {
+                        "name": "obj",
+                        "value": {
+                          "kind": "node",
+                          "class_name": "ENT",
+                          "root": "RESERVE",
+                          "modifiers": [],
+                          "roles": []
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "source_profile": "normalized"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C005",
+      "profile": "core",
+      "source_text": "[STA:BAL <ctx=[ENT:SYS]>]",
+      "normalized_text": "[STA:BAL <ctx=[ENT:SYS]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "core",
+        "source_text": "[STA:BAL <ctx=[ENT:SYS]>]",
+        "ast": {
+          "kind": "node",
+          "class_name": "STA",
+          "root": "BAL",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "ctx",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "SYS",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "core"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C006",
+      "profile": "core",
+      "source_text": "[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]",
+      "normalized_text": "[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "core",
+        "source_text": "[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]",
+        "ast": {
+          "kind": "node",
+          "class_name": "REL",
+          "root": "DEP",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "dst",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "FORM",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "src",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "CODE",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "core"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C007",
+      "profile": "exec",
+      "source_text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=[LAW:ZSUM]>]",
+      "normalized_text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=[LAW:ZSUM]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "exec",
+        "source_text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]; invariant=[LAW:ZSUM]>]",
+        "ast": {
+          "kind": "node",
+          "class_name": "EXEC",
+          "root": "TRANSFER",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "src",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "A",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "dst",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "B",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "obj",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "RES",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "invariant",
+              "value": {
+                "kind": "node",
+                "class_name": "LAW",
+                "root": "ZSUM",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "exec"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C008",
+      "profile": "exec",
+      "source_text": "[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]; time=[TIME:LIN]>]",
+      "normalized_text": "[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]; time=[TIME:LIN]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "exec",
+        "source_text": "[EXEC:ACT <agt=[ENT:HUM]; obj=[ENT:SYS]; time=[TIME:LIN]>]",
+        "ast": {
+          "kind": "node",
+          "class_name": "EXEC",
+          "root": "ACT",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "agt",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "HUM",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "obj",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "SYS",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "time",
+              "value": {
+                "kind": "node",
+                "class_name": "TIME",
+                "root": "LIN",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "exec"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    },
+    {
+      "id": "C009",
+      "profile": "human",
+      "source_text": "mystic(seed -> form)",
+      "normalized_text": null,
+      "ast_document": null,
+      "normalized": false,
+      "error": "Unsupported Human shorthand: 'mystic(seed -> form)'"
+    },
+    {
+      "id": "C010",
+      "profile": "exec",
+      "source_text": "[EXEC:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+      "normalized_text": "[EXEC:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "exec",
+        "source_text": "[EXEC:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+        "ast": {
+          "kind": "node",
+          "class_name": "EXEC",
+          "root": "SPR",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "core",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "SEED",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "res",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "FORM",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "exec"
+        },
+        "validation_annotations": [],
+        "metadata": {}
+      },
+      "normalized": true,
+      "error": null
+    }
+  ]
+}

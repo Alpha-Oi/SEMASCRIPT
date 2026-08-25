@@ -1,0 +1,86 @@
+[
+  {
+    "id": "N01",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[MOD:NEG]"
+  },
+  {
+    "id": "N02",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FRM:INV <law=ZSUM>]"
+  },
+  {
+    "id": "N03",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FRM:TIME <mode=CYC>]"
+  },
+  {
+    "id": "N04",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[PAT:GEN <code=[ENT:TEMPLATE]>]"
+  },
+  {
+    "id": "N05",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[STA:ZSUM <ctx=[ENT:SYS]>]"
+  },
+  {
+    "id": "N06",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[PAT:FOO <core=[ENT:A]; res=[ENT:B]>]"
+  },
+  {
+    "id": "N07",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FRM:INV <scp=[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]"
+  },
+  {
+    "id": "N08",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FRM:TIME <scp=[PRC:ACT <agt=[ENT:HUM]>]>]"
+  },
+  {
+    "id": "N09",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[PAT:PAL <scope=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]"
+  },
+  {
+    "id": "N10",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[PRC:OBS <who=[ENT:HUM]; obj=[ENT:OBJ]>]"
+  },
+  {
+    "id": "N11",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[PRC:OBS <agt=[ENT:HUM]; obj=[ENT:OBJ]>"
+  },
+  {
+    "id": "N12",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FOO:BAR]"
+  },
+  {
+    "id": "N13",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FRM:INV <law=ZSUM; scp=[]>]"
+  },
+  {
+    "id": "N14",
+    "mode": "core",
+    "expected_valid": false,
+    "text": "[FRM:TIME <mode=LIN; scp=[[PRC:CHG <obj=[ENT:SYSTEM]>];]>]"
+  }
+]

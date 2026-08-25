@@ -1,0 +1,22 @@
+[
+  {
+    "id": "PDN01",
+    "profile": "core",
+    "input": "[PAT:SPR <core=[ENT:SEED]>]"
+  },
+  {
+    "id": "PDN02",
+    "profile": "core",
+    "input": "[PAT:GEN <dst=[ENT:INSTANCE]>]"
+  },
+  {
+    "id": "PDN03",
+    "profile": "core",
+    "input": "[PAT:PAL <scope=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]"
+  },
+  {
+    "id": "PDN04",
+    "profile": "human",
+    "input": "mystic(seed -> form)"
+  }
+]

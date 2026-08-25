@@ -1,0 +1,70 @@
+{
+  "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+  "profile": "exec",
+  "source_text": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]",
+  "root_entity_id": "e1",
+  "entities": [
+    {
+      "id": "e1",
+      "kind": "node",
+      "class_name": "EXEC",
+      "root": "TRANSFER",
+      "modifiers": [],
+      "x": 320,
+      "y": 80
+    },
+    {
+      "id": "e2",
+      "kind": "node",
+      "class_name": "ENT",
+      "root": "A",
+      "modifiers": [],
+      "x": 120,
+      "y": 220
+    },
+    {
+      "id": "e3",
+      "kind": "node",
+      "class_name": "ENT",
+      "root": "B",
+      "modifiers": [],
+      "x": 320,
+      "y": 220
+    },
+    {
+      "id": "e4",
+      "kind": "node",
+      "class_name": "ENT",
+      "root": "RES",
+      "modifiers": [],
+      "x": 520,
+      "y": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_e1_e2_0",
+      "from_id": "e1",
+      "to_id": "e2",
+      "role": "src",
+      "order": 0
+    },
+    {
+      "id": "edge_e1_e3_1",
+      "from_id": "e1",
+      "to_id": "e3",
+      "role": "dst",
+      "order": 1
+    },
+    {
+      "id": "edge_e1_e4_2",
+      "from_id": "e1",
+      "to_id": "e4",
+      "role": "obj",
+      "order": 2
+    }
+  ],
+  "metadata": {
+    "generated_from_ast": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "snapshot_reconcile_commit_package_commit_version": "SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_COMMIT_PROMOTE_v0.1",
+  "commit_name": "pkg_import_commit",
+  "resolution_name": "pkg_import_resolution",
+  "package_name": "pkg_src_commit_package",
+  "source_commit_name": "pkg_src_commit",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "pkg_src_feature_pkg_resolved"
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "promoted": true,
+    "promoted_point_name": "pkg_import_release",
+    "promoted_point_kind": "release",
+    "active_session_id": "pkg_src_feature_pkg_resolved",
+    "active_branch_name": "main"
+  }
+}

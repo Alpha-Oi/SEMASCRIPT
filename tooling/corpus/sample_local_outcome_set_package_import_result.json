@@ -1,0 +1,12 @@
+{
+  "local_outcome_set_package_import_version": "SEMASCRIPT_LOCAL_PROMOTED_RESOLUTION_PACKAGE_v0.1",
+  "import_name": "lp_local_portable_import",
+  "package_name": "lp_local_portable",
+  "imported_commit_name": "lp_local_outcome_localpkg_import",
+  "summary": {
+    "imported_session_count": 1,
+    "target_branch_name": "main",
+    "has_promoted_point": true,
+    "active_session_id": "lp_feature_reconcile_resolved_pkg_resolved_localpkg"
+  }
+}

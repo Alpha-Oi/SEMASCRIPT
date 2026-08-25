@@ -1,0 +1,421 @@
+{
+  "resolution_version": "SEMASCRIPT_INTERACTIVE_CONFLICT_RESOLUTION_v0.1",
+  "merge_version": "SEMASCRIPT_THREE_WAY_SESSION_MERGE_v0.1",
+  "base_session_id": "resolve_base",
+  "left_session_id": "resolve_left",
+  "right_session_id": "resolve_right",
+  "summary": {
+    "conflict_count": 1,
+    "resolved_count": 1,
+    "unresolved_count": 0,
+    "finalized": true
+  },
+  "applied_decisions": [
+    {
+      "path": "source_text",
+      "choice": "left",
+      "value": "gen(template -> instance_a)"
+    }
+  ],
+  "unresolved_conflicts": [],
+  "resolved_source": {
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "profile": "human",
+    "source_mode": "text",
+    "source_text": "gen(template -> instance_a)",
+    "ui_state": {
+      "selected_entity_id": null,
+      "preview_mode": "raw",
+      "decompose": true,
+      "viewport": {
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "zoom": 1.0
+      },
+      "panels": {
+        "svg": true,
+        "ast": true,
+        "runtime": true,
+        "state": true,
+        "graph_json": true
+      }
+    },
+    "session_name": "Merged: Resolve Left + Resolve Right"
+  },
+  "merged_session": {
+    "session_version": "SEMASCRIPT_PROJECT_SESSION_v0.1",
+    "session_name": "Merged: Resolve Left + Resolve Right",
+    "project": {
+      "profile": "human",
+      "source_mode": "text",
+      "source_text": "gen(template -> instance_a)",
+      "normalized_text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE_A]>]",
+      "slinear": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE_A]>]",
+      "decomposed_slinear": "[REL:DEP <dst=[ENT:INSTANCE_A]; src=[ENT:TEMPLATE]>]",
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {},
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      }
+    },
+    "documents": {
+      "ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "normalized",
+        "source_text": "gen(template -> instance_a)",
+        "ast": {
+          "kind": "node",
+          "class_name": "PAT",
+          "root": "GEN",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "code",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "TEMPLATE",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "dst",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "INSTANCE_A",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "source_profile": "normalized"
+        },
+        "validation_annotations": [],
+        "metadata": {
+          "normalized_text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE_A]>]"
+        }
+      },
+      "decomposed_ast_document": {
+        "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+        "source_profile": "normalized",
+        "source_text": "gen(template -> instance_a)",
+        "ast": {
+          "kind": "node",
+          "class_name": "REL",
+          "root": "DEP",
+          "modifiers": [],
+          "roles": [
+            {
+              "name": "dst",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "INSTANCE_A",
+                "modifiers": [],
+                "roles": []
+              }
+            },
+            {
+              "name": "src",
+              "value": {
+                "kind": "node",
+                "class_name": "ENT",
+                "root": "TEMPLATE",
+                "modifiers": [],
+                "roles": []
+              }
+            }
+          ],
+          "notes": [
+            "decomposed_from:PAT:GEN"
+          ]
+        },
+        "validation_annotations": [],
+        "metadata": {
+          "normalized_text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE_A]>]",
+          "pattern_decomposition_applied": true,
+          "pattern_decomposition_count": 1
+        }
+      },
+      "graph_document": {
+        "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+        "profile": "normalized",
+        "source_text": "gen(template -> instance_a)",
+        "root_entity_id": "e1",
+        "entities": [
+          {
+            "id": "e1",
+            "kind": "node",
+            "class_name": "PAT",
+            "root": "GEN",
+            "modifiers": [],
+            "x": 320,
+            "y": 80
+          },
+          {
+            "id": "e2",
+            "kind": "node",
+            "class_name": "ENT",
+            "root": "TEMPLATE",
+            "modifiers": [],
+            "x": 140,
+            "y": 200
+          },
+          {
+            "id": "e3",
+            "kind": "node",
+            "class_name": "ENT",
+            "root": "INSTANCE_A",
+            "modifiers": [],
+            "x": 320,
+            "y": 224
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge_e1_e2_0",
+            "from_id": "e1",
+            "to_id": "e2",
+            "role": "code",
+            "order": 0
+          },
+          {
+            "id": "edge_e1_e3_1",
+            "from_id": "e1",
+            "to_id": "e3",
+            "role": "dst",
+            "order": 1
+          }
+        ],
+        "metadata": {
+          "generated_from_ast": true
+        }
+      },
+      "decomposed_graph_document": {
+        "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+        "profile": "normalized",
+        "source_text": "gen(template -> instance_a)",
+        "root_entity_id": "e1",
+        "entities": [
+          {
+            "id": "e1",
+            "kind": "node",
+            "class_name": "REL",
+            "root": "DEP",
+            "modifiers": [],
+            "x": 320,
+            "y": 80
+          },
+          {
+            "id": "e2",
+            "kind": "node",
+            "class_name": "ENT",
+            "root": "INSTANCE_A",
+            "modifiers": [],
+            "x": 140,
+            "y": 200
+          },
+          {
+            "id": "e3",
+            "kind": "node",
+            "class_name": "ENT",
+            "root": "TEMPLATE",
+            "modifiers": [],
+            "x": 320,
+            "y": 224
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge_e1_e2_0",
+            "from_id": "e1",
+            "to_id": "e2",
+            "role": "dst",
+            "order": 0
+          },
+          {
+            "id": "edge_e1_e3_1",
+            "from_id": "e1",
+            "to_id": "e3",
+            "role": "src",
+            "order": 1
+          }
+        ],
+        "metadata": {
+          "generated_from_ast": true
+        }
+      }
+    },
+    "reports": {
+      "validation": {
+        "mode": "core",
+        "valid": true,
+        "errors": []
+      },
+      "runtime_report": {
+        "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+        "accepted": true,
+        "entry_kind": "core_runtime",
+        "context": {
+          "time_mode": null,
+          "invariant_law": null,
+          "schedule": null
+        },
+        "plan": [
+          {
+            "op_family": "CORE",
+            "op_name": "DEPENDENCY",
+            "roles": {
+              "dst": "[ENT:INSTANCE_A]",
+              "src": "[ENT:TEMPLATE]"
+            },
+            "constraints": {
+              "time_mode": null,
+              "invariant_law": null,
+              "schedule": null
+            },
+            "reversible": false,
+            "effect_class": "dependency_relation"
+          }
+        ],
+        "errors": [],
+        "notes": [
+          "decomposed_pattern_runtime"
+        ],
+        "decomposition_count": 1
+      },
+      "state_report": {
+        "state_model_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "accepted": true,
+        "initial_state": {
+          "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+          "resources": {},
+          "states": {},
+          "dependencies": [],
+          "observations": [],
+          "actions": [],
+          "expansions": [],
+          "history": [],
+          "metadata": {
+            "applied_steps": 0,
+            "last_schedule": null
+          }
+        },
+        "final_state": {
+          "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+          "resources": {},
+          "states": {},
+          "dependencies": [
+            {
+              "dst": "[ENT:INSTANCE_A]",
+              "src": "[ENT:TEMPLATE]"
+            }
+          ],
+          "observations": [],
+          "actions": [],
+          "expansions": [],
+          "history": [
+            {
+              "op_name": "DEPENDENCY",
+              "op_family": "CORE",
+              "roles": {
+                "dst": "[ENT:INSTANCE_A]",
+                "src": "[ENT:TEMPLATE]"
+              },
+              "constraints": {
+                "time_mode": null,
+                "invariant_law": null,
+                "schedule": null
+              }
+            }
+          ],
+          "metadata": {
+            "applied_steps": 1,
+            "last_schedule": null
+          }
+        },
+        "runtime_report": {
+          "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+          "accepted": true,
+          "entry_kind": "core_runtime",
+          "context": {
+            "time_mode": null,
+            "invariant_law": null,
+            "schedule": null
+          },
+          "plan": [
+            {
+              "op_family": "CORE",
+              "op_name": "DEPENDENCY",
+              "roles": {
+                "dst": "[ENT:INSTANCE_A]",
+                "src": "[ENT:TEMPLATE]"
+              },
+              "constraints": {
+                "time_mode": null,
+                "invariant_law": null,
+                "schedule": null
+              },
+              "reversible": false,
+              "effect_class": "dependency_relation"
+            }
+          ],
+          "errors": [],
+          "notes": [
+            "decomposed_pattern_runtime"
+          ],
+          "decomposition_count": 1
+        },
+        "errors": []
+      }
+    },
+    "render": {
+      "svg_raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"462\" height=\"114\" viewBox=\"0 0 462 114\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">normalized</text>\n<polygon points=\"234.5,26.0 289.5,47.8 272.3,88.0 196.8,88.0 179.5,47.8\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"234.5\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">PAT:GEN</text>\n<ellipse cx=\"69.0\" cy=\"57.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:TEMPLATE</text>\n<line x1=\"234.5\" y1=\"57.0\" x2=\"69.0\" y2=\"57.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"151.8\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">code</text>\n<ellipse cx=\"393.7\" cy=\"57.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"393.7\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:INSTANCE_A</text>\n<line x1=\"234.5\" y1=\"57.0\" x2=\"393.7\" y2=\"57.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"314.1\" y=\"53.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">dst</text>\n</svg>",
+      "svg_decomposed": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"446\" height=\"112\" viewBox=\"0 0 446 112\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">normalized</text>\n<polygon points=\"223.1,26.0 275.1,56.0 223.1,86.0 171.1,56.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"223.1\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">REL:DEP</text>\n<ellipse cx=\"69.0\" cy=\"56.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:TEMPLATE</text>\n<line x1=\"223.1\" y1=\"56.0\" x2=\"69.0\" y2=\"56.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"146.1\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">src</text>\n<ellipse cx=\"377.3\" cy=\"56.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"377.3\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:INSTANCE_A</text>\n<line x1=\"223.1\" y1=\"56.0\" x2=\"377.3\" y2=\"56.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"300.2\" y=\"52.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">dst</text>\n</svg>"
+    },
+    "ui_state": {
+      "selected_entity_id": null,
+      "preview_mode": "raw",
+      "decompose": true,
+      "viewport": {
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "zoom": 1.0
+      },
+      "panels": {
+        "svg": true,
+        "ast": true,
+        "runtime": true,
+        "state": true,
+        "graph_json": true
+      }
+    },
+    "metadata": {
+      "generated_from": "text_input"
+    }
+  }
+}

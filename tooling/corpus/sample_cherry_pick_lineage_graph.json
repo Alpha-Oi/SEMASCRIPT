@@ -1,0 +1,135 @@
+{
+  "lineage_graph_version": "SEMASCRIPT_NAMED_MERGE_LINEAGE_GRAPH_v0.1",
+  "project_name": "Sample Cherry Pick Project",
+  "active_session_id": "feature_2_cp",
+  "active_branch_name": "main",
+  "branches": [
+    {
+      "branch_name": "main",
+      "root_session_id": "base_s",
+      "head_session_id": "feature_2_cp",
+      "is_active_branch": true,
+      "session_count": 4,
+      "color_index": 0
+    },
+    {
+      "branch_name": "feature_cp",
+      "root_session_id": "base_s",
+      "head_session_id": "feature_2",
+      "is_active_branch": false,
+      "session_count": 2,
+      "color_index": 1
+    }
+  ],
+  "nodes": [
+    {
+      "session_id": "base_s",
+      "session_name": "Base",
+      "branch_name": "main",
+      "lineage_kind": "root",
+      "tags": [
+        "cherry-pick"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 70
+    },
+    {
+      "session_id": "feature_1",
+      "session_name": "Feature 1",
+      "branch_name": "feature_cp",
+      "lineage_kind": "commit",
+      "tags": [
+        "cherry-pick"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 70
+    },
+    {
+      "session_id": "feature_2",
+      "session_name": "Feature 2",
+      "branch_name": "feature_cp",
+      "lineage_kind": "commit",
+      "tags": [
+        "cherry-pick"
+      ],
+      "is_active": false,
+      "x": 360,
+      "y": 185
+    },
+    {
+      "session_id": "main_2",
+      "session_name": "Main 2",
+      "branch_name": "main",
+      "lineage_kind": "commit",
+      "tags": [
+        "cherry-pick"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 185
+    },
+    {
+      "session_id": "feature_1_cp",
+      "session_name": "Feature 1",
+      "branch_name": "main",
+      "lineage_kind": "cherry_pick",
+      "tags": [
+        "cherry-pick"
+      ],
+      "is_active": false,
+      "x": 120,
+      "y": 300
+    },
+    {
+      "session_id": "feature_2_cp",
+      "session_name": "Feature 2",
+      "branch_name": "main",
+      "lineage_kind": "cherry_pick",
+      "tags": [
+        "cherry-pick"
+      ],
+      "is_active": true,
+      "x": 120,
+      "y": 415
+    }
+  ],
+  "edges": [
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "feature_1",
+      "relation": "parent",
+      "branch_name": "feature_cp"
+    },
+    {
+      "from_session_id": "feature_1",
+      "to_session_id": "feature_2",
+      "relation": "parent",
+      "branch_name": "feature_cp"
+    },
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "main_2",
+      "relation": "parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "main_2",
+      "to_session_id": "feature_1_cp",
+      "relation": "parent",
+      "branch_name": "main"
+    },
+    {
+      "from_session_id": "feature_1_cp",
+      "to_session_id": "feature_2_cp",
+      "relation": "parent",
+      "branch_name": "main"
+    }
+  ],
+  "summary": {
+    "branch_count": 2,
+    "session_count": 6,
+    "edge_count": 5
+  }
+}

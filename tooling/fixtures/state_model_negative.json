@@ -1,0 +1,97 @@
+[
+  {
+    "id": "SMN01",
+    "profile": "exec",
+    "input": "[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "A": {
+          "RES": 0
+        },
+        "B": {
+          "RES": 0
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "required_error": "S_BALANCE"
+  },
+  {
+    "id": "SMN02",
+    "profile": "core",
+    "input": "[FRM:INV <law=ZSUM; scp=[EXEC:CREATE <dst=[ENT:SYS]; obj=[ENT:RES]>]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "SYS": {
+          "RES": 0
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "required_error": "R_INV_ZSUM"
+  },
+  {
+    "id": "SMN03",
+    "profile": "human",
+    "input": "mystic(seed -> form)",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {},
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "required_error": "R_NORMALIZE"
+  },
+  {
+    "id": "SMN04",
+    "profile": "exec",
+    "input": "[EXEC:DESTROY <obj=[ENT:RES]; ctx=[ENT:SYS]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "SYS": {
+          "RES": 0
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    },
+    "required_error": "S_BALANCE"
+  }
+]

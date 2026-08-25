@@ -1,0 +1,17 @@
+{
+  "squash_version": "SEMASCRIPT_SQUASH_FOLD_LINEAGE_COMMIT_v0.1",
+  "project_name": "Sample Squash Project",
+  "source_session_ids": [
+    "feature_1",
+    "feature_2"
+  ],
+  "target_branch_name": "main",
+  "materialized_from_session_id": "feature_2",
+  "squashed_session_id": "squash_s",
+  "squashed_session_name": "Squashed Feature Session",
+  "summary": {
+    "folded_count": 2,
+    "target_head_before": "main_2",
+    "active_session_id": "squash_s"
+  }
+}

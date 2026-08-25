@@ -1,0 +1,15 @@
+{
+  "snapshot_restore_version": "SEMASCRIPT_SNAPSHOT_IMPORT_RESTORE_v0.1",
+  "project_name": "Sample Restored Project",
+  "restore_name": "restore_v1",
+  "snapshot_name": "snapshot_restore_v1",
+  "source_point_name": "restore_release",
+  "source_point_kind": "release",
+  "target_session_id": "restore_feature",
+  "summary": {
+    "restored": true,
+    "immutable_source": true,
+    "active_session_id": "restore_feature",
+    "active_branch_name": "main"
+  }
+}

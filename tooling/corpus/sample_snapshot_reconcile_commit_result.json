@@ -1,0 +1,31 @@
+{
+  "snapshot_reconcile_commit_version": "SEMASCRIPT_SNAPSHOT_RECONCILE_COMMIT_PROMOTE_v0.1",
+  "commit_name": "resolution_set_v1",
+  "resolution_name": "resolution_v1",
+  "snapshot_name": "snapshot_commit_v1",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "commit_feature_reconcile_resolved"
+  ],
+  "promoted_point_result": {
+    "tag_release_version": "SEMASCRIPT_TAG_RELEASE_POINTS_v0.1",
+    "project_name": "Sample Reconcile Commit Current",
+    "tag_name": "release_resolution_v1",
+    "point_kind": "release",
+    "target_session_id": "commit_feature_reconcile_resolved",
+    "branch_name": "main",
+    "summary": {
+      "created": true,
+      "is_release": true
+    }
+  },
+  "summary": {
+    "committed": true,
+    "resolved_session_count": 1,
+    "promoted": true,
+    "promoted_point_name": "release_resolution_v1",
+    "promoted_point_kind": "release",
+    "active_session_id": "commit_feature_reconcile_resolved",
+    "active_branch_name": "main"
+  }
+}

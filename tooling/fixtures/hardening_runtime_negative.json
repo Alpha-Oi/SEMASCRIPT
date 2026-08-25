@@ -1,0 +1,14 @@
+[
+  {
+    "id": "HRN02",
+    "profile": "core",
+    "input": "[FRM:INV <law=NZSUM; scp=[EXEC:TRANSFER <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]",
+    "required_error": "R_INV_NZSUM"
+  },
+  {
+    "id": "HRN03",
+    "profile": "core",
+    "input": "[FRM:TIME <mode=REV; scp=[EXEC:DESTROY <obj=[ENT:RES]; ctx=[ENT:SYS]>]>]",
+    "required_error": "R_TIME_REV"
+  }
+]

@@ -1,0 +1,428 @@
+{
+  "session_version": "SEMASCRIPT_PROJECT_SESSION_v0.1",
+  "session_name": "Consumer Session",
+  "project": {
+    "profile": "exec",
+    "source_mode": "text",
+    "source_text": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+    "normalized_text": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+    "slinear": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+    "decomposed_slinear": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+    "initial_state": {
+      "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "resources": {
+        "INSTANCE": {
+          "RESOURCE": 2
+        },
+        "STORE": {
+          "RESOURCE": 0
+        }
+      },
+      "states": {},
+      "dependencies": [],
+      "observations": [],
+      "actions": [],
+      "expansions": [],
+      "history": [],
+      "metadata": {
+        "applied_steps": 0,
+        "last_schedule": null
+      }
+    }
+  },
+  "documents": {
+    "ast_document": {
+      "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+      "source_profile": "exec",
+      "source_text": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+      "ast": {
+        "kind": "node",
+        "class_name": "EXEC",
+        "root": "TRANSFER",
+        "modifiers": [],
+        "roles": [
+          {
+            "name": "src",
+            "value": {
+              "kind": "node",
+              "class_name": "ENT",
+              "root": "INSTANCE",
+              "modifiers": [],
+              "roles": []
+            }
+          },
+          {
+            "name": "dst",
+            "value": {
+              "kind": "node",
+              "class_name": "ENT",
+              "root": "STORE",
+              "modifiers": [],
+              "roles": []
+            }
+          },
+          {
+            "name": "obj",
+            "value": {
+              "kind": "node",
+              "class_name": "ENT",
+              "root": "RESOURCE",
+              "modifiers": [],
+              "roles": []
+            }
+          }
+        ],
+        "source_profile": "exec"
+      },
+      "validation_annotations": [],
+      "metadata": {}
+    },
+    "decomposed_ast_document": {
+      "schema_version": "SEMASCRIPT_AST_SCHEMA_v0.1",
+      "source_profile": "exec",
+      "source_text": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+      "ast": {
+        "kind": "node",
+        "class_name": "EXEC",
+        "root": "TRANSFER",
+        "modifiers": [],
+        "roles": [
+          {
+            "name": "src",
+            "value": {
+              "kind": "node",
+              "class_name": "ENT",
+              "root": "INSTANCE",
+              "modifiers": [],
+              "roles": []
+            }
+          },
+          {
+            "name": "dst",
+            "value": {
+              "kind": "node",
+              "class_name": "ENT",
+              "root": "STORE",
+              "modifiers": [],
+              "roles": []
+            }
+          },
+          {
+            "name": "obj",
+            "value": {
+              "kind": "node",
+              "class_name": "ENT",
+              "root": "RESOURCE",
+              "modifiers": [],
+              "roles": []
+            }
+          }
+        ],
+        "source_profile": "exec"
+      },
+      "validation_annotations": [],
+      "metadata": {
+        "pattern_decomposition_applied": true,
+        "pattern_decomposition_count": 0
+      }
+    },
+    "graph_document": {
+      "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+      "profile": "exec",
+      "source_text": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+      "root_entity_id": "e1",
+      "entities": [
+        {
+          "id": "e1",
+          "kind": "node",
+          "class_name": "EXEC",
+          "root": "TRANSFER",
+          "modifiers": [],
+          "x": 320,
+          "y": 80
+        },
+        {
+          "id": "e2",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "INSTANCE",
+          "modifiers": [],
+          "x": 140,
+          "y": 200
+        },
+        {
+          "id": "e3",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "STORE",
+          "modifiers": [],
+          "x": 320,
+          "y": 224
+        },
+        {
+          "id": "e4",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "RESOURCE",
+          "modifiers": [],
+          "x": 500,
+          "y": 248
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge_e1_e2_0",
+          "from_id": "e1",
+          "to_id": "e2",
+          "role": "src",
+          "order": 0
+        },
+        {
+          "id": "edge_e1_e3_1",
+          "from_id": "e1",
+          "to_id": "e3",
+          "role": "dst",
+          "order": 1
+        },
+        {
+          "id": "edge_e1_e4_2",
+          "from_id": "e1",
+          "to_id": "e4",
+          "role": "obj",
+          "order": 2
+        }
+      ],
+      "metadata": {
+        "generated_from_ast": true
+      }
+    },
+    "decomposed_graph_document": {
+      "graph_version": "SEMASCRIPT_GRAPH_MODEL_v0.1",
+      "profile": "exec",
+      "source_text": "[EXEC:TRANSFER <src=[ENT:INSTANCE]; dst=[ENT:STORE]; obj=[ENT:RESOURCE]>]",
+      "root_entity_id": "e1",
+      "entities": [
+        {
+          "id": "e1",
+          "kind": "node",
+          "class_name": "EXEC",
+          "root": "TRANSFER",
+          "modifiers": [],
+          "x": 320,
+          "y": 80
+        },
+        {
+          "id": "e2",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "INSTANCE",
+          "modifiers": [],
+          "x": 140,
+          "y": 200
+        },
+        {
+          "id": "e3",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "STORE",
+          "modifiers": [],
+          "x": 320,
+          "y": 224
+        },
+        {
+          "id": "e4",
+          "kind": "node",
+          "class_name": "ENT",
+          "root": "RESOURCE",
+          "modifiers": [],
+          "x": 500,
+          "y": 248
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge_e1_e2_0",
+          "from_id": "e1",
+          "to_id": "e2",
+          "role": "src",
+          "order": 0
+        },
+        {
+          "id": "edge_e1_e3_1",
+          "from_id": "e1",
+          "to_id": "e3",
+          "role": "dst",
+          "order": 1
+        },
+        {
+          "id": "edge_e1_e4_2",
+          "from_id": "e1",
+          "to_id": "e4",
+          "role": "obj",
+          "order": 2
+        }
+      ],
+      "metadata": {
+        "generated_from_ast": true
+      }
+    }
+  },
+  "reports": {
+    "validation": {
+      "mode": "exec",
+      "valid": true,
+      "errors": []
+    },
+    "runtime_report": {
+      "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+      "accepted": true,
+      "entry_kind": "exec",
+      "context": {
+        "time_mode": null,
+        "invariant_law": null,
+        "schedule": null
+      },
+      "plan": [
+        {
+          "op_family": "EXEC",
+          "op_name": "TRANSFER",
+          "roles": {
+            "src": "[ENT:INSTANCE]",
+            "dst": "[ENT:STORE]",
+            "obj": "[ENT:RESOURCE]"
+          },
+          "constraints": {
+            "time_mode": null,
+            "invariant_law": null,
+            "schedule": null
+          },
+          "reversible": true,
+          "effect_class": "redistribution"
+        }
+      ],
+      "errors": [],
+      "notes": [],
+      "decomposition_count": 0
+    },
+    "state_report": {
+      "state_model_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+      "accepted": true,
+      "initial_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "INSTANCE": {
+            "RESOURCE": 2
+          },
+          "STORE": {
+            "RESOURCE": 0
+          }
+        },
+        "states": {},
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [],
+        "metadata": {
+          "applied_steps": 0,
+          "last_schedule": null
+        }
+      },
+      "final_state": {
+        "state_version": "SEMASCRIPT_STATE_MODEL_v0.1",
+        "resources": {
+          "INSTANCE": {
+            "RESOURCE": 1
+          },
+          "STORE": {
+            "RESOURCE": 1
+          }
+        },
+        "states": {
+          "INSTANCE": [],
+          "STORE": []
+        },
+        "dependencies": [],
+        "observations": [],
+        "actions": [],
+        "expansions": [],
+        "history": [
+          {
+            "op_name": "TRANSFER",
+            "op_family": "EXEC",
+            "roles": {
+              "src": "[ENT:INSTANCE]",
+              "dst": "[ENT:STORE]",
+              "obj": "[ENT:RESOURCE]"
+            },
+            "constraints": {
+              "time_mode": null,
+              "invariant_law": null,
+              "schedule": null
+            }
+          }
+        ],
+        "metadata": {
+          "applied_steps": 1,
+          "last_schedule": null
+        }
+      },
+      "runtime_report": {
+        "runtime_version": "SEMASCRIPT_EXEC_RUNTIME_v0.1",
+        "accepted": true,
+        "entry_kind": "exec",
+        "context": {
+          "time_mode": null,
+          "invariant_law": null,
+          "schedule": null
+        },
+        "plan": [
+          {
+            "op_family": "EXEC",
+            "op_name": "TRANSFER",
+            "roles": {
+              "src": "[ENT:INSTANCE]",
+              "dst": "[ENT:STORE]",
+              "obj": "[ENT:RESOURCE]"
+            },
+            "constraints": {
+              "time_mode": null,
+              "invariant_law": null,
+              "schedule": null
+            },
+            "reversible": true,
+            "effect_class": "redistribution"
+          }
+        ],
+        "errors": [],
+        "notes": [],
+        "decomposition_count": 0
+      },
+      "errors": []
+    }
+  },
+  "render": {
+    "svg_raw": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"456\" height=\"174\" viewBox=\"0 0 456 174\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">exec</text>\n<polygon points=\"181.1,57.0 275.1,57.0 285.1,87.0 275.1,117.0 181.1,117.0 171.1,87.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"228.1\" y=\"83.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">EXEC:TRANSFER</text>\n<ellipse cx=\"69.0\" cy=\"87.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:INSTANCE</text>\n<line x1=\"228.1\" y1=\"87.0\" x2=\"69.0\" y2=\"87.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"148.6\" y=\"83.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">src</text>\n<ellipse cx=\"387.3\" cy=\"52.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"387.3\" y=\"48.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:STORE</text>\n<line x1=\"228.1\" y1=\"87.0\" x2=\"387.3\" y2=\"52.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"307.7\" y=\"65.5\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">dst</text>\n<ellipse cx=\"387.3\" cy=\"122.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"387.3\" y=\"118.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:RESOURCE</text>\n<line x1=\"228.1\" y1=\"87.0\" x2=\"387.3\" y2=\"122.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"307.7\" y=\"100.5\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">obj</text>\n</svg>",
+    "svg_decomposed": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"456\" height=\"174\" viewBox=\"0 0 456 174\">\n<rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\"/>\n<text x=\"24\" y=\"16\" font-family=\"sans-serif\" font-size=\"10\">exec</text>\n<polygon points=\"181.1,57.0 275.1,57.0 285.1,87.0 275.1,117.0 181.1,117.0 171.1,87.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"228.1\" y=\"83.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">EXEC:TRANSFER</text>\n<ellipse cx=\"69.0\" cy=\"87.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"69.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:INSTANCE</text>\n<line x1=\"228.1\" y1=\"87.0\" x2=\"69.0\" y2=\"87.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"148.6\" y=\"83.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">src</text>\n<ellipse cx=\"387.3\" cy=\"52.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"387.3\" y=\"48.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:STORE</text>\n<line x1=\"228.1\" y1=\"87.0\" x2=\"387.3\" y2=\"52.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"307.7\" y=\"65.5\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">dst</text>\n<ellipse cx=\"387.3\" cy=\"122.0\" rx=\"43.0\" ry=\"26.0\" fill=\"white\" stroke=\"black\" stroke-width=\"1.5\"/>\n<text x=\"387.3\" y=\"118.0\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\">ENT:RESOURCE</text>\n<line x1=\"228.1\" y1=\"87.0\" x2=\"387.3\" y2=\"122.0\" stroke=\"black\" stroke-width=\"1.1\"/>\n<text x=\"307.7\" y=\"100.5\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"normal\">obj</text>\n</svg>"
+  },
+  "ui_state": {
+    "selected_entity_id": null,
+    "preview_mode": "raw",
+    "decompose": true,
+    "viewport": {
+      "scroll_x": 0,
+      "scroll_y": 0,
+      "zoom": 1.0
+    },
+    "panels": {
+      "svg": true,
+      "ast": true,
+      "runtime": true,
+      "state": true,
+      "graph_json": true
+    }
+  },
+  "metadata": {
+    "generated_from": "text_input"
+  }
+}

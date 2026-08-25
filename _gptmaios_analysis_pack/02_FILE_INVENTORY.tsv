@@ -1,0 +1,487 @@
+path	extension	size_bytes	category	include_reason
+AGENTS.md	.md	3330	contract	project contract / governance file
+docs/00_PROJECT_IDENTITY.md	.md	2794	docs	documentation for architecture/status/spec context
+docs/01_ARCHITECTURE_MAP.md	.md	2179	docs	documentation for architecture/status/spec context
+docs/02_CURRENT_STATUS.md	.md	2384	docs	documentation for architecture/status/spec context
+docs/03_ROADMAP.md	.md	1458	docs	documentation for architecture/status/spec context
+docs/04_SCOPE_V0_1.md	.md	1673	docs	documentation for architecture/status/spec context
+docs/README.md	.md	7975	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_0_SEMANTIC_BASELINE.md	.md	2146	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_AST_INTEGRATION_PACK_v0.1.md	.md	873	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_BATCH_RUNTIME_STATE_CORPUS_v0.1.md	.md	1551	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_BRANCH_REBASE_REPLAY_TARGET_LINEAGE_v0.1.md	.md	1659	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_BRANCHING_NAMED_MERGE_LINEAGE_GRAPH_v0.1.md	.md	1407	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_CHERRY_PICK_SELECTIVE_SESSION_REPLAY_ACROSS_BRANCHES_v0.1.md	.md	1659	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_CORE_SPEC_v0.1.md	.md	3662	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_CORPUS_PIPELINE_v0.1.md	.md	867	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_CROSS_SESSION_COMPARE_DIFF_MODE_v0.1.md	.md	1438	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_EDITABLE_VISUAL_GRAPH_MODE_v0.1.md	.md	2171	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_EDITOR_VISUAL_INSPECTOR_SPEC_v0.1.md	.md	1474	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_ENV_BOOTSTRAP_AND_VERIFICATION_v0.2.md	.md	4136	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_EXEC_PROFILE_v0.1.md	.md	5900	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_EXEC_RUNTIME_RULES_v0.1.md	.md	4290	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_GLYPH_ARCHITECTURE_v0.1.md	.md	5791	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_GRAMMAR_EXPANSION_v0.1.md	.md	1918	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_HARDENING_REGRESSION_SUITE_v0.2.md	.md	6711	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_HUMAN_NORMALIZER_MVP_v0.1.md	.md	1250	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_HUMAN_PROFILE_v0.1.md	.md	7533	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_IMPLEMENTATION_PLAN_v0.1.md	.md	4538	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_INTERACTIVE_CONFLICT_RESOLUTION_MANUAL_MERGE_DECISIONS_v0.1.md	.md	1945	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_LOCAL_OUTCOME_SET_DIFF_COMPARE_BETWEEN_IMPORTED_PROMOTED_RESOLUTIONS_v0.1.md	.md	877	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_LOCAL_OUTCOME_SET_EXPORT_IMPORT_AS_PORTABLE_LOCAL_PROMOTED_RESOLUTION_PACKAGE_v0.1.md	.md	1565	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_MANIFEST_v0.1.md	.md	5861	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_MERGE_COMMIT_RESOLVED_SESSION_INSERTION_v0.1.md	.md	1502	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_MULTI_SESSION_PROJECT_WORKSPACE_v0.1.md	.md	1258	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PARTIAL_SNAPSHOT_RESTORE_SELECTIVE_WORKSPACE_STATE_IMPORT_v0.1.md	.md	2310	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PATTERN_DECOMPOSITION_SPEC_v0.1.md	.md	1507	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PATTERN_TIME_INVARIANT_PACK_v0.1.md	.md	4080	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PERSISTED_PROJECT_SESSION_FORMAT_v0.1.md	.md	1822	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_COMMIT_PROMOTE_IMPORTED_RESOLUTION_v0.1.md	.md	1040	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_CONFLICT_RESOLUTION_MANUAL_IMPORT_DECISIONS_v0.1.md	.md	1027	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_DIFF_COMPARE_COMMITTED_IMPORTED_OUTCOMES_v0.1.md	.md	1137	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_DIFF_COMPATIBILITY_CHECK_BEFORE_IMPORT_v0.1.md	.md	1266	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_EXPORT_IMPORT_COMPARE_BASELINE_OR_THREE_WAY_MERGE_BETWEEN_COMMITTED_IMPORTED_OUTCOMES_v0.1.md	.md	1293	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_THREE_WAY_CONFLICT_RESOLUTION_MANUAL_MERGE_DECISIONS_v0.1.md	.md	1277	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PORTABLE_LOCAL_OUTCOME_PACKAGE_THREE_WAY_MERGE_COMMIT_PROMOTE_v0.1.md	.md	1704	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PROFILE_MATRIX_v0.1.md	.md	4606	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_PROJECT_STATUS_PACK_v0.2.md	.md	15864	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_REFERENCE_CORPUS_STARTER_v0.1.md	.md	1327	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_RESET_RESTORE_BRANCH_HEAD_TO_HISTORICAL_SESSION_OR_LINEAGE_POINT_v0.1.md	.md	1597	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_RESOLUTION_SET_DIFF_COMPARE_BETWEEN_PROMOTED_RECONCILE_OUTCOMES_v0.1.md	.md	1292	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_RESOLUTION_SET_EXPORT_IMPORT_AS_STANDALONE_PROMOTED_OUTCOME_PACKAGE_v0.1.md	.md	1460	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_CONFLICT_DETECTION_RECONCILE_PREVIEW_BEFORE_APPLY_v0.1.md	.md	1716	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_CONFLICT_RESOLUTION_MANUAL_RECONCILE_DECISIONS_v0.1.md	.md	1635	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_DIFF_RESTORE_PREVIEW_BEFORE_APPLY_v0.1.md	.md	1357	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_IMMUTABLE_WORKSPACE_STATE_EXPORT_BY_TAG_OR_RELEASE_POINT_v0.1.md	.md	1557	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_IMPORT_WORKSPACE_RESTORE_FROM_IMMUTABLE_EXPORT_v0.1.md	.md	1556	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_MERGE_RECONCILE_IMPORTED_STATE_WITH_CURRENT_WORKSPACE_LINEAGE_v0.1.md	.md	2079	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SNAPSHOT_RECONCILE_COMMIT_PROMOTE_RESOLUTION_SET_OR_RELEASE_LINEAGE_POINT_v0.1.md	.md	1608	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SQUASH_FOLD_MULTIPLE_SESSIONS_INTO_ONE_LINEAGE_COMMIT_v0.1.md	.md	1686	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_COMMIT_PROMOTE_IMPORTED_RESOLUTION_INTO_LOCAL_NAMED_OUTCOME_SET_OR_RELEASE_POINT_v0.1.md	.md	1513	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_CONFLICT_RESOLUTION_MANUAL_IMPORT_DECISIONS_v0.1.md	.md	1972	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_DIFF_COMPATIBILITY_CHECK_BEFORE_IMPORT_v0.1.md	.md	1527	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_STATE_MODEL_v0.1.md	.md	3073	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_SVG_RENDERER_SPEC_v0.1.md	.md	1481	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_TAG_RELEASE_POINTS_OVER_SESSIONS_AND_LINEAGE_STATES_v0.1.md	.md	1204	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_TESTPACK_v0.1.md	.md	637	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_THREE_WAY_SESSION_MERGE_CONFLICT_DETECTION_v0.1.md	.md	2029	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_TOOLING_MVP_PLAN_v0.1.md	.md	1951	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_V0_2_HARDENING_SPEC.md	.md	7217	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_WORKSPACE_NAVIGATION_DEPENDENCY_MAP_v0.1.md	.md	1974	docs	documentation for architecture/status/spec context
+docs/SEMASCRIPT_WORKSPACE_TIMELINE_SESSION_HISTORY_v0.1.md	.md	1571	docs	documentation for architecture/status/spec context
+inspector/app.js	.js	66389	action	inspector UI workflow/action source
+inspector/graph-session-workspace.js	.js	33497	source	frontend source file
+inspector/index.html	.html	32496	source	frontend source file
+inspector/inspector-action-workflow.js	.js	17431	action	inspector UI workflow/action source
+inspector/inspector-bootstrap-workflow.js	.js	9654	action	inspector UI workflow/action source
+inspector/inspector-core-workflow.js	.js	7458	action	inspector UI workflow/action source
+inspector/inspector-package-guidance.js	.js	14711	source	frontend source file
+inspector/inspector-panel-workflow.js	.js	6694	action	inspector UI workflow/action source
+inspector/local-outcome-set-package-workflow.js	.js	21456	action	inspector UI workflow/action source
+inspector/portable-merge-workstation.js	.js	25520	action	inspector UI workflow/action source
+inspector/project-lifecycle-workflow.js	.js	23265	action	inspector UI workflow/action source
+inspector/project-operations-workflow.js	.js	21410	action	inspector UI workflow/action source
+inspector/project-workspace-workflow.js	.js	16273	action	inspector UI workflow/action source
+inspector/reconcile-commit-package-workflow.js	.js	24510	action	inspector UI workflow/action source
+inspector/snapshot-reconcile-workflow.js	.js	20834	action	inspector UI workflow/action source
+inspector/styles.css	.css	18010	source	frontend source file
+README.md	.md	2696	docs	documentation for architecture/status/spec context
+tooling/_generate_branch_rebase_project.py	.py	2781	script	fixture/corpus generation script
+tooling/_generate_branch_reset_project.py	.py	2395	script	fixture/corpus generation script
+tooling/_generate_branching_project.py	.py	2591	script	fixture/corpus generation script
+tooling/_generate_cherry_pick_project.py	.py	2791	script	fixture/corpus generation script
+tooling/_generate_compare_project.py	.py	1692	script	fixture/corpus generation script
+tooling/_generate_conflict_resolution_project.py	.py	2267	script	fixture/corpus generation script
+tooling/_generate_dependency_project.py	.py	1895	script	fixture/corpus generation script
+tooling/_generate_graph_sample.py	.py	791	script	fixture/corpus generation script
+tooling/_generate_graph_session.py	.py	1093	script	fixture/corpus generation script
+tooling/_generate_inspector_sample.py	.py	647	script	fixture/corpus generation script
+tooling/_generate_local_outcome_set_compare_project.py	.py	5564	script	fixture/corpus generation script
+tooling/_generate_local_outcome_set_package_commit_compare_project.py	.py	6649	script	fixture/corpus generation script
+tooling/_generate_local_outcome_set_package_commit_project.py	.py	5806	script	fixture/corpus generation script
+tooling/_generate_local_outcome_set_package_preview_project.py	.py	5286	script	fixture/corpus generation script
+tooling/_generate_local_outcome_set_package_project.py	.py	5439	script	fixture/corpus generation script
+tooling/_generate_local_outcome_set_package_resolution_project.py	.py	5646	script	fixture/corpus generation script
+tooling/_generate_merge_commit_project.py	.py	2331	script	fixture/corpus generation script
+tooling/_generate_merge_project.py	.py	1933	script	fixture/corpus generation script
+tooling/_generate_partial_snapshot_import_project.py	.py	2861	script	fixture/corpus generation script
+tooling/_generate_portable_local_outcome_package_merge_project.py	.py	7572	script	fixture/corpus generation script
+tooling/_generate_portable_local_outcome_package_merge_resolution_project.py	.py	7503	script	fixture/corpus generation script
+tooling/_generate_project_index.py	.py	826	script	fixture/corpus generation script
+tooling/_generate_snapshot_project.py	.py	2277	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_commit_compare_project.py	.py	4049	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_commit_package_commit_project.py	.py	3963	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_commit_package_preview_project.py	.py	3938	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_commit_package_project.py	.py	4555	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_commit_package_resolution_project.py	.py	4564	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_commit_project.py	.py	3400	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_preview_project.py	.py	2966	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_project.py	.py	2949	script	fixture/corpus generation script
+tooling/_generate_snapshot_reconcile_resolution_project.py	.py	3174	script	fixture/corpus generation script
+tooling/_generate_snapshot_restore_preview_project.py	.py	2445	script	fixture/corpus generation script
+tooling/_generate_snapshot_restore_project.py	.py	2249	script	fixture/corpus generation script
+tooling/_generate_squash_project.py	.py	2835	script	fixture/corpus generation script
+tooling/_generate_tag_release_project.py	.py	1871	script	fixture/corpus generation script
+tooling/_generate_text_session.py	.py	616	script	fixture/corpus generation script
+tooling/_generate_timeline_project.py	.py	1378	script	fixture/corpus generation script
+tooling/corpus/corpus_manifest.json	.json	1253	example	safe corpus/fixture/example evidence
+tooling/corpus/corpus_normalized_sample.json	.json	17144	example	safe corpus/fixture/example evidence
+tooling/corpus/corpus_validation_report_sample.json	.json	2448	example	safe corpus/fixture/example evidence
+tooling/corpus/hardening_corpus_manifest_v0_2.json	.json	5192	example	safe corpus/fixture/example evidence
+tooling/corpus/hardening_runtime_report_sample.json	.json	2664	example	safe corpus/fixture/example evidence
+tooling/corpus/hardening_state_report_sample.json	.json	2836	example	safe corpus/fixture/example evidence
+tooling/corpus/inspector_graph_sample_analysis.json	.json	12307	example	safe corpus/fixture/example evidence
+tooling/corpus/inspector_sample_analysis.json	.json	8089	example	safe corpus/fixture/example evidence
+tooling/corpus/inspector_sample_input.txt	.txt	25	example	safe corpus/fixture/example evidence
+tooling/corpus/project_roundtrip_test.json	.json	34282	example	safe corpus/fixture/example evidence
+tooling/corpus/runtime_corpus_report_sample.json	.json	2485	example	safe corpus/fixture/example evidence
+tooling/corpus/runtime_state_corpus_manifest.json	.json	5042	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_base_session.json	.json	11806	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_feature_session.json	.json	11844	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_main_session.json	.json	11841	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_rebase_lineage_graph.json	.json	3066	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_rebase_result.json	.json	714	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_rebased_project_index.json	.json	91767	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_reset_lineage_graph.json	.json	1944	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_reset_project_index.json	.json	46221	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branch_reset_result.json	.json	356	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_branching_project_index.json	.json	61778	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_base_session.json	.json	11799	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_feature1_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_feature2_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_main2_session.json	.json	11901	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_pick_lineage_graph.json	.json	2945	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_pick_result.json	.json	806	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cherry_picked_project_index.json	.json	91466	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_commit_base_session.json	.json	11806	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_commit_current_head_session.json	.json	11787	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_commit_left_session.json	.json	11846	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_commit_right_session.json	.json	11847	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_commit_source_base_session.json	.json	11813	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_commit_source_feature_session.json	.json	11769	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_compare_current_head_session.json	.json	11788	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_compare_left_session.json	.json	11807	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_compare_project_index.json	.json	29979	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_compare_right_session.json	.json	11621	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_compare_source_base_session.json	.json	11814	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_compare_source_feature_session.json	.json	11770	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_conflicted_merge_result.json	.json	1518	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_cross_session_diff.json	.json	2416	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_dependency_project_index.json	.json	31710	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_graph_document.json	.json	1257	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_graph_session.json	.json	14061	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_human.ast.json	.json	2088	grammar	fixture/corpus file for parser/grammar behavior
+tooling/corpus/sample_human.report.json	.json	103	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_human.txt	.txt	54	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_initial_state.json	.json	324	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_merge_current_head_session.json	.json	11792	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_merge_source_base_session.json	.json	11818	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_merge_source_feature_session.json	.json	11774	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package.json	.json	17913	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_commit_compare_project_index.json	.json	84733	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_commit_compare_result.json	.json	3077	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_commit_package.json	.json	18025	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_commit_project_index.json	.json	80587	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_commit_result.json	.json	601	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_export_result.json	.json	283	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_import_result.json	.json	445	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_imported_project_index.json	.json	36028	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_left_commit_result.json	.json	602	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_preview_package.json	.json	18134	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_preview_project_index.json	.json	58293	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_preview_result.json	.json	1643	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_resolution_package.json	.json	18063	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_resolution_project_index.json	.json	35292	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_resolution_result.json	.json	1208	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_outcome_set_package_right_commit_result.json	.json	606	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_commit_current_head_session.json	.json	11801	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_commit_source_base_session.json	.json	11827	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_commit_source_feature_session.json	.json	11783	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_compare_current_head_session.json	.json	11802	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_compare_source_base_session.json	.json	11828	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_compare_source_feature_session.json	.json	11784	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_current_head_session.json	.json	11794	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_preview_current_head_session.json	.json	11802	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_preview_source_base_session.json	.json	11828	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_preview_source_feature_session.json	.json	11784	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_resolution_current_head_session.json	.json	11805	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_resolution_source_base_session.json	.json	11831	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_resolution_source_feature_session.json	.json	11787	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_source_base_session.json	.json	11820	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_local_package_source_feature_session.json	.json	11776	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_merge_base_session.json	.json	11805	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_merge_commit_project_index.json	.json	60213	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_merge_commit_result.json	.json	60213	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_merge_left_session.json	.json	11845	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_merge_right_session.json	.json	11846	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_named_merge_lineage_graph.json	.json	2433	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_navigation_consumer_session.json	.json	14387	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_navigation_producer_session.json	.json	11811	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_commit_current_head_session.json	.json	11795	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_commit_source_base_session.json	.json	11821	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_commit_source_feature_session.json	.json	11777	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_current_head_session.json	.json	11788	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_preview_current_head_session.json	.json	11788	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_preview_source_base_session.json	.json	11814	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_preview_source_feature_session.json	.json	11770	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_resolution_current_head_session.json	.json	11799	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_resolution_source_base_session.json	.json	11825	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_resolution_source_feature_session.json	.json	11801	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_source_base_session.json	.json	11814	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_package_source_feature_session.json	.json	11770	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_partial_base_session.json	.json	11807	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_partial_current_session.json	.json	11801	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_partial_feature_session.json	.json	11783	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_partial_import_project_index.json	.json	32491	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_partial_import_result.json	.json	651	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_partial_import_snapshot_package.json	.json	42629	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_pattern.txt	.txt	17	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_pattern_decomposed.ast.json	.json	904	grammar	fixture/corpus file for parser/grammar behavior
+tooling/corpus/sample_pattern_decomposed.txt	.txt	42	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_base_commit_result.json	.json	550	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_left_commit_result.json	.json	552	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_merge_project_index.json	.json	124362	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_merge_resolution_merge_result.json	.json	2840	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_merge_resolution_project_index.json	.json	142549	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_merge_resolution_result.json	.json	1191	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_merge_result.json	.json	2898	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_portable_local_outcome_package_right_commit_result.json	.json	555	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_preview_base_session.json	.json	11807	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_preview_extra_session.json	.json	11801	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_preview_feature_session.json	.json	11783	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_project_index.json	.json	31391	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_rebase_base_session.json	.json	11799	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_rebase_feature1_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_rebase_feature2_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_rebase_main2_session.json	.json	11901	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reconcile_current_head_session.json	.json	11786	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reconcile_preview_current_head_session.json	.json	11788	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reconcile_preview_source_base_session.json	.json	11814	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reconcile_preview_source_feature_session.json	.json	11770	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reconcile_source_base_session.json	.json	11812	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reconcile_source_feature_session.json	.json	11768	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_render_core.txt	.txt	83	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_render_human.txt	.txt	25	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_render_multi.txt	.txt	116	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reset_base_session.json	.json	11799	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reset_feature1_session.json	.json	11657	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_reset_feature2_session.json	.json	11657	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolution_current_head_session.json	.json	11791	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolution_source_base_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolution_source_feature_session.json	.json	11773	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolve_base_session.json	.json	11807	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolve_left_session.json	.json	11847	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolve_right_session.json	.json	11848	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_resolved_merge_result.json	.json	14028	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_restore_base_session.json	.json	11807	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_restore_feature_session.json	.json	11783	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_runtime.txt	.txt	116	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_runtime_report.json	.json	945	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_export_package.json	.json	42274	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_export_result.json	.json	372	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_compare_project_index.json	.json	37697	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_compare_result.json	.json	2800	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_left_result.json	.json	667	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_local_outcome_compare_project_index.json	.json	76964	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package.json	.json	16866	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_commit_package.json	.json	15713	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_commit_project_index.json	.json	35749	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_commit_result.json	.json	639	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_export_result.json	.json	293	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_import_result.json	.json	421	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_imported_project_index.json	.json	34753	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_preview_package.json	.json	16744	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_preview_result.json	.json	2059	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_project_index.json	.json	36005	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_resolution_package.json	.json	16960	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_resolution_project_index.json	.json	34148	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_package_resolution_result.json	.json	1139	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_project_index.json	.json	35212	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_result.json	.json	983	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_commit_right_result.json	.json	674	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_package.json	.json	42861	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_preview_package.json	.json	43517	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_preview_result.json	.json	1161	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_project_index.json	.json	32263	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_resolution_package.json	.json	43211	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_resolution_project_index.json	.json	32957	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_resolution_result.json	.json	1042	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_reconcile_result.json	.json	771	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_restore_package.json	.json	42672	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_restore_preview_package.json	.json	42665	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_restore_preview_result.json	.json	2179	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_restore_result.json	.json	461	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_snapshot_restored_project_index.json	.json	32460	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squash_base_session.json	.json	11799	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squash_feature1_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squash_feature2_session.json	.json	11817	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squash_lineage_graph.json	.json	2854	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squash_main2_session.json	.json	11901	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squash_result.json	.json	461	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_squashed_project_index.json	.json	76661	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_state_input.txt	.txt	57	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_state_report.json	.json	1917	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_tag_base_session.json	.json	11803	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_tag_feature_session.json	.json	11779	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_tag_release_lineage_graph.json	.json	1421	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_tag_release_project_index.json	.json	78682	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_tag_release_result.json	.json	295	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_text_session.json	.json	11814	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_three_way_merge_result.json	.json	4853	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_timeline_project_index.json	.json	29909	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_timeline_session_a.json	.json	11804	example	safe corpus/fixture/example evidence
+tooling/corpus/sample_timeline_session_b.json	.json	11617	example	safe corpus/fixture/example evidence
+tooling/corpus/session_roundtrip_test.json	.json	13942	example	safe corpus/fixture/example evidence
+tooling/corpus/state_corpus_report_sample.json	.json	2818	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC01.svg	.svg	1747	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC02.svg	.svg	2352	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC03.svg	.svg	1775	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC04.svg	.svg	3323	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC05.svg	.svg	1324	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC06.svg	.svg	1316	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC07.svg	.svg	1928	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/batch_runtime_state/BRC08.svg	.svg	1747	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/sample_core.svg	.svg	2352	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/sample_human.svg	.svg	1324	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/sample_human_decomposed.svg	.svg	1312	example	safe corpus/fixture/example evidence
+tooling/corpus/svg_samples/sample_multiscene.svg	.svg	3323	example	safe corpus/fixture/example evidence
+tooling/decompose_pattern.py	.py	1737	parser	parser/normalizer/AST/validation source
+tooling/exec_runtime.py	.py	14804	runtime	runtime/execution source
+tooling/execute_runtime.py	.py	1023	runtime	runtime/execution source
+tooling/execute_with_state.py	.py	1268	runtime	runtime/execution source
+tooling/FIXTURE_INDEX.md	.md	1200	unknown	included as non-excluded project evidence
+tooling/fixtures/core_negative.json	.json	1746	example	safe corpus/fixture/example evidence
+tooling/fixtures/core_positive.json	.json	2554	example	safe corpus/fixture/example evidence
+tooling/fixtures/exec_negative.json	.json	1290	example	safe corpus/fixture/example evidence
+tooling/fixtures/exec_positive.json	.json	1222	example	safe corpus/fixture/example evidence
+tooling/fixtures/exec_runtime_negative.json	.json	813	example	safe corpus/fixture/example evidence
+tooling/fixtures/exec_runtime_positive.json	.json	1234	example	safe corpus/fixture/example evidence
+tooling/fixtures/hardening_human_negative.json	.json	194	example	safe corpus/fixture/example evidence
+tooling/fixtures/hardening_human_positive.json	.json	1389	example	safe corpus/fixture/example evidence
+tooling/fixtures/hardening_runtime_negative.json	.json	365	example	safe corpus/fixture/example evidence
+tooling/fixtures/hardening_runtime_positive.json	.json	617	example	safe corpus/fixture/example evidence
+tooling/fixtures/hardening_state_negative.json	.json	560	example	safe corpus/fixture/example evidence
+tooling/fixtures/hardening_state_positive.json	.json	1707	example	safe corpus/fixture/example evidence
+tooling/fixtures/human_normalization.json	.json	1252	example	safe corpus/fixture/example evidence
+tooling/fixtures/human_normalization_negative.json	.json	311	example	safe corpus/fixture/example evidence
+tooling/fixtures/human_normalization_positive.json	.json	1804	example	safe corpus/fixture/example evidence
+tooling/fixtures/pattern_decomposition_negative.json	.json	405	example	safe corpus/fixture/example evidence
+tooling/fixtures/pattern_decomposition_positive.json	.json	1701	example	safe corpus/fixture/example evidence
+tooling/fixtures/state_model_negative.json	.json	2132	example	safe corpus/fixture/example evidence
+tooling/fixtures/state_model_positive.json	.json	3472	example	safe corpus/fixture/example evidence
+tooling/fixtures/svg_renderer_cases.json	.json	825	example	safe corpus/fixture/example evidence
+tooling/graph_model.py	.py	6604	source	Python source file
+tooling/human_normalizer.py	.py	7571	parser	parser/normalizer/AST/validation source
+tooling/inspector_browser_check.png	.png	1849418	unknown	included as non-excluded project evidence
+tooling/inspector_browser_check_branch_snapshot.png	.png	2087290	unknown	included as non-excluded project evidence
+tooling/inspector_browser_check_human.png	.png	1891814	unknown	included as non-excluded project evidence
+tooling/inspector_server.py	.py	27126	tool	server/service/CLI/tooling source
+tooling/inspector_service.py	.py	31328	tool	server/service/CLI/tooling source
+tooling/normalize_cli.py	.py	478	parser	parser/normalizer/AST/validation source
+tooling/normalize_corpus.py	.py	1757	parser	parser/normalizer/AST/validation source
+tooling/parse_to_ast.py	.py	1176	parser	parser/normalizer/AST/validation source
+tooling/pattern_decomposer.py	.py	3963	parser	parser/normalizer/AST/validation source
+tooling/project_branching.py	.py	9628	memory	state/session/project/workspace model source
+tooling/project_cherrypick.py	.py	4790	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package.py	.py	17603	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_commit.py	.py	9294	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_commit_compare.py	.py	7586	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_commit_merge.py	.py	9519	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_commit_merge_commit.py	.py	12855	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_commit_merge_resolution.py	.py	17464	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_preview.py	.py	7606	memory	state/session/project/workspace model source
+tooling/project_local_outcome_set_package_resolution.py	.py	16639	memory	state/session/project/workspace model source
+tooling/project_model.py	.py	42478	memory	state/session/project/workspace model source
+tooling/project_rebase.py	.py	5461	memory	state/session/project/workspace model source
+tooling/project_reset.py	.py	2596	memory	state/session/project/workspace model source
+tooling/project_snapshot.py	.py	5775	memory	state/session/project/workspace model source
+tooling/project_snapshot_diff.py	.py	5637	memory	state/session/project/workspace model source
+tooling/project_snapshot_partial_import.py	.py	13175	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile.py	.py	11477	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit.py	.py	7898	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit_compare.py	.py	7037	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit_package.py	.py	16863	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit_package_commit.py	.py	8766	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit_package_commit_compare.py	.py	5953	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit_package_preview.py	.py	9518	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_commit_package_resolution.py	.py	16292	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_preview.py	.py	6302	memory	state/session/project/workspace model source
+tooling/project_snapshot_reconcile_resolution.py	.py	16059	memory	state/session/project/workspace model source
+tooling/project_snapshot_restore.py	.py	5381	memory	state/session/project/workspace model source
+tooling/project_squash.py	.py	4647	memory	state/session/project/workspace model source
+tooling/project_tags.py	.py	3941	memory	state/session/project/workspace model source
+tooling/README.md	.md	2507	docs	documentation for architecture/status/spec context
+tooling/render_corpus_svgs.py	.py	946	tool	server/service/CLI/tooling source
+tooling/render_to_svg.py	.py	1026	tool	server/service/CLI/tooling source
+tooling/run_batch_runtime_state_corpus_checks.py	.py	1762	test	verification/smoke/regression runner
+tooling/run_branch_rebase_checks.py	.py	3212	test	verification/smoke/regression runner
+tooling/run_branch_reset_checks.py	.py	2726	test	verification/smoke/regression runner
+tooling/run_branching_checks.py	.py	2945	test	verification/smoke/regression runner
+tooling/run_cherry_pick_checks.py	.py	3205	test	verification/smoke/regression runner
+tooling/run_conflict_resolution_checks.py	.py	2466	test	verification/smoke/regression runner
+tooling/run_cross_session_compare_checks.py	.py	1916	test	verification/smoke/regression runner
+tooling/run_environment_bootstrap_checks.py	.py	2429	test	verification/smoke/regression runner
+tooling/run_exec_runtime_checks.py	.py	1849	test	verification/smoke/regression runner
+tooling/run_fixture_validation.py	.py	1573	test	verification/smoke/regression runner
+tooling/run_hardening_human_checks.py	.py	1460	test	verification/smoke/regression runner
+tooling/run_hardening_runtime_checks.py	.py	1717	test	verification/smoke/regression runner
+tooling/run_hardening_state_checks.py	.py	2258	test	verification/smoke/regression runner
+tooling/run_human_normalization_checks.py	.py	1608	test	verification/smoke/regression runner
+tooling/run_inspector_browser_ui_checks.py	.py	67056	test	verification/smoke/regression runner
+tooling/run_inspector_http_e2e_checks.py	.py	15647	test	verification/smoke/regression runner
+tooling/run_inspector_http_graph_session_e2e_checks.py	.py	6673	test	verification/smoke/regression runner
+tooling/run_inspector_http_lifecycle_import_e2e_checks.py	.py	16568	test	verification/smoke/regression runner
+tooling/run_inspector_http_project_ops_e2e_checks.py	.py	14782	test	verification/smoke/regression runner
+tooling/run_inspector_http_smoke_checks.py	.py	17416	test	verification/smoke/regression runner
+tooling/run_inspector_smoke_checks.py	.py	42310	test	verification/smoke/regression runner
+tooling/run_local_outcome_set_compare_checks.py	.py	5367	test	verification/smoke/regression runner
+tooling/run_local_outcome_set_package_checks.py	.py	5701	test	verification/smoke/regression runner
+tooling/run_local_outcome_set_package_commit_checks.py	.py	6028	test	verification/smoke/regression runner
+tooling/run_local_outcome_set_package_commit_compare_checks.py	.py	6539	test	verification/smoke/regression runner
+tooling/run_local_outcome_set_package_preview_checks.py	.py	5084	test	verification/smoke/regression runner
+tooling/run_local_outcome_set_package_resolution_checks.py	.py	5832	test	verification/smoke/regression runner
+tooling/run_merge_commit_checks.py	.py	3618	test	verification/smoke/regression runner
+tooling/run_partial_snapshot_import_checks.py	.py	3245	test	verification/smoke/regression runner
+tooling/run_pattern_decomposition_checks.py	.py	2238	test	verification/smoke/regression runner
+tooling/run_portable_local_outcome_package_merge_checks.py	.py	7457	test	verification/smoke/regression runner
+tooling/run_portable_local_outcome_package_merge_commit_checks.py	.py	8970	test	verification/smoke/regression runner
+tooling/run_portable_local_outcome_package_merge_resolution_checks.py	.py	7085	test	verification/smoke/regression runner
+tooling/run_project_model_checks.py	.py	24196	test	verification/smoke/regression runner
+tooling/run_runtime_corpus.py	.py	1792	test	verification/smoke/regression runner
+tooling/run_session_merge_checks.py	.py	2800	test	verification/smoke/regression runner
+tooling/run_session_model_checks.py	.py	2389	test	verification/smoke/regression runner
+tooling/run_snapshot_export_checks.py	.py	2442	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_checks.py	.py	3153	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_commit_checks.py	.py	3515	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_commit_compare_checks.py	.py	3722	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_commit_package_checks.py	.py	4441	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_commit_package_commit_checks.py	.py	5677	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_commit_package_preview_checks.py	.py	3969	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_commit_package_resolution_checks.py	.py	5185	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_preview_checks.py	.py	2947	test	verification/smoke/regression runner
+tooling/run_snapshot_reconcile_resolution_checks.py	.py	3808	test	verification/smoke/regression runner
+tooling/run_snapshot_restore_checks.py	.py	2619	test	verification/smoke/regression runner
+tooling/run_snapshot_restore_preview_checks.py	.py	2712	test	verification/smoke/regression runner
+tooling/run_squash_checks.py	.py	3184	test	verification/smoke/regression runner
+tooling/run_state_corpus.py	.py	2047	test	verification/smoke/regression runner
+tooling/run_state_model_checks.py	.py	2257	test	verification/smoke/regression runner
+tooling/run_svg_renderer_checks.py	.py	807	test	verification/smoke/regression runner
+tooling/run_tag_release_checks.py	.py	2271	test	verification/smoke/regression runner
+tooling/run_v0_2_hardening_suite.py	.py	1761	test	verification/smoke/regression runner
+tooling/run_workspace_navigation_checks.py	.py	2434	test	verification/smoke/regression runner
+tooling/run_workspace_timeline_checks.py	.py	1964	test	verification/smoke/regression runner
+tooling/semascript_ast.py	.py	3985	parser	parser/normalizer/AST/validation source
+tooling/semascript_parser.py	.py	5821	parser	parser/normalizer/AST/validation source
+tooling/semascript_validator.py	.py	6858	parser	parser/normalizer/AST/validation source
+tooling/serialize_ast.py	.py	472	parser	parser/normalizer/AST/validation source
+tooling/session_conflict_resolution.py	.py	3143	memory	state/session/project/workspace model source
+tooling/session_diff.py	.py	5089	memory	state/session/project/workspace model source
+tooling/session_merge.py	.py	6304	memory	state/session/project/workspace model source
+tooling/session_model.py	.py	5823	memory	state/session/project/workspace model source
+tooling/state_model.py	.py	10461	memory	state/session/project/workspace model source
+tooling/svg_renderer.py	.py	15066	tool	server/service/CLI/tooling source
+tooling/validate_ast.py	.py	1491	parser	parser/normalizer/AST/validation source
+tooling/validate_cli.py	.py	910	tool	server/service/CLI/tooling source
+tooling/validate_corpus.py	.py	2170	source	Python source file
+tooling/workspace_navigation.py	.py	6689	memory	state/session/project/workspace model source
+tooling/workspace_timeline.py	.py	3297	memory	state/session/project/workspace model source

@@ -1,0 +1,83 @@
+{
+  "snapshot_restore_preview_version": "SEMASCRIPT_SNAPSHOT_DIFF_RESTORE_PREVIEW_v0.1",
+  "snapshot_name": "snapshot_preview_v1",
+  "source_point_name": "preview_release",
+  "source_point_kind": "release",
+  "anchor": {
+    "tag_name": "preview_release",
+    "point_kind": "release",
+    "target_session_id": "preview_feature",
+    "target_session_name": "Preview Feature",
+    "branch_name": "main",
+    "note": "preview anchor",
+    "lineage_state": {
+      "branch_name": "main",
+      "branch_head_session_id": "preview_feature",
+      "active_session_id": "preview_base",
+      "active_branch_name": "main",
+      "is_branch_head_target": true
+    }
+  },
+  "restore_target": {
+    "restored_project_name": "Sample Preview Restored",
+    "would_activate_session_id": "preview_feature",
+    "would_activate_branch_name": "main",
+    "activate_anchor": true
+  },
+  "scalar_diff": {
+    "current_project_name": "Sample Snapshot Preview Source",
+    "snapshot_project_name": "Sample Snapshot Preview Source",
+    "current_active_session_id": "preview_base",
+    "snapshot_active_session_id": "preview_base",
+    "current_active_branch_name": "main",
+    "snapshot_active_branch_name": "main"
+  },
+  "collections": {
+    "sessions": {
+      "shared": [
+        "preview_base",
+        "preview_feature"
+      ],
+      "current_only": [
+        "preview_extra"
+      ],
+      "snapshot_only": []
+    },
+    "branches": {
+      "shared": [
+        "main"
+      ],
+      "current_only": [],
+      "snapshot_only": []
+    },
+    "tag_points": {
+      "shared": [
+        "preview_release"
+      ],
+      "current_only": [],
+      "snapshot_only": []
+    },
+    "snapshot_exports": {
+      "shared": [],
+      "current_only": [
+        "snapshot_preview_v1"
+      ],
+      "snapshot_only": []
+    },
+    "snapshot_restores": {
+      "shared": [],
+      "current_only": [],
+      "snapshot_only": []
+    }
+  },
+  "summary": {
+    "current_session_count": 3,
+    "snapshot_session_count": 2,
+    "current_branch_count": 1,
+    "snapshot_branch_count": 1,
+    "project_name_changed": true,
+    "active_session_changed": true,
+    "active_branch_changed": false,
+    "changed": true
+  }
+}

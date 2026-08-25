@@ -1,0 +1,86 @@
+{
+  "lineage_graph_version": "SEMASCRIPT_NAMED_MERGE_LINEAGE_GRAPH_v0.1",
+  "project_name": "Sample Branch Reset Project",
+  "active_session_id": "feature_1",
+  "active_branch_name": "feature_reset",
+  "branches": [
+    {
+      "branch_name": "main",
+      "root_session_id": "base_s",
+      "head_session_id": "base_s",
+      "manual_head_session_id": "base_s",
+      "is_active_branch": false,
+      "session_count": 1,
+      "color_index": 0
+    },
+    {
+      "branch_name": "feature_reset",
+      "root_session_id": "base_s",
+      "head_session_id": "feature_1",
+      "manual_head_session_id": "feature_1",
+      "is_active_branch": true,
+      "session_count": 2,
+      "color_index": 1
+    }
+  ],
+  "nodes": [
+    {
+      "session_id": "base_s",
+      "session_name": "Base",
+      "branch_name": "main",
+      "lineage_kind": "root",
+      "tags": [
+        "reset"
+      ],
+      "is_active": false,
+      "is_branch_head": true,
+      "x": 120,
+      "y": 70
+    },
+    {
+      "session_id": "feature_1",
+      "session_name": "Feature 1",
+      "branch_name": "feature_reset",
+      "lineage_kind": "commit",
+      "tags": [
+        "reset"
+      ],
+      "is_active": true,
+      "is_branch_head": true,
+      "x": 360,
+      "y": 70
+    },
+    {
+      "session_id": "feature_2",
+      "session_name": "Feature 2",
+      "branch_name": "feature_reset",
+      "lineage_kind": "commit",
+      "tags": [
+        "reset"
+      ],
+      "is_active": false,
+      "is_branch_head": false,
+      "x": 360,
+      "y": 185
+    }
+  ],
+  "edges": [
+    {
+      "from_session_id": "base_s",
+      "to_session_id": "feature_1",
+      "relation": "parent",
+      "branch_name": "feature_reset"
+    },
+    {
+      "from_session_id": "feature_1",
+      "to_session_id": "feature_2",
+      "relation": "parent",
+      "branch_name": "feature_reset"
+    }
+  ],
+  "summary": {
+    "branch_count": 2,
+    "session_count": 3,
+    "edge_count": 2
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "snapshot_reconcile_commit_package_resolution_version": "SEMASCRIPT_STANDALONE_OUTCOME_PACKAGE_CONFLICT_RESOLUTION_v0.1",
+  "resolution_name": "pkg_import_resolution_v1",
+  "package_name": "pkg_reconcile_commit_v1_pkg",
+  "source_commit_name": "pkg_reconcile_commit_v1",
+  "target_branch_name": "main",
+  "resolved_session_ids": [
+    "pkg_feature_reconcile_resolved_pkg_resolved"
+  ],
+  "skipped_session_ids": [],
+  "resolution_pairs": [
+    {
+      "original_session_id": "pkg_feature_reconcile_resolved",
+      "resolved_session_id": "pkg_feature_reconcile_resolved_pkg_resolved",
+      "resolved_with_head_session_id": "import_current",
+      "decision_choice": "use_package",
+      "preview_status": "conflict_like",
+      "conflict_like": true
+    }
+  ],
+  "summary": {
+    "resolved_session_count": 1,
+    "skipped_session_count": 0,
+    "conflict_like_count": 1,
+    "conflict_resolved_count": 1,
+    "decision_counts": {
+      "use_package": 1,
+      "use_current": 0,
+      "skip": 0,
+      "custom_text": 0
+    },
+    "active_session_id": "pkg_feature_reconcile_resolved_pkg_resolved",
+    "active_branch_name": "main"
+  }
+}

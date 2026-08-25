@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P01",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[PRC:OBS <agt=[ENT:HUM]; obj=[ENT:OBJ]>]"
+  },
+  {
+    "id": "P02",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[REL:CAU <cau=[PRC:CHG <obj=[ENT:SYS]>]; res=[STA:DEC <ctx=[ENT:RES]>]>]"
+  },
+  {
+    "id": "P03",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:INV <law=ZSUM; scp=[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]>]"
+  },
+  {
+    "id": "P04",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:TIME <mode=CYC; scp=[PRC:CHG <obj=[ENT:SYS]>]>]"
+  },
+  {
+    "id": "P05",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]"
+  },
+  {
+    "id": "P06",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:MODULE_INSTANCE]>]"
+  },
+  {
+    "id": "P07",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[PAT:PAL <axis=[IDX:CENTER]; scope=[REL:EQU <left=[ENT:A]; right=[ENT:A]>]>]"
+  },
+  {
+    "id": "P08",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[STA:BAL <ctx=[ENT:SYS]>]"
+  },
+  {
+    "id": "P09",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:CND <scp=[REL:CAU <cau=[STA:DEC <ctx=[ENT:RES]>]; res=[STA:STB {NEG} <ctx=[ENT:SYS]>]>]>]"
+  },
+  {
+    "id": "P10",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[REL:DEP <dst=[ENT:FORM]; src=[ENT:CODE]>]"
+  },
+  {
+    "id": "P11",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:TIME <mode=REV; scp=[PRC:TRF <src=[ENT:A]; dst=[ENT:B]>]>]"
+  },
+  {
+    "id": "P12",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[STA:STB {NEG} <ctx=[ENT:SYS]>]"
+  },
+  {
+    "id": "P13",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:INV <law=ZSUM; scp=[[PRC:TRF <src=[ENT:A]; dst=[ENT:B]; obj=[ENT:RES]>]; [PRC:TRF <src=[ENT:B]; dst=[ENT:C]; obj=[ENT:CREDIT]>]]>]"
+  },
+  {
+    "id": "P14",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:TIME <mode=CYC; scp=[[PRC:CHG <obj=[ENT:SYSTEM]>]; [PRC:CHG <obj=[ENT:RESERVE]>]]>]"
+  },
+  {
+    "id": "P15",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[PAT:PAL <axis=[IDX:CENTER]; scope=[[REL:EQU <left=[ENT:A]; right=[ENT:A]>]; [REL:EQU <left=[ENT:B]; right=[ENT:B]>]]>]"
+  },
+  {
+    "id": "P16",
+    "mode": "core",
+    "expected_valid": true,
+    "text": "[FRM:TIME <mode=LIN; scp=[REL:CAU <cau=[STA:DEC <ctx=[ENT:RESOURCE]>]; res=[STA:STB {NEG} <ctx=[ENT:SYSTEM]>]>]>]"
+  }
+]

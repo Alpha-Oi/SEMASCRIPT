@@ -1,0 +1,120 @@
+{
+  "compare_version": "SEMASCRIPT_CROSS_SESSION_DIFF_v0.1",
+  "project_name": "Sample Compare Project",
+  "left_session_id": "compare_left",
+  "right_session_id": "compare_right",
+  "left_session_name": "Compare Left",
+  "right_session_name": "Compare Right",
+  "identity": {
+    "profile": {
+      "left": "human",
+      "right": "human",
+      "changed": false
+    },
+    "source_mode": {
+      "left": "text",
+      "right": "text",
+      "changed": false
+    }
+  },
+  "structure": {
+    "slinear": {
+      "left": "[PAT:GEN <code=[ENT:TEMPLATE]; dst=[ENT:INSTANCE]>]",
+      "right": "[PAT:SPR <core=[ENT:SEED]; res=[ENT:FORM]>]",
+      "changed": true
+    },
+    "decomposed_slinear": {
+      "left": "[REL:DEP <dst=[ENT:INSTANCE]; src=[ENT:TEMPLATE]>]",
+      "right": "[PRC:EXP <src=[ENT:SEED]; res=[ENT:FORM]>]",
+      "changed": true
+    },
+    "entities": {
+      "shared": [],
+      "left_only": [
+        "INSTANCE",
+        "TEMPLATE"
+      ],
+      "right_only": [
+        "FORM",
+        "SEED"
+      ]
+    },
+    "inputs": {
+      "shared": [],
+      "left_only": [
+        "TEMPLATE"
+      ],
+      "right_only": [
+        "SEED"
+      ]
+    },
+    "outputs": {
+      "shared": [],
+      "left_only": [
+        "INSTANCE"
+      ],
+      "right_only": [
+        "FORM"
+      ]
+    },
+    "state_nodes": {
+      "shared": [],
+      "left_only": [],
+      "right_only": []
+    }
+  },
+  "execution": {
+    "runtime_accepted": {
+      "left": true,
+      "right": true,
+      "changed": false
+    },
+    "state_accepted": {
+      "left": true,
+      "right": true,
+      "changed": false
+    },
+    "runtime_ops": {
+      "shared": [],
+      "left_only": [
+        "DEPENDENCY"
+      ],
+      "right_only": [
+        "EXPAND"
+      ]
+    },
+    "dependency_count": {
+      "left": 1,
+      "right": 0,
+      "changed": true
+    },
+    "expansion_count": {
+      "left": 0,
+      "right": 1,
+      "changed": true
+    },
+    "action_count": {
+      "left": 0,
+      "right": 0,
+      "changed": false
+    },
+    "observation_count": {
+      "left": 0,
+      "right": 0,
+      "changed": false
+    },
+    "history_len": {
+      "left": 1,
+      "right": 1,
+      "changed": false
+    }
+  },
+  "summary": {
+    "same_profile": true,
+    "same_source_mode": true,
+    "shared_entities_count": 0,
+    "left_only_entities_count": 2,
+    "right_only_entities_count": 2,
+    "runtime_ops_overlap_count": 0
+  }
+}

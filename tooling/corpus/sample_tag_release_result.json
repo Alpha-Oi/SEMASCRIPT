@@ -1,0 +1,12 @@
+{
+  "tag_release_version": "SEMASCRIPT_TAG_RELEASE_POINTS_v0.1",
+  "project_name": "Sample Tag Release Project",
+  "tag_name": "release_v1",
+  "point_kind": "release",
+  "target_session_id": "tag_feature",
+  "branch_name": "main",
+  "summary": {
+    "created": true,
+    "is_release": true
+  }
+}
