@@ -1,4 +1,20 @@
-# SEMASCRIPT All-in-One Bundle v0.2 — Portable Local Outcome Package Three-Way Merge Commit / Promote
+<div align="center">
+
+# ◈ SEMASCRIPT
+
+### Portable local outcome-package three-way merge / commit / promote bundle
+
+**Semantic scripting · Three-way merge · Local-first**
+
+[![Compile](https://github.com/Alpha-Oi/SEMASCRIPT/actions/workflows/compile.yml/badge.svg)](https://github.com/Alpha-Oi/SEMASCRIPT/actions/workflows/compile.yml)
+![Status](https://img.shields.io/badge/status-active-22a06b)
+![License](https://img.shields.io/badge/license-proprietary-lightgrey)
+
+[Contributing](CONTRIBUTING.md) · [Conduct](CODE_OF_CONDUCT.md) · [Security](SECURITY.md) · [Notice](NOTICE)
+
+</div>
+
+---
 
 Этот рабочий bundle продолжает кумулятивную цепочку `SEMASCRIPT_All_In_One_v0_2_*`.
 
